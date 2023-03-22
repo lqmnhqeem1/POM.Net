@@ -1,0 +1,25 @@
+ -  - 10:50
+IM_POM_VB.Net.Login -> AuthenticateOrRedirect
+Exception Level: 1
+Failed to authenticate and populate user data
+   at IM_POM_VB.Net.Login.AuthenticateOrRedirect(String UserId, String Password, String StoreId, Int32& errMsg) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 159
+   at IM_POM_VB.Net.Login.LoggingIn(Object sender, EventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 227
+Exception Level: 2
+AuthenticateUser()
+   at POM.Lib.Data.DataAccess.GetLDAP_PATH(String DomainID) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\DataAccess.vb:line 108
+   at IM_POM_VB.Net.Login.AuthenticateOrRedirect(String UserId, String Password, String StoreId, Int32& errMsg) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 92
+Exception Level: 3
+String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at POM.Lib.Data.DataAccess.GetLDAP_PATH(String DomainID) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\DataAccess.vb:line 101
+
+

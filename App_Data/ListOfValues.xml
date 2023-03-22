@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListOfValues>
+	<lovItem id="allocprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true" />
+		<lovParam id="proddesc" text="Description" datatype="alpha" maxlength="100" visible="true" />
+		<lovParam id="caseqty" text="Case Qty" datatype="numeric" maxlength="10" visible="false" />
+		<lovParam id="unitcost" text="Unit Cost" datatype="numeric" maxlength="19" visible="false" />
+		<lovParam id="uom" text="UOM" datatype="alpha" maxlength="6" visible="false" />
+	</lovItem>
+	<lovItem id="prod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="ntprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="vend" selectedParamId="vendcode">
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="vendname" text="Vendor Name" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="retvend" selectedParamId="vendcode">
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="vendname" text="Vendor Name" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="hamp" selectedParamId="hampcode">
+		<lovParam id="hampcode" text="Hamper Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="hampdesc" text="Hamper Description" datatype="alpha" maxlength="40" visible="true"></lovParam>
+		<lovParam id="hampupc" text="Hamper UPC" datatype="alpha" maxlength="14" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="hamptrans" selectedParamId="hampcode">
+		<lovParam id="hampcode" text="Hamper Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="hampdesc" text="Hamper Description" datatype="alpha" maxlength="40" visible="true"></lovParam>
+		<lovParam id="hampupc" text="Hamper UPC" datatype="alpha" maxlength="14" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="po" selectedParamId="pocode">
+		<lovParam id="pocode" text="PO Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="podate" text="PO Date" datatype="date" maxlength="10" visible="true"></lovParam>
+		<lovParam id="deptcode" text="Department" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="categorycode" text="Category" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="potype" text="PO Type" datatype="alpha" maxlength="1" visible="true"></lovParam>
+		<lovParam id="postatus" text="PO Status" datatype="alpha" maxlength="2" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="PalletProd" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="7" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="prodcase" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alphanumeric" maxlength="15" visible="true"></lovParam>
+		<lovParam id="min" text="Min Ord Qty" datatype="numeric" maxlength="0" visible="false"></lovParam>
+	</lovItem>
+	<lovItem id="ibtcase" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="min" text="Min Ord Qty" datatype="numeric" maxlength="11" visible="false"></lovParam>
+	</lovItem>
+	<lovItem id="ibtprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="numeric" maxlength="15" visible="true"></lovParam>
+	</lovItem>
+	<!-- Modified by : Eric Tan
+       Modified on : 15 Aprl 2012
+       Purpose  : DCL3314 Order Consolidation-->
+	<lovItem id="prprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="numeric" maxlength="15" visible="true"></lovParam>
+	</lovItem>
+
+	<lovItem id="grn" selectedParamId="grnnumber">
+		<lovParam id="grnnumber" text="GRN Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="ponumber" text="PO Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="vendcode" text="Vendor" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="grnstatus" text="Status" datatype="alpha" maxlength="1" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="promotion" selectedParamId="promocode">
+		<lovParam id="promocode" text="Promotion Code" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="promodesc" text="Promotion Description" datatype="alpha" maxlength="60" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="pospromotion" selectedParamId="promocode">
+		<lovParam id="promocode" text="Promotion Code" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="promodesc" text="Promotion Description" datatype="alpha" maxlength="60" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="prodvend" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="prodadj" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="produpc" text="UPC" datatype="numeric" maxlength="13" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="false"></lovParam>
+		<lovParam id="caseqty" text="Case Qty" datatype="alpha" maxlength="15" visible="false"></lovParam>
+		<lovParam id="ohb" text="OHB" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="returnableflag" text="Returnable Flag" datatype="alpha" maxlength="3" visible="false"></lovParam>
+		<!--saber,DCL5825,16/05/2019-->
+		<lovParam id="cost" text="Cost" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="DeptOut" text="DeptOut" datatype="alpha" maxlength="2" visible="false"></lovParam>
+	</lovItem>
+	<lovItem id="vendlinkprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="caseqty" text="Case Qty" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="cost" text="Cost" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="price" text="Price" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="gp" text="GP%" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="sellingunit" text="SKU" datatype="alpha" maxlength="15" visible="false"></lovParam>
+	</lovItem>
+	<lovItem id="graprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="produpc" text="UPC" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="qty" text="Min Quantity" datatype="numeric" maxlength="10" visible="false"></lovParam>
+	</lovItem>
+	<lovItem id="ipcprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="cost" text="Cost" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="price" text="Price" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="gp" text="GP%" datatype="numeric" maxlength="12" visible="false"></lovParam>
+		<lovParam id="cqty" text="Case Qty" datatype="numeric" maxlength="12" visible="False"></lovParam>
+		<lovParam id="produpc" text="Product UPC" datatype="alpha" maxlength="14" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="gra" selectedParamId="granumber">
+		<lovParam id="granumber" text="GRA Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="vendcode" text="Vendor" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="grastatus" text="Status" datatype="alpha" maxlength="1" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="prodohb" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="pogrn" selectedParamId="pocode">
+		<lovParam id="pocode" text="PO Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="podate" text="PO Date" datatype="date" maxlength="10" visible="true"></lovParam>
+		<lovParam id="divcode" text="Division" datatype="integer" maxlength="1" visible="true"></lovParam>
+		<lovParam id="deptcode" text="Department" datatype="alpha" maxlength="15" visible="false"></lovParam>
+		<lovParam id="categorycode" text="Category" datatype="alpha" maxlength="15" visible="false"></lovParam>
+		<lovParam id="potype" text="PO Type" datatype="alpha" maxlength="1" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="invgrn" selectedParamId="grnnumber">
+		<lovParam id="grnnumber" text="GRN Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="ponumber" text="PO Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="vendcode" text="Vendor" datatype="integer" maxlength="10" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="graprod" selectedParamId="produpc">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="produpc" text="UPC" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="qty" text="Min Quantity" datatype="numeric" maxlength="10" visible="false"></lovParam>
+	</lovItem>
+	<lovItem id="poinv" selectedParamId="pocode">
+		<lovParam id="pocode" text="PO Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="entrydate" text="Entry Date" datatype="date" maxlength="10" visible="true"></lovParam>
+		<lovParam id="deptcode" text="Department" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="categorycode" text="Category" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="salesinvoicetype" text="Sales Invoice Type" datatype="alpha" maxlength="1" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="salesinv" selectedParamId="salesinvoicenumber">
+		<lovParam id="salesinvoicenumber" text="Sales Invoice Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="ponumber" text="PO Number" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="vendcode" text="Vendor" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="invoicestatus" text="Status" datatype="alpha" maxlength="1" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="orderstore" selectedParamId="orderstorecode">
+		<lovParam id="orderstorecode" text="Ship Store" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="orderstorename" text="Store Description" datatype="alpha" maxlength="1" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="shipstore" selectedParamId="shipstorecode">
+		<lovParam id="shipstorecode" text="Ship Store" datatype="integer" maxlength="12" visible="true"></lovParam>
+		<lovParam id="shipstorename" text="Store Description" datatype="alpha" maxlength="1" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="venc" selectedParamId="vendcode">
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="vendname" text="Vendor Name" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="ibtack" selectedParamId="transno">
+		<lovParam id="transno" text="Request/Allocation Out #" datatype="alpha" maxlength="12" visible="true"></lovParam>
+		<lovParam id="outno" text="Out #" datatype="alpha" maxlength="12" visible="true"></lovParam>
+		<lovParam id="inno" text="In #" datatype="alpha" maxlength="12" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="exportpovend" selectedParamId="vendcode">
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="vendname" text="Vendor Name" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="ftvend" selectedParamId="vendcode">
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="vendname" text="Vendor Name" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="ftconso" selectedParamId="consolidateid">
+		<lovParam id="consolidateid" text="Consolidate ID" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="consolidatedate" text="Consolidate Date" datatype="date" maxlength="10" visible="true"></lovParam>
+		<lovParam id="vendcode" text="Vendor Code" datatype="integer" maxlength="10" visible="true"></lovParam>
+		<lovParam id="vendname" text="Vendor Name" datatype="alpha" maxlength="50" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="pstockprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="true"></lovParam>
+	</lovItem>
+	<lovItem id="rtwprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<lovParam id="caseid" text="Case Id" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="caseqty" text="Case Qty" datatype="alpha" maxlength="15" visible="true"></lovParam>
+	</lovItem>
+	<!--Modified By : Saber Ang
+  Purpose     : DCL5790-->
+	<lovItem id="DCStoreprod" selectedParamId="prodcode">
+		<lovParam id="prodcode" text="Product Code" datatype="alpha" maxlength="15" visible="true"></lovParam>
+		<lovParam id="proddesc" text="Product Description" datatype="alpha" maxlength="50" visible="true"></lovParam>
+		<!--<lovParam id="caseid" text="Case Id" datatype="numeric" maxlength="15" visible="true"></lovParam>-->
+	</lovItem>
+	<!--***************************************************************************************************-->
+</ListOfValues>

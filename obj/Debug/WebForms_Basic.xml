@@ -1,0 +1,1655 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IM POM VB.Net
+</name>
+</assembly>
+<members>
+<member name="T:IM_POM_VB.Net.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:IM_POM_VB.Net.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:IM_POM_VB.Net.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:IM_POM_VB.Net.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:IM_POM_VB.Net.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="T:IM_POM_VB.Net.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:IM_POM_VB.Net.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:IM_POM_VB.Net.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:IM_POM_VB.Net.CalendarControl._txtCalendarValue">
+<summary>
+txtCalendarValue control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.CalendarControl._hlnkCalLink">
+<summary>
+hlnkCalLink control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.CalendarControl._ifrmCalendar">
+<summary>
+ifrmCalendar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.Text">
+ <summary>
+ Gets/Sets the value of date control
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.CalendarCssClass">
+ <summary>
+ Gets/Sets the CssClass for this control
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.TextBoxCssClass">
+ <summary>
+ Gets/Sets Calendar TextBox CssClass
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.ButtonCssClass">
+ <summary>
+ Gets/Sets Calendar Image CssClass
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.MaxLength">
+ <summary>
+ Gets/Sets the maxlength of entry
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.TextEntryHandle">
+ <summary>
+ Gets the textbox for calendar control
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.TextEntryClientID">
+ <summary>
+ Gets the textbox client id
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.TabIndex">
+ <summary>
+ Gets/Sets TabIndex of Calendar Control
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.CalendarControl.TextChange">
+ <summary>
+ Gets/Sets TabIndex of Calendar Control
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:IM_POM_VB.Net.CalendarPopup._frmCalendar">
+<summary>
+frmCalendar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.CalendarPopup._clPopupCalendar">
+<summary>
+clPopupCalendar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ClientExe._btnClientExe">
+<summary>
+btnClientExe control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ClientExe._ifrmClientExe">
+<summary>
+ifrmClientExe control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ClientExe.Text">
+ <summary>
+ Gets or Sets the ClientExe control's Button Text Property
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ClientExe.RunText">
+ <summary>
+ Gets or Sets the ClientExe control's Button Text Property when control is processing
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ClientExe.TabIndex">
+ <summary>
+ Gets or Sets the TabIndex of ClientExe control
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ClientExe.CssClass">
+ <summary>
+ Gets or Sets the Cascading Style Sheet (CSS) class rendered by the web server control on the client
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ClientExe.OnClientClick">
+ <summary>
+ Sets the client side script that executes when a System.Web.UI.WebControls.Button controls's
+ System.Web.UI.Webcontrols.Button.Click event is raised
+ </summary>
+ <value></value>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ClientExe.ClientExeParam">
+ <summary>
+ Sets the command line arguments for client exe to be executed
+ </summary>
+ <value></value>
+ <remarks></remarks>
+</member>
+<member name="F:IM_POM_VB.Net.InProgress._divInProgress">
+<summary>
+divInProgress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.InProgress.Text">
+ <summary>
+ Gets / Sets Control Display Text
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IM_POM_VB.Net.InProgress.ControlClientID">
+ <summary>
+ Gets ClientID for container DIV
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValues._txtLOVCode">
+<summary>
+txtLOVCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValues._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.Code">
+ <summary>
+ Gets or Sets List Of Value Id to display
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.SelectedParamId">
+ <summary>
+ Gets or Sets the parameter id whose data would be returned
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.Text">
+ <summary>
+ Gets or Sets List Of Values selected Data
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.ListOfValuesCssClass">
+ <summary>
+ Gets or Sets CssClass for ListOfValues
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.TextBoxCssClass">
+ <summary>
+ Gets or Sets the CssClass for ListOfValue TextBox
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.ButtonCssClass">
+ <summary>
+ Gets or Sets the CssClass for ListOfValues Button
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.MaxLength">
+ <summary>
+ Gets/Sets MaxLength of ListOfValues Entry
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.TextEntryHandle">
+ <summary>
+ Gets Textbox object to associate with
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>One may need this handle in order to set validation controls</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.TextEntryClientID">
+ <summary>
+ Gets TextBox ClientID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.AdditionalData">
+ <summary>
+ Sets field-param mapping for any additional required data
+ </summary>
+ <value></value>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.AdditionalFilter">
+ <summary>
+ Gets/Sets param-field mapping for any additional data filtering
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.Enabled">
+ <summary>
+ Gets/Sets Control Enable State
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.TabIndex">
+ <summary>
+ Gets/Sets ListOfValues TabIndex
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.OnClientClick">
+ <summary>
+ Gets/Sets Client Script to run OnClick of this button
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.OnDataPopulate">
+ <summary>
+ Gets/Sets Client Script to run OnDataPopulate of this control
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="P:IM_POM_VB.Net.ListOfValues.AutoMode">
+ <summary>
+ Gets/Sets Auto Operation Mode of List Of Values
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Author: Tanmoy Paul</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._frmListOfValues">
+<summary>
+frmListOfValues control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._smLOV">
+<summary>
+smLOV control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._lblPageTitle">
+<summary>
+lblPageTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._lblSearch">
+<summary>
+lblSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._tblSearchParam">
+<summary>
+tblSearchParam control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._upgLOVSearch">
+<summary>
+upgLOVSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._upLOVSearch">
+<summary>
+upLOVSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._btnReset">
+<summary>
+btnReset control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._trResult">
+<summary>
+trResult control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._lblResult">
+<summary>
+lblResult control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._upgLOVResult">
+<summary>
+upgLOVResult control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._upLOVResult">
+<summary>
+upLOVResult control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._lblMessage">
+<summary>
+lblMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._dgLOV">
+<summary>
+dgLOV control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._hdFullValue">
+<summary>
+hdFullValue control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._btnDone">
+<summary>
+btnDone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ListOfValuesPopup._btnCancel">
+<summary>
+btnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:IM_POM_VB.Net.ListOfValuesPopup.CreateChildControls">
+ <summary>
+ Create Child Event
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.ListOfValuesPopup.BuildParamEntry">
+ <summary>
+ Method to build UI for search condition entry
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.ListOfValuesPopup.BindDataSource(System.Int32,System.Int32)">
+ <summary>
+ Procedure to retrieve and bind data to grid
+ </summary>
+ <param name="PageIndex">Current Page Index of DataGrid</param>
+ <param name="PageSize">Number of records per page in datagrid</param>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.ListOfValuesPopup.GetSelectedValue">
+ <summary>
+ Returns Hastable of selected data row in ListOfValues
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._divFileList">
+<summary>
+divFileList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._tdButton">
+<summary>
+tdButton control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._upButton">
+<summary>
+upButton control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._ibtnOk">
+<summary>
+ibtnOk control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._ibtnCancel">
+<summary>
+ibtnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._upTree">
+<summary>
+upTree control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._xdsServer">
+<summary>
+xdsServer control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._tvServerFile">
+<summary>
+tvServerFile control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._tServerFile">
+<summary>
+tServerFile control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.ServerFileDialog._btnServerFile">
+<summary>
+btnServerFile control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._lblMessage">
+<summary>
+lblMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._lblUserName">
+<summary>
+lblUserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._txtUserName">
+<summary>
+txtUserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._lblPassword">
+<summary>
+lblPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._txtPassword">
+<summary>
+txtPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._lblStore">
+<summary>
+lblStore control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._ddlStore">
+<summary>
+ddlStore control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._btnLogin">
+<summary>
+btnLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Login._btnCancel">
+<summary>
+btnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._lblVendorCode">
+<summary>
+lblVendorCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._txtVendorCode">
+<summary>
+txtVendorCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._lblVendorName">
+<summary>
+lblVendorName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._txtVendorName">
+<summary>
+txtVendorName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._lblDepartment">
+<summary>
+lblDepartment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._ddlDepartment">
+<summary>
+ddlDepartment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._ddlCategory">
+<summary>
+ddlCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._btnReset">
+<summary>
+btnReset control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._lblResults">
+<summary>
+lblResults control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorDetails._grdVendorDetails">
+<summary>
+grdVendorDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ this event initializes the department, category drop downs on page load
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.HideControls">
+ <summary>
+ hide results label and vendorproducts button
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.PopulateDropDowns">
+ <summary>
+ populate dropdowns
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.ShowGridHeader">
+ <summary>
+ show the grid with header only
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ reset the grid and the rest of the controls on the form
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.ClearControls">
+ <summary>
+ clear the controls of the form
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.ddlDepartment_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ this event populates the category drop down corresponding to the selected department
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.btnSearch_Click(System.Object,System.EventArgs)">
+ <summary>
+ this event populates the grid with the given searching criteria 
+ on click event of search button
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.BindGrid">
+ <summary>
+ bind the grid with the given search criteria
+ </summary>    
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.grdVendorDetails_ItemDataBound(System.Object,System.Web.UI.WebControls.DataGridItemEventArgs)">
+ <summary>
+ item databound event handles the exclusive radio button option in the grid
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorDetails.grdVendorDetails_PageIndexChanged(System.Object,System.Web.UI.WebControls.DataGridPageChangedEventArgs)">
+ <summary>
+ PageIndex Change Event
+ </summary>
+ <param name="source"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._lblSearch">
+<summary>
+lblSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._lblVendorCode">
+<summary>
+lblVendorCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._txtVendorCode">
+<summary>
+txtVendorCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._lblVendorName">
+<summary>
+lblVendorName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._txtVendorName">
+<summary>
+txtVendorName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._lblDepartment">
+<summary>
+lblDepartment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._ddlDepartment">
+<summary>
+ddlDepartment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._lblCategory">
+<summary>
+lblCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._ddlCategory">
+<summary>
+ddlCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._btnReset">
+<summary>
+btnReset control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._lblDetails">
+<summary>
+lblDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._lblResults">
+<summary>
+lblResults control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorEnquiryForm._grdVendorDetails">
+<summary>
+grdVendorDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._txtVendorCode">
+<summary>
+txtVendorCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._txtVendorDesc">
+<summary>
+txtVendorDesc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._lblDepartment">
+<summary>
+lblDepartment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._ddlDepartment">
+<summary>
+ddlDepartment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._ddlCategory">
+<summary>
+ddlCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorPrdtDetails._btnReset">
+<summary>
+btnReset control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProduct._lblError">
+<summary>
+lblError control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProduct._frmVendorProduct">
+<summary>
+frmVendorProduct control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProduct._dgVenProduct">
+<summary>
+dgVenProduct control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProduct._lbtnViewHistory">
+<summary>
+lbtnViewHistory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lblVendorCode">
+<summary>
+lblVendorCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lblVendorCodeVal">
+<summary>
+lblVendorCodeVal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lblVendorDesc">
+<summary>
+lblVendorDesc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lblVendorDescVal">
+<summary>
+lblVendorDescVal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lblDepartment">
+<summary>
+lblDepartment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lblDepartmentVal">
+<summary>
+lblDepartmentVal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lblError">
+<summary>
+lblError control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._grdVendorProduct">
+<summary>
+grdVendorProduct control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lbtnVPCHistory">
+<summary>
+lbtnVPCHistory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.VendorProducts._lbtnLRCHistory">
+<summary>
+lbtnLRCHistory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorProducts.FetchData">
+ <summary>
+ fetch the vendor product details for the given vendor Code
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorProducts.GetDepartmentCounter">
+ <summary>
+ shows the total different department of the product
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorProducts.ShowGridHeader">
+ <summary>
+ show grid header only
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorProducts.grdVendorProduct_PageIndexChanged(System.Object,System.Web.UI.WebControls.DataGridPageChangedEventArgs)">
+ <summary>
+ PageIndexChanged Event
+ </summary>
+ <param name="source"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IM_POM_VB.Net.VendorProducts.lbtnVPCHistory_Click(System.Object,System.EventArgs)">
+ <summary>
+ opens the VPCHistory page in a new window
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>Modified by Sachin Jain for DCL 1556 on 22-Sep-2008</remarks>
+ LOH - Comment
+</member>
+<member name="M:IM_POM_VB.Net.VendorProducts.lbtnLRCHistory_Click(System.Object,System.EventArgs)">
+ <summary>
+ opens the LRCHistory page in a new window
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>Modified by Sachin Jain for DCL 1556 on 22-Sep-2008</remarks>
+ ' LOH - Comment
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._MainContent">
+<summary>
+MainContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._lblLoginName">
+<summary>
+lblLoginName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._lblCurrRole">
+<summary>
+lblCurrRole control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._lblStoreId">
+<summary>
+lblStoreId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._lblHQSystemVal">
+<summary>
+lblHQSystemVal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._smpPOM">
+<summary>
+smpPOM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._lnkBack">
+<summary>
+lnkBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._lblHHTPwd">
+<summary>
+lblHHTPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._frmMasterPage">
+<summary>
+frmMasterPage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._hlnkChangeStore">
+<summary>
+hlnkChangeStore control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._hlnkChangeRole">
+<summary>
+hlnkChangeRole control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._lnkSignOut">
+<summary>
+lnkSignOut control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._lblSignOut">
+<summary>
+lblSignOut control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._imgSignOut">
+<summary>
+imgSignOut control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SiteMaster._tContent">
+<summary>
+tContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._frmSwitchRole">
+<summary>
+frmSwitchRole control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._imgGiant">
+<summary>
+imgGiant control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lblStore">
+<summary>
+lblStore control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lblStoreId">
+<summary>
+lblStoreId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lblUser">
+<summary>
+lblUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lblUserId">
+<summary>
+lblUserId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lnkSignOut">
+<summary>
+lnkSignOut control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lblSignOut">
+<summary>
+lblSignOut control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._imgSignOut">
+<summary>
+imgSignOut control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lblPageTile">
+<summary>
+lblPageTile control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lblMessage">
+<summary>
+lblMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._lblRoles">
+<summary>
+lblRoles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._dgRole">
+<summary>
+dgRole control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._hrAbButton">
+<summary>
+hrAbButton control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.SwitchRole._btnSwitchRole">
+<summary>
+btnSwitchRole control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:IM_POM_VB.Net.SwitchRole.AssignRole">
+ <summary>
+ Method to assign role to current user
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Site_Mobile._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Site_Mobile._HeadContent">
+<summary>
+HeadContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Site_Mobile._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Site_Mobile._FeaturedContent">
+<summary>
+FeaturedContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Site_Mobile._MainContent">
+<summary>
+MainContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IM_POM_VB.Net.Site_Mobile._ViewSwitcher1">
+<summary>
+ViewSwitcher1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

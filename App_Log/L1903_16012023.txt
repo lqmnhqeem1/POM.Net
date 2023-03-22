@@ -1,0 +1,100 @@
+ -  - 10:42
+POM.Lib.UI.Utility -> GetMessage
+Exception Level: 1
+Error retrieving Message
+   at POM.Lib.UI.Utility.GetMessage(String MessageId, Object[] Param) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\Utility.vb:line 120
+   at IM_POM_VB.Net.Login.Page_Load(Object sender, EventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 39
+Exception Level: 2
+Could not find file 'C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\App_Data\Message.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at POM.Lib.UI.Utility.GetMessage(String MessageId, Object[] Param) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\Utility.vb:line 56
+
+
+ -  - 10:45
+POM.Lib.UI.Utility -> GetMessage
+Exception Level: 1
+Error retrieving Message
+   at POM.Lib.UI.Utility.GetMessage(String MessageId, Object[] Param) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\Utility.vb:line 120
+   at IM_POM_VB.Net.Login.Page_Load(Object sender, EventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 39
+Exception Level: 2
+Could not find file 'C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\App_Data\Message.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at POM.Lib.UI.Utility.GetMessage(String MessageId, Object[] Param) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\Utility.vb:line 56
+
+
+ -  - 10:49
+POM.Lib.UI.Utility -> GetMessage
+Exception Level: 1
+Error retrieving Message
+   at POM.Lib.UI.Utility.GetMessage(String MessageId, Object[] Param) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\Utility.vb:line 120
+   at IM_POM_VB.Net.Login.Page_Load(Object sender, EventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 39
+Exception Level: 2
+Could not find file 'C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\App_Data\Message.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at POM.Lib.UI.Utility.GetMessage(String MessageId, Object[] Param) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\Utility.vb:line 56
+
+
+ -  - 10:51
+System.Number -> StringToNumber
+Exception Level: 1
+Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at IM_POM_VB.Net.VendorDetails.BindGrid() in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorEnquiry.aspx.vb:line 337
+   at IM_POM_VB.Net.VendorDetails.btnSearch_Click(Object sender, EventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorEnquiry.aspx.vb:line 309
+
+
+ -  - 10:51
+System.Number -> StringToNumber
+Exception Level: 1
+Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at IM_POM_VB.Net.VendorDetails.BindGrid() in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorEnquiry.aspx.vb:line 337
+   at IM_POM_VB.Net.VendorDetails.btnSearch_Click(Object sender, EventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorEnquiry.aspx.vb:line 309
+
+

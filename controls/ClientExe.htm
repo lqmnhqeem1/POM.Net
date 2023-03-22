@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title>ClientExe</title>
+        <style type="text/css">
+            .normalLabel
+            {
+	            font: normal 10px Verdana;
+	            text-decoration:none;
+	            padding-left: 5px;
+            }
+        </style>
+        <script type="text/javascript" src="../commonjs/common.js"></script>
+        <script language="javascript" type="text/javascript">
+            function startActiveX()
+            {
+                var i=0, exename, cmdparam, objControl, cmdp, funccall, arrcmdparam;
+                var result = 0;
+                exename = getQueryStringValue("exename");
+                cmdparam = getQueryStringValue("args");
+                
+                if (cmdparam.indexOf("PrintLabel.exe") >=0)
+                {
+                    cmdparam = cmdparam.replace("PrintLabel.exe", '');
+                    //If calling Print Label Exe
+                    while (cmdparam.indexOf('%20') >= 0)
+                    {
+                        cmdparam = cmdparam.replace("%20", ' ');
+                    }
+                    while (cmdparam.indexOf('|') >= 0)
+                    {
+                        cmdparam = cmdparam.replace("|", '=');
+                    }           
+                    while (cmdparam.indexOf('\\') >= 0)
+                    {
+                        cmdparam = cmdparam.replace("\\", '');
+                    }
+                    
+                    var oShell = new ActiveXObject("Shell.Application");
+                    oShell.ShellExecute(exename, cmdparam, "", "open", "1");
+                }
+                else
+                {
+                    while (cmdparam.indexOf('^') >= 0)
+                    {
+                        cmdparam = cmdparam.replace("^", '&');
+                    }                    
+                    
+                    result = InvClientExe.InvokeExe(exename, cmdparam);
+                }
+                
+                window.returnValue = result;
+                window.close();
+            }
+        </script>
+    </head>
+    <body style="margin:0px 0px 0px 0px; width:145px; height:20px; background-color:#e2fae2;" onload="startActiveX();">
+        <table border="0" cellpadding="0" cellspacing="0" style="height:20px; width:145px;">
+            <tr valign="top" align="left">
+                <td>
+                    <object id="InvClientExe" classid="CLSID:DD793FC3-57C4-41A1-A62A-223F5F00EEB4" codebase="ClientExe.CAB#version=1,0,0,0" style="display:none;"></object>
+                    <label class="normalLabel">Processing</label><img src="../images/processing_line.gif" alt="" />
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

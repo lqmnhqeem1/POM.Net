@@ -1,0 +1,60 @@
+ -  - 09:19
+IM_POM_VB.Net.Login -> AuthenticateOrRedirect
+Exception Level: 1
+Failed to authenticate and populate user data
+   at IM_POM_VB.Net.Login.AuthenticateOrRedirect(String UserId, String Password, String StoreId, Int32& errMsg) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 168
+   at IM_POM_VB.Net.Login.LoggingIn(Object sender, EventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 235
+Exception Level: 2
+Error retrieving Message
+   at POM.Lib.UI.Utility.GetMessage(String MessageId, Object[] Param) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\Utility.vb:line 120
+   at IM_POM_VB.Net.Login.AuthenticateOrRedirect(String UserId, String Password, String StoreId, Int32& errMsg) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Login.aspx.vb:line 144
+Exception Level: 3
+Could not find file 'C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\App_Data\Message.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at POM.Lib.UI.Utility.GetMessage(String MessageId, Object[] Param) in D:\Giant_SourceCode\POM.Net v1.1\POM.Net Lib\Utility.vb:line 56
+
+
+1015 - z_ppc_pom2 - 11:43
+IM_POM_VB.Net.VendorProducts -> grdVendorProduct_ItemDataBound
+Exception Level: 1
+Object reference not set to an instance of an object.
+   at IM_POM_VB.Net.VendorProducts.grdVendorProduct_ItemDataBound(Object sender, DataGridItemEventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorProducts.aspx.vb:line 239
+
+
+1015 - z_ppc_pom2 - 11:43
+IM_POM_VB.Net.VendorProducts -> FetchData
+Exception Level: 1
+Error occurred while binding grid
+   at IM_POM_VB.Net.VendorProducts.FetchData() in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorProducts.aspx.vb:line 130
+   at IM_POM_VB.Net.VendorProducts.Page_Load(Object sender, EventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorProducts.aspx.vb:line 34
+Exception Level: 2
+Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at IM_POM_VB.Net.VendorProducts.grdVendorProduct_ItemDataBound(Object sender, DataGridItemEventArgs e) in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorProducts.aspx.vb:line 251
+   at System.Web.UI.WebControls.DataGrid.OnItemDataBound(DataGridItemEventArgs e)
+   at System.Web.UI.WebControls.DataGrid.CreateItem(Int32 itemIndex, Int32 dataSourceIndex, ListItemType itemType, Boolean dataBind, Object dataItem, DataGridColumn[] columns, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at IM_POM_VB.Net.VendorProducts.FetchData() in C:\Users\loqman\Documents\GitHub\IM POM VB.Net\IM-POM-VB.Net\Master File\VendorProducts.aspx.vb:line 111
+
+

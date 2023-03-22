@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  1		- 19	: ActiveX Message
+  501	- 10000	: External System Message
+  10001 - 19999 : Information messages
+  20001 - 29999 : Validation messages
+  30001 - 39999 : Error messages
+  50001 - 59999 : System Critical messages
+  60001 - 69999 : Report Error messages
+  70000 - 79999 : GST Error messages
+-->
+<messages>
+	<message id="1" text="Wrong number of arguments" />
+	<message id="2" text="Interface files not found" />
+	<message id="3" text="Unable to map novell drive" />
+	<message id="4" text="Unexpected Error" />
+	<message id="5" text="Failed connect to HHT device" />
+	<message id="6" text="Failed to synchronized with HHT device" />
+	<message id="7" text="Unable download and upload interface file from ftp server" />
+	<message id="8" text="Wrong argument passed in" />
+	<message id="9" text="File rename process failed" />
+	<message id="10" text="Unexpected Error calling HHT DLL and Clipper program" />
+	<message id="11" text="Failed read status file" />
+	<message id="12" text="F: drive not yet login to Novell server" />
+	<message id="13" text="Interface control &amp; detail file not match" />
+	<message id="501" text="User Account Lock. Kindly call IT Helpdesk to unlock." />
+	<message id="502" text="%arrs" />
+	<message id="10001" text="No Records Found" />
+	<message id="10002" text="Data has been successfully Saved" />
+	<message id="10003" text="This page is under construction. Please check back later." />
+	<message id="10004" text="Failed to Authenticate" />
+	<message id="10005" text="Please select %s" />
+	<message id="10006" text="Only %s items can be added to one PO" />
+	<message id="10007" text="Product already exists" />
+	<message id="10008" text="Product is supplied by another vendor at cheaper Cost; Vendor Code:- " />
+	<message id="10009" text="Please add items to PO" />
+	<message id="10010" text="Please select a Valid Product" />
+	<message id="10011" text="Please enter valid Order Qty (multiple of Min. Order Qty)." />
+	<message id="10012" text="Record have been successfully Deleted." />
+	<message id="10013" text="Records have been DeActivated" />
+	<message id="10014" text="Generated PO#: %arrs" />
+	<message id="10015" text="PO has been activated by %s" />
+	<message id="10016" text="File successfully downloaded." />
+	<message id="10017" text="No file downloaded." />
+	<message id="10018" text="File successfully uploaded." />
+	<message id="10019" text="User is not authorized to access %s Screen." />
+	<message id="10020" text="User is not authorized to delete the record." />
+	<message id="10021" text="User is not authorized to modify the record." />
+	<message id="10022" text="POM.Net not supported" />
+	<message id="10023" text="Invalid Adjustment Type" />
+	<message id="10024" text="User Department not valid for this Transaction" />
+	<message id="10025" text="Product is already added to this Stock Adjustment Transaction" />
+	<message id="10026" text="Please select Reason Code" />
+	<message id="10027" text="Please select a valid Product" />
+	<message id="10028" text="Please enter Adjusted received quantity" />
+	<message id="10029" text="Invalid Control Type" />
+	<message id="10030" text="Please enter valid Qty (multiple of Set Qty)" />
+	<message id="10031" text="StockTake Adjustment Cannot be done at this time." />
+	<message id="10032" text="Department IN should not be the same as Department OUT." />
+	<message id="10033" text="Please select a day from Order Day." />
+	<message id="10034" text="Please select a Frequency." />
+	<message id="10035" text="Records Already Exists." />
+	<message id="10036" text="Created" />
+	<message id="10037" text="Confirmed" />
+	<message id="10038" text="Cancelled" />
+	<message id="10039" text="Product(s) already exists in list." />
+	<message id="10040" text="Not a valid Product Code." />
+	<message id="10041" text="Either the vendor is deleted or not a valid Product or Product with Zero (0) Cost." />
+	<message id="10042" text="Please select a Valid Product to be added to this IBT Request" />
+	<message id="10043" text="Please add items to this IBT Request" />
+	<message id="10044" text="File Download succesful" />
+	<message id="10045" text="File succesfully uploaded. Transactions entered are %s" />
+	<message id="10046" text="Quantity entered is greater than 100. Do you wish to continue ?" />
+	<message id="10047" text="Please enter valid Order Qty (multiple of Min. Order Qty)." />
+	<message id="10048" text="Not a valid Vendor Code" />
+	<message id="10049" text="Please Enter Quantity greater than zero" />
+	<message id="10050" text="List of Pending RTV: %s" />
+	<message id="10051" text="User not Authorised to receive PO" />
+	<message id="10052" text="PO is Expired" />
+	<message id="10053" text="Error in Downloading: %s File." />
+	<message id="10054" text="File Path(%s) does not Exists" />
+	<message id="10055" text="Please Enter Date greater than or equal to today. " />
+	<message id="10056" text="Non-Trade Po Details are not available. " />
+	<message id="10057" text="You do not have rights to set Price less than Cost." />
+	<message id="10058" text="List of Generated RTV: %s" />
+	<message id="10059" text="No File to Upload." />
+	<message id="10060" text="File not in correct format" />
+	<message id="10061" text="List of PO Uploaded: %s" />
+	<message id="10062" text="List of PO not Uploaded: %s" />
+	<message id="10063" text="Generated Invoice Batch#: %arrs" />
+	<message id="10064" text="Set Qty: %s" />
+	<message id="10065" text="Transaction status should be confirmed" />
+	<message id="10066" text="Received Cost cannot be greater than Cost on PO." />
+	<message id="10067" text="Please enter Shipped Qty Less than or equal to Requested Qty(Positive Value) " />
+	<message id="10068" text="Generated IBT Recon#: %arrs" />
+	<message id="10069" text="Control Information does not match with information on file. Upload Aborted." />
+	<message id="10070" text="Record already exists in 'Created' status " />
+	<message id="10071" text="Please Select At least One." />
+	<message id="10072" text="Non-Trade Accural Posted: %arrs" />
+	<message id="10073" text="User not Authorised to receive High Shrink/High Value PO" />
+	<message id="10074" text="Data has been successfully Confirmed" />
+	<message id="10075" text="Product Code: %s" />
+	<message id="10076" text="Received Quantity cannot be zero for all products." />
+	<message id="10077" text="Row count does not match with Control Values." />
+	<message id="10078" text="Current Date does not match with Control Values." />
+	<message id="10079" text="Please Select a valid case id." />
+	<message id="10080" text="No Data to export" />
+	<message id="10081" text="HHT Password has been reset.Current Password is : " />
+	<message id="10082" text="Invoice Date cannot be more than 3 days from current date." />
+	<message id="10083" text="Invoice Amount cannot be blank." />
+	<message id="10084" text="Invoice Amount is Zero. Do You wish to continue?" />
+	<message id="10085" text="User %s should be %s" />
+	<message id="10086" text="High Shrink/High Value User should be %s" />
+	<message id="10087" text="Consignment PO can not be received" />
+	<message id="10088" text="Please enter valid Qty (multiple of Case Qty)" />
+	<message id="10089" text="Transaction successfully cancelled: %s" />
+	<message id="10090" text="Transaction successfully confirmed: %s" />
+	<message id="10091" text="Transaction successfully saved: %s" />
+	<message id="10092" text="PO has been activated." />
+	<message id="10093" text="Please select Active, Ranged Product" />
+	<message id="10094" text="Warning: Error contacting remote server. %arrs set to default values." />
+	<message id="10095" text="Error contacting remote server. Transaction rollbacked." />
+	<message id="10096" text="Data modified by another user, please refresh. %s: %arrs" />
+	<message id="10097" text="DA Number is blank. Do you wish to continue ?" />
+	<message id="10098" text="PO has been Deactivated." />
+	<message id="10099" text="Price cannot be blank or Zero." />
+	<message id="10100" text="Price has been updated." />
+	<message id="10121" text="Only %s items can be added to %s %s" />
+	<message id="10122" text="Do you want to print %s?" />
+	<message id="10123" text="Please select %arrs" />
+	<message id="10124" text="Confirmed PO#: %arrs" />
+	<message id="10125" text="Are you sure to Create this PO" />
+	<message id="10126" text="Generated IBT#: %arrs" />
+	<message id="10127" text="Cost should be greater than Zero. Product Code %s" />
+	<message id="10128" text="You do not have rights to Set GP greater than 0 and less than 50 %." />
+	<message id="10129" text="You do not have rights to Set GP greater than 50%." />
+	<message id="10130" text="Product either does not exists or not ranged at store: %s." />
+	<message id="10131" text="Product Dept. is different from selected dept." />
+	<message id="10132" text="Product Category. is different from selected category." />
+	<message id="10133" text="Selected product is not Fresh product." />
+	<message id="10134" text="Selected product is a Fresh product." />
+	<message id="10135" text="Selected product is not Non Trade product." />
+	<message id="10136" text="Selected product is not Active." />
+	<message id="10137" text="Mismatch in Centralised/Decentralised Flag." />
+	<message id="10138" text="Product is either not supplied by this Vendor or is not ranged on this store." />
+	<message id="10139" text="Vendor product is not active. %s" />
+	<message id="10140" text="Invalid Vendor Product distribution method." />
+	<message id="10141" text="Product Case Id either does not exists or not ranged on this store" />
+	<message id="10142" text="Vendor Code either does not exist or is not ranged on this store" />
+	<message id="10143" text="Product Status is invalid." />
+	<message id="10144" text="Selected product is a Non Trade product." />
+	<message id="10145" text="HHT Password has been reset." />
+	<message id="10146" text="PO is Cancelled." />
+	<message id="10147" text="Invoice Amount cannot &gt; 9,000,000" />
+	<message id="10148" text="Selected product is a Style." />
+	<message id="10149" text="CN/DN No : %s" />
+	<message id="10150" text="Product Code and UPC do not match" />
+	<message id="10151" text="Product Case ID and UPC do not match" />
+	<message id="10152" text="Prelist Template not Found" />
+	<message id="10153" text="Server is not operational, Please Contact IT Helpdesk" />
+	<message id="10154" text="User is not authorized to validate GR." />
+	<message id="10155" text="Only case quantity equals to 1 is allowed for Return" />
+	<message id="10156" text="Please make sure your Handheld Terminal is CONNECTED" />
+	<message id="10157" text="**&gt; Remember to modify your config file in HHT to change the Serial Number" />
+	<message id="10158" text="Please select Handheld Terminal Model!" />
+	<message id="10159" text="HHT registered successful !" />
+	<message id="10160" text="Register start NOW, dont disconnect your Handheld Terminal!" />
+	<message id="10161" text="Zero WAC for product %arrs, IBT Out can't proceed." />
+	<message id="10162" text="Product Code %s is either not Active or not Sourced on shipping store." />
+	<message id="10163" text="Zero WAC for product %arrs, IBT Request can't proceed." />
+	<message id="10164" text="Receiving cost cannot be zero for FRESH or NonTrade product." />
+	<message id="10165" text="Some of the requested items do not exist or are not ranged. Kindly call IT helpdesk for further action." />
+	<message id="10166" text="HandHeld Terminal Registered Succesful" />
+	<message id="10167" text="Confirm to download Fresh copy of database?" />
+	<message id="10168" text="Product division is different from selected division" />
+	<message id="10168" text="Currency Rate is not Maintain. Please Maintain For Currency Code: %s " />
+	<message id="10169" text="Error Contacting Remote Server: Confirm PO has been successfully Rollbacked" />
+	<message id="10170" text="Either no record(s) being selected or sales invoice under %s status" />
+	<message id="10171" text="IBT In confirmation rollback because CN/DN failed created in destination store! Please re-load the page." />
+	<message id="10172" text="Please select IBT Type." />
+	<message id="10173" text="Please provide %s." />
+	<message id="10174" text="Product Qty is greater than %s. Do you want to proceed?" />
+	<message id="10175" text="Only case quantity equals to 1 is allowed for Stock Adjustment" />
+	<message id="10176" text="Product Code (%s) Qty is/are greater than " />
+	<message id="10177" text="%s. Do you want to proceed?" />
+	<message id="10178" text="Vendor PO File - %s successfully generated." />
+	<message id="10179" text="Vendor PO File - %s failed to generate." />
+	<message id="10180" text="Vendor is Mandatory Fields for %s." />
+	<message id="10181" text="PO From and PO To is mandatory fields for download criteria." />
+	<message id="10182" text="Transaction successful posted.  Please check status by store." />
+	<message id="10183" text="Vendor - %s Added Successfully." />
+	<message id="10184" text="Vendor - %s Already Exists." />
+	<message id="10185" text="Vendor - %s Deleted Successfully." />
+	<message id="10186" text="Vendor - %s Not Found." />
+	<message id="10187" text="Interface File Failed to Download." />
+	<message id="10188" text="Vendor Status is invalid" />
+	<message id="10189" text="Product is Centralized Item" />
+	<message id="10190" text="Attention, Outstanding IBT Request #: %s [Request Qty %s from shipping store %s on %s]" />
+	<message id="10191" text="At Least One Store must be Selected for FT Consolidate Process." />
+	<message id="10192" text="Generated Consolidate ID #: %s" />
+	<message id="10193" text="CNDN Confirmation Rollback: CN/DN Adjustment failed to created in remote store! Please retry again." />
+	<message id="10194" text="Case Pack 1 not allowed when bigger case pack exists." />
+	<message id="10195" text="User does not have rights to Authorise High Value RTV and OHB check for Department %s" />
+	<message id="10196" text="Case Pack not available at Shipping Store." />
+	<message id="10197" text="Case Pack not available at WMS. %s" />
+	<message id="10198" text="Please select a SKU with Case ID attached." />
+	<message id="10199" text="Invalid Date Input" />
+	<message id="10200" text="Invalid Store Input" />
+	<message id="10201" text="Only 10 SKUs for 1 Save Process!" />
+	<message id="10202" text="No confirmation is allow if all lines with zero quantity." />
+	<message id="10203" text="All uploaded data has been processed!" />
+	<message id="10204" text="No Data Upload on %s" />
+	<message id="10205" text="Error on Search!" />
+	<message id="10206" text="You have successfully save the data!" />
+	<message id="10207" text="There's error during creation, Please refer to Exception report!" />
+	<message id="10208" text="You have successfully created the PO with range %s to %s and IBT with range %s to %s" />
+	<message id="10209" text="You have successfully created the PO with range %s to %s" />
+	<message id="10210" text="You have successfully created the IBT with range %s to %s" />
+	<message id="10211" text="You Have successfully upload the data from HHT!" />
+	<message id="10212" text="Receiving store details(IP Address) not configured." />
+	<message id="10213" text="Product is blocked for ordering from HQ." />
+	<message id="10214" text="Pallet rounding is applied over the %s quantity for shipping store WMS DC." />
+	<message id="10215" text="No CNDN allowed between DC and store." />
+	<message id="10216" text="No data for import." />
+	<message id="10217" text="Entered Qty is greater than OHB of product.This will require supervisor authorization to confirm." />
+	<message id="10218" text="User does not have rights to Authorise quantity greater than OHB." />
+	<message id="10219" text="Product can only be ordered from preferred DC: %s" />
+	<message id="10220" text="Error contacting remote server. Transaction rollbacked -%s" />
+	<message id="10221" text="Shipping store details(IP Address) not configured." />
+	<message id="10222" text="DC Dept Code cannot be blank for Product %s." />
+	<message id="10223" text="Latest Stock-take not available: %s" />
+	<message id="10224" text="Last imported Stock-Take: %s" />
+	<message id="10225" text="There are error(s) occur during IBT Request Confirmation. Kindly call IT helpdesk for further action." />
+	<message id="10226" text="Transaction rollbacked -%s" />
+	<message id="10227" text="This will trigger saving to all selected POM stores, Confirm?" />
+	<message id="10228" text="Confirm to re-load the data again?" />
+	<message id="10229" text="Invalid Vendor Product distribution method - %s" />
+	<message id="10230" text="Product %s order qty > shipping store OHB, IBT Out can't proceed." />
+	<message id="10231" text="Cancelling the product %s will cancel the following product as well." />
+	<message id="10330" text="Waiting to Download SDF Database." />
+	<message id="10331" text="Downloaded SDF Database." />
+	<message id="10332" text="Generating SDF Database." />
+	<message id="10333" text="%s record(s) was updated." />
+	<message id="10334" text="The following item(s) are blocked from procurement: %s" />
+	<message id="10335" text="Records have been Unexpired" />
+	<message id="10336" text="Request: %s currently on processing. No changes allow at this point" />
+	<message id="10337" text="No changes allow at this point" />
+	<message id="10338" text="No expired PO found within users selection" />
+	<message id="10339" text="Invoice Amount less than GRN Amount, DN will be generate." />
+	<message id="10340" text="Order quantity is %s\% above of Suggested Order Quantity." />
+	<message id="10341" text="Order quantity is %s\% below of Suggested Order Quantity." />
+	<message id="10342" text="IBT request %s under processing, no modification allow." />
+	<message id="10343" text="IBT request have been sent to HQ portal for processing." />
+	<message id="10344" text="Vendor %s is non returnable, please check with master data team to re-open the returnable flag." />
+	<message id="10345" text="GRA Amount is greater GRA Amount Upper Limit %s.This will require supervisor authorization to confirm." />
+	<message id="10346" text="User Account Locked" />
+	<message id="10347" text="Invalid User ID" />
+	<message id="10348" text="Invalid Password" />
+	<message id="10349" text="Invalid Domain" />
+	<message id="10350" text="Please select valid Cycle Count Remark." />
+	<message id="10351" text="Please enter valid Other Remark." />
+	<message id="10352" text="Total Process Count: %s. Total Error Count: %s" />
+	<message id="10353" text="Generated ICT#: %arrs" />
+	<message id="10354" text="Stock Take Adjustment Cannot Have Mixture of Reason Code"/>
+	<!--Add By Farnia @ 31 July 2014 For DCL 5137 - Show shelf capacity on shelf label-->
+	<message id="10355" text="Recorde update successfully."/>
+	<!--******************************************************************************-->
+	<message id="10356" text="SOQ Updated, Kindly Review." />
+	<message id="10357" text="To %s, Please Click %s Button Again!" />
+	<!--Add By Farnia @ 29 Oct 2014 For DCL 5176 - Gap Check-->
+	<message id="10358" text="No Records Found."/>
+	<!--******************************************************************************-->
+	<!--Add By Farnia @ 29 Oct 2014 For DCL 5176 - Gap Check-->
+	<message id="10359" text="No Records uploaded."/>
+	<!--******************************************************************************-->
+	<!--Add By Farnia @ 5 Nov 2014 For DCL 5176 - Gap Check-->
+	<message id="10360" text="OHB should be greater than Zero. Product Code %s" />
+	<!--******************************************************************************-->
+	<!--Add By Farnia @ 5 Nov 2014 For DCL 5196 - Direct convert as adjustment from Gap Check module-->
+	<message id="10361" text="Adjustment will be Created Under Control Type ‘Stock Take Adjustment’ with Reason Code ‘Gap Check’ : Stock Adjustment %s" />
+	<!--******************************************************************************-->
+
+	<message id="20001" text="%s must be specified" />
+	<message id="20002" text="%s should be numeric" />
+	<message id="20003" text="Invalid %s" />
+	<message id="20004" text="%s should be alphanumeric" />
+	<message id="20005" text="At least one of the fields must be specified: %arrs." />
+	<message id="20006" text="%s must be specified" />
+	<message id="20007" text="Frequency as DAILY and Order Days cannot be selected together" />
+	<message id="20008" text="Not a Variation Product" />
+	<message id="20009" text="Do you want to save?" />
+	<message id="20010" text="Do you want to delete" />
+	<message id="20011" text="Records have been saved." />
+	<message id="20012" text="Records have been cancelled." />
+	<message id="20013" text="Records have been confirmed." />
+	<message id="20014" text="Do you want to %s?" />
+	<message id="20015" text="Please select at least one record." />
+	<message id="20016" text="All fields must be specified" />
+	<message id="20017" text="%s should be greater than or equal to %s" />
+	<message id="20018" text="%s should be greater than %s" />
+	<message id="20019" text="Are you sure to Confirm this PO?" />
+	<message id="20020" text="Are you sure to Cancel this PO?" />
+	<message id="20021" text="Are you sure to remove this Product?" />
+	<message id="20022" text="%s is not a valid Date" />
+	<message id="20023" text="Please select at least one GRN No" />
+	<message id="20024" text="Records have been Deleted." />
+	<message id="20025" text="%s should be integer" />
+	<message id="20026" text="Received Quantity can not be greater than PO Quantity." />
+	<message id="20027" text="%s should be greater than or equal to current date" />
+	<message id="20028" text="User 2 cannot be same as User 1" />
+	<message id="20029" text="Linked Products will also be updated.\nDo you want to continue?" />
+	<message id="20030" text="Are your sure you want to delete?" />
+	<message id="20031" text="Please select valid frequency for the selected order days" />
+	<message id="20032" text="%s should be less than or equal to %s" />
+	<message id="20033" text="Please select at least one RTV No" />
+	<message id="20034" text="Are you sure to confirm this Record?" />
+	<message id="20035" text="Are you sure to Cancel this IBT Request?" />
+	<message id="20036" text="%s should be positive number" />
+	<message id="20037" text="Products are not ranged to the selected Store: %arrs" />
+	<message id="20038" text="User %s does not exist in active directory" />
+	<message id="20039" text="Please select another search criteria with confirmed status." />
+	<message id="20040" text="Are you sure to Confirm this RTV?" />
+	<message id="20041" text="Are you sure to Cancel this RTV?" />
+	<message id="20042" text="Invalid %s, %s: %arrs" />
+	<message id="20043" text="Do you want to Save this RTV?" />
+	<message id="20044" text="RTV Saved with RTV# %s" />
+	<message id="20045" text="Please Enter %s" />
+	<message id="20046" text="Duplicate %s : %arrs" />
+	<message id="20047" text="%s mismatch %s" />
+	<message id="20048" text="Do you want to print GRN for validation ?" />
+	<message id="20049" text="Actual Received Qty cannot be greater than Received Qty." />
+	<message id="20050" text="Unsaved data exists. Do you want to continue?" />
+	<message id="20051" text="Are you sure to confirm this transaction?" />
+	<message id="20052" text="Are you sure to cancel this transaction?" />
+	<message id="20053" text="Are you sure to create this transaction?" />
+	<message id="20054" text="Batch should have all same %s" />
+	<message id="20055" text="Vendor Invoice No already exists." />
+	<message id="20056" text="Invalid Department Code." />
+	<message id="20057" text="Data Entered is not Complete." />
+	<message id="20058" text="No Job Status for the selected date!" />
+	<message id="20059" text="Product %s moved to RTV %s" />
+	<message id="20060" text="Records have been post for pick." />
+	<message id="20061" text="Shipped Quantity can not be greater than PO Quantity." />
+	<message id="20062" text="Either Vendor or Vendor Product(s) is not returnable!" />
+	<message id="20063" text="Please select at least one %s." />
+	<message id="20064" text="%s is mandatory" />
+	<message id="20065" text="Selected Product and Case Pack already existed in database." />
+	<message id="20066" text="Either the product or vendor product is not active, not ranged or no sourcing!" />
+	<message id="20067" text="Selected Batch ID already existed in database." />
+	<message id="20068" text="PO status is %s. GRN can not be saved." />
+	<message id="20069" text="Request created by DC.Can not add/delete product from this." />
+	<message id="20070" text="Attention : The suggested order quantity is not accurate. Previous day sales is not inclusive in the OHB and SOS calculation." />
+	<message id="20071" text="Stock take file generated successfully" />
+	<message id="20072" text="No stock take record exist for post." />
+	<message id="20073" text="RTV Amount cannot be less than " />
+	<message id="20074" text="RTV Amount cannot be more than " />
+	<message id="20075" text="Past days can not be less then or equal to zero." />
+	<message id="20076" text="Net Invoice Amount must be higher or same as Net GRN Amount, %s: %arrs" />
+	<message id="20077" text="All (*) are Mandatory" />
+	<message id="20078" text="Invalid Store Code Range" />
+	<message id="20079" text="Net Invoice Amount must be same as Net GRN Amount %s after VP Cost for a product is modified." />
+	<message id="20080" text="GRN Amount must not be higher than the Invoice Amount %s." />
+	<message id="20081" text="All Oracle Codes are required for selected rows." />
+	<message id="20082" text="Group already exists" />
+	<message id="20083" text="Invalid Store Code Range" />
+	<message id="20084" text="Invalid Department Range" />
+	<message id="20085" text="Invalid Store Code Range" />
+	<message id="20086" text="Invalid Vendor Code Range" />
+	<message id="20087" text="Order qty cannot &gt; 100,000!" />
+	<message id="20088" text="Invalid Reason Code on %s" />
+	<message id="20089" text="Loading New Allocation Data would remove any unsaved data. Do you wish to continue?" />
+	<message id="20090" text="Creating New Allocation Data would remove any unsaved data. Do you wish to continue?" />
+	<message id="20091" text="Receiving store can not be connected. Coordinate with IT helpdesk for further support." />
+	<message id="20092" text="Balance file is not ready for %s, please not to generate stocktake report." />
+	<message id="20093" text="Balance file for %s already successfully processed. Please proceed with generate stocktake report." />
+	<message id="20094" text="Vendor can not be changed,New/Existing RTV amount should be between %s and %s." />
+	<message id="20095" text="Selected product does not belong to type: %s" />
+	<message id="20096" text="Selected product does not belong to distribution type: %s" />
+	<message id="20097" text="Product(case Id) is not supplied by this vendor." />
+	<message id="20098" text="Please add items to RTW request." />
+	<message id="20099" text="Records saved sucessfully for RTW# %s." />
+	<message id="20100" text="Product Division is different from selected Division." />
+	<message id="20101" text="Pls provide received quantity in Carton." />
+	<message id="20102" text="Quantity is in Carton. Do you wish to continue?" />
+	<message id="20103" text="Either primary vendor or vendor product(s) is not returnable for the selected lines!" />
+	<message id="20104" text="One of %s and %s is mandatory. %s will be disabled for high value RTV." />
+	<message id="20105" text="UPC already Linked to Another Product." />
+	<message id="20106" text="Cancel PO Fail Because GRN already Confirm." />
+	<message id="20107" text="Invalid file type." />
+	<message id="20108" text="One of %s and %s is mandatory." />
+	<message id="20109" text="Product is not exists in DC or has been deleted from DC." />
+	<message id="20110" text="Please enter request quantity for at least one record." />
+	<message id="20111" text="Can not spam Non Zeor (0) request quantity record." />
+	<message id="20112" text="NO PO Generated and All Listing Item marked as PO Created." />
+	<message id="20113" text="NO IBT# is Created and All Listing Item marked as IBT Created." />
+	<message id="20114" text="Are you sure to update buffer stock as %s for %s %s to %s?" />
+	<message id="20115" text="Order quantity does not meet minimum order quantity of %s" />
+	<message id="20116" text="PO not allow due to product code doesn't meet minimum order quantity. Order quantity will be auto set to minimum order quantity for highlighted lines." />
+	<message id="20117" text="Order quantity changed. Do you wish to continue?" />
+	<message id="20118" text="All line with adjust quantity = 0 therefore no confirmation require OR Press the cancel button to reject the CNDN stock adjustment." />
+	<message id="20119" text="Received Quantity can not be greater than %s times PO Quantity." />
+	<message id="20120" text="Each items order quantity can not over maximum %s cartons." />
+	<message id="20121" text="GR Cost is higher than the PO Cost." />
+	<message id="20122" text="Please select Prefer DC." />
+	<message id="20123" text="Invalid Sales Date Range." />
+	<message id="20124" text="No Sale List : %s" />
+	<message id="20125" text="Please select a file to import." />
+	<message id="20126" text="Upload file fail. Please try again later." />
+	<message id="20127" text="Imported file contain item more than the maximun allow quantity (%s)." />
+	<message id="20128" text="%s can not be less then or equal to zero." />
+	<message id="20129" text="NO ICT# is Created and All Listing Item marked as ICT Created.%arrs" />
+	<message id="20130" text="Stock adjustment: %s already created for current stock take." />
+	<message id="20131" text="Today is not a valid date to create stock take adjustment." />
+	<!--****************************************************************************************
+  Added By	: Farnia Emami
+  Added On	: 24 November 2014
+  Purpose	  : DCL 5176 - Gap Check
+  *********************************************************************************************-->
+	<message id="20132" text="At Least One Record Select Before Process With Confirmation. " />
+	<!--*****************************************************************************************-->
+	<!--****************************************************************************************
+	Added By	: Shahlan Puasa
+	Added On	: 30 November 2015
+	Purpose	    : Trust Receiving DCL
+	*********************************************************************************************-->
+	<message id ="20133" text = "Report Successfully Generated! Press F5 to regenerate report."/>
+	<message id ="20134" text = "Failed to generate report. Please contact administrator."/>
+	<!--*****************************************************************************************-->
+	<!--****************************************************************************************
+	Added By	: Shahlan Puasa
+	Added On	: 30 November 2015
+	Purpose	    : Easy Loader Excel File upload
+	*********************************************************************************************-->
+	<message id ="20135" text = "Data file successfully loaded. Please check the record(s) before proceed to confirm. Only valid record(s) will be %s"/>
+	<message id ="20136" text = "Successful"/>
+	<message id ="20137" text = "Incorrect Excel columns format. Please refer to formatting sample"/>
+	<message id ="20138" text = "Please select the required filter fields with * marking"/>
+	<message id ="20139" text = "Please select the Excel File to be uploaded!"/>
+	<message id ="20140" text = "Please verify file content! It seems that the uploaded file is empty."/>
+	<message id ="20141" text = "Uploaded successfully!"/>
+	<!--*****************************************************************************************-->
+
+
+	<message id="30001" text="Cannot delete because reference exists in the system." />
+	<message id="30002" text="Cannot insert duplicate HHT Id " />
+	<message id="30003" text="Invalid Date Range" />
+	<message id="30004" text="No PO generated." />
+	<message id="30005" text="Record already exists" />
+	<message id="30006" text="Please select a Confirm PO" />
+	<message id="30007" text="PO Dept and User Dept not Match!" />
+	<message id="30008" text="Please select a Fresh PO" />
+	<message id="30009" text="Claim Id already exists" />
+	<message id="30010" text="%s should be blank" />
+	<!--****************************************************************************************
+  Added By	: Saber Ang
+  Added On	: 17 November 2017
+  Purpose	  : DCL 5676
+  *********************************************************************************************-->
+	<message id="30011" text="More Than 1 division in Product selection." />
+	<!--*********************************************************************************************-->
+	<message id="50001" text="Unexpected Error occurred. Contact System Administrator." />
+	<message id="60001" text="Trade and Outright or Fresh cannot be selected together!" />
+	<message id="60002" text="[Date From] must earlier than [Date To]!" />
+	<message id="60003" text="[Range From] must smaller than [Range To]!" />
+	<message id="60004" text="[Difference Amount From] must smaller than [Difference Amount To]!" />
+	<message id="60005" text="[Vendor Code From] must smaller than [Vendor Code To]!" />
+	<message id="60006" text="Please enter correct date format! eg:yyyy-mm-dd" />
+	<message id="60007" text="All fields must be specified!" />
+	<message id="60008" text="Please enter number only! eg:1000" />
+	<message id="60009" text="Invalid Date Format" />
+	<message id="60010" text="Please enter correct PO Code! eg:1015XXXXXXXX" />
+	<message id="60011" text="[PO Code From] must smaller than [PO Code To]" />
+	<message id="60012" text="PO Type must be Fresh!" />
+	<message id="60013" text="Sales data for stock movement date %arrs is under processing" />
+	<message id="60014" text="SMR Report will be generate after sales data finish processing" />
+	<message id="60015" text="Top x Should Not Be Equal to or Less Than Zero " />
+	<message id="60016" text="Sales Date To Should Not be Current Date and Future Date" />
+	<message id="60017" text="Sales Date From Should Not be Current Date and Future Date" />
+	<message id="60018" text="%s Should Not Be Future Date" />
+	<message id="60019" text="Record was created in PMM system. Can not edit in current SAP sytem " />
+	<message id="60020" text="IBT for Fresh is disallowed during Interim Phase " />
+	<message id="60021" text="Selected store's HQ system is diffrent from requesting store's HQ system.IBT can not be performed. " />
+	<message id="60022" text="Error contacting remote server,Shiping store HQ system can not be identified,IBT can not be processed. " />
+	<message id="60023" text="Products in green color rows are either not active ,not ranged or have zero wac on shipping store(if shipping store is DC).IBT can not be performed " />
+	<message id="60024" text="Actual Received Qty should be between shipped qty and orginally received Qty." />
+	<message id="60025" text="PO Date, PO Type and Department From must be selected." />
+	<message id="60026" text="Inactive Vendor not allow to generate PO and confirm PO." />
+	<message id="60027" text="IDT adjustment not allowed if transfer type, expenses type and deptment tray is empty." />
+	<message id="60028" text="Invalid Stock Take Date." />
+	<message id="60029" text="Invalide Stock Take Store Code." />
+	<message id="60030" text="[Date From] and [Date To] must be within same month!" />
+	<message id="60031" text="All Mandatory fields must be specified!" />
+	<message id="60032" text="Invalid Division Range" />
+	<message id="60033" text="Invalid Department Range" />
+
+
+	<message id="70000" text="Invoice amount with GST should be higher or equals to than invoice amount without GST" />
+	<message id="70001" text="Invalid invoice amount with GST" />
+	<message id="70002" text="Invalid invoice amount" />
+	<message id="70003" text="Error retrieving invoice no reference config." />
+	<message id="70004" text="IBT Stock: Items is blocked from RTV. Please perform stocks transfer to sender store." />
+	<message id="70005" text="GR not matched: Item is blocked from RTV." />
+	<message id="70006" text="Item is blocked from RTV." />
+	<message id="70007" text="Reference invoice number not found." />
+	<message id="70008" text="Note: Product Not Allow for ICT Return will Block for Edit Shipped Quantity"/>
+	<message id="70009" text="Note: Items Not Allow for RTW Consolidation &amp; Subsequent RTV Creation &lt;br/&gt;"/>
+	<message id="70010" text="Invoice Amount with GST must be higher than Invoice Amount without GST for Standard Rated"/>
+	<message id="70011" text="Please enter vendor invoice number."/>
+	<message id="70012" text="Non Inventorized Article Not Allow for ICT."/>
+	<message id="70013" text="Late Submission. The Submission Cutoff Time is 11:00 AM Daily "/>
+
+
+	<!--****************************************************************************************
+	Added By	: Shahlan Puasa
+	Purpose	    : SMS Maintenance
+	*********************************************************************************************-->
+	<message id="80000" text="No configuration for SMS Limit! Please contact administrator." />
+	<message id="80001" text="You have reached max number of SMS users allowed." />
+	<message id="80002" text="Invalid Phone Number entered." />
+	<message id="80003" text="Please select the SMS Type." />
+	<message id="80004" text="Length of phone number exceeded 11 characters" />
+
+	<!--****************************************************************************************
+  Added By :Saber Ang
+  Date     : 26/03/2018
+  ********************************************************************************************-->
+	<message id="90001" text="%s not weighted Product, no decimal allow" />
+	<!--****************************************************************************************-->
+
+	<!--****************************************************************************************
+  Added By :Saber Ang
+  Date     : 02/10/2018
+  Purpose  : DCL5787 - POM_IBT_VPC_Checking_Message
+  ********************************************************************************************-->
+	<message id="90002" text="No VPC record. Please contact Masterfile for assistance." />
+	<!--****************************************************************************************-->
+	<!--****************************************************************************************
+  Added By :Saber Ang
+  Date     : 15/01/2019
+  Purpose  : DCL5805
+  ********************************************************************************************-->
+	<message id="90003" text="Article Type %s is blocked from Stock Take Adjustment." />
+	<!--****************************************************************************************-->
+	<!--****************************************************************************************
+  Added By :Saber Ang
+  Date     : 16/05/2019
+  Purpose  : DCL5825
+  ********************************************************************************************-->
+	<message id="90004" text="WARNING: THIS IS A RETURNABLE PRODUCT.DO YOU WISH TO CONTINUE?" />
+	<message id="90005" text="%s Have more than 1 Primary Vendor.Invalid Product." />
+	<!--****************************************************************************************-->
+
+</messages>

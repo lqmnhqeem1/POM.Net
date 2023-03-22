@@ -1,0 +1,581 @@
+﻿body {
+    /*background-color: #f7f7f7;*/
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+hr {
+    color: #588d59;
+    height: 1px;
+    width: 100%;
+}
+
+A, normalHyperLink {
+    font: bold 12px Calibri;
+    color: #818181;
+    cursor: hand;
+}
+
+    A:hover, normalHyperLink.hover {
+        color: #588d59;
+        font: bold 12px Calibri;
+        cursor: hand;
+    }
+
+    A.paddedHyperLink, .paddedHyperLink {
+        font: bold 12px Calibri;
+        color: #818181;
+        cursor: hand;
+        padding-left: 5px;
+    }
+
+        A.paddedHyperLink:hover, .paddedHyperLink.hover {
+            color: #588d59;
+            font: bold 12px Calibri;
+            cursor: hand;
+            padding-left: 5px;
+        }
+
+
+    A.disabledHyperLink, .disabledHyperLink {
+        font: bold 12px Calibri;
+        color: #818181;
+        cursor: auto;
+    }
+
+        A.disabledHyperLink.hover, .disabledHyperLink.hover {
+            color: #588d59;
+            font: bold 12px Calibri;
+            cursor: auto;
+        }
+
+    A.gridhighlightHyperLink, .gridhighlightHyperLink {
+        color: #588d59;
+        font: bold 12px Calibri;
+        cursor: hand;
+    }
+
+div {
+    overflow: auto;
+    vertical-align: top;
+}
+
+    div.float {
+        float: left;
+        top: expression(this.offsetParent.scrollTop + (window.screen.availHeight/2));
+        left: expression((window.screen.availWidth/2)-19);
+        z-index: 19;
+        position: absolute;
+        background-color: Transparent;
+    }
+
+    div.dimmer {
+        visibility: hidden;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 768px;
+        width: 780px;
+        font: bold 42px Calibri;
+        background-image: url(images/honey.png);
+        _background-image: none;
+        _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='images/honey.png');
+    }
+
+table.entry, .searchTable {
+    margin: 12px 0px 12px 0px;
+    border: solid 1px #326733;
+    width: 100%;
+    text-align: left;
+}
+
+tr.title td, .titleLabel {
+    color: #ffffff;
+    background-color: #588d59;
+    font: bold 15px Calibri;
+    text-align: left;
+    vertical-align: middle;
+    height: 24px;
+    padding-left: 10px;
+}
+
+tr.caption td, .captionLabel {
+    color: #588d59;
+    background-color: Transparent;
+    vertical-align: bottom;
+    font: bold 14px Calibri;
+    text-decoration: none;
+    text-align: left;
+}
+
+tr.d0 td, .searchTableDarkRow0 {
+    background-color: #e2fae2;
+    font-size: 12px;
+    font-family: Calibri;
+    color: #000000;
+    background-position: left;
+    vertical-align: middle;
+    border: none 0px;
+}
+
+tr.d1 td, .searchTableDarkRow1 {
+    background-color: #ffffff;
+    font-size: 12px;
+    font-family: Calibri color: #000000;
+    background-position: left;
+    vertical-align: middle;
+    border: none 0px;
+}
+
+tr.d0 td.c0, .searchTableDarkRow0 {
+    background-color: #e2fae2;
+    font-size: 12px;
+    font-family: Calibri;
+    color: #000000;
+    background-position: left;
+    vertical-align: middle;
+    border: none 0px;
+    width: 20%;
+}
+
+tr.d0 td.c1, .searchTableDarkRow0 {
+    background-color: #e2fae2;
+    font-size: 12px;
+    font-family: Calibri;
+    color: #000000;
+    background-position: left;
+    vertical-align: middle;
+    border: none 0px;
+    width: 30%;
+}
+
+tr.d1 td.c0, .searchTableDarkRow1 {
+    background-color: #ffffff;
+    font-size: 12px;
+    font-family: Calibri;
+    color: #000000;
+    background-position: left;
+    vertical-align: middle;
+    border: none 0px;
+    width: 20%;
+}
+
+tr.d1 td.c1, .searchTableDarkRow1 {
+    background-color: #ffffff;
+    font-size: 12px;
+    font-family: Calibri;
+    color: #000000;
+    background-position: left;
+    vertical-align: middle;
+    border: none 0px;
+    width: 30%;
+}
+
+
+tr.selectedRow td, .selectedRow {
+    background-color: #588d59;
+}
+
+tr.systemLabel td, .systemLabel {
+    font: normal 12px Calibri;
+    color: #a3a3a3;
+}
+
+img.normalImage, .normalImage {
+    border: none 0px;
+}
+
+tr.normalLabel td, .normalLabel {
+    font: normal 12px Calibri;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+tr.redLabel td, .redLabel {
+    font: bold 12px Calibri;
+    text-decoration: none;
+    text-align: center;
+    color: #ff0000;
+    width: 500px;
+}
+
+tr.greenLabel td, .greenLabel {
+    font: bold 12px Calibri;
+    text-decoration: none;
+    text-align: left;
+    color: #588d59;
+}
+
+tr.newPRItem td, .newPRItem {
+    font: normal 12px Calibri;
+    text-decoration: none;
+    background-color: #F4FFF4;
+}
+
+tr.newSAItem td, .newSAItem {
+    font: normal 12px Calibri;
+    text-decoration: none;
+    background-color: #E6F1E6;
+}
+
+tr.newSATextBox td, .newSATextBox {
+    font: normal 12px Calibri;
+    border: 0px solid #999999;
+    text-align: right;
+    text-decoration: none;
+    background-color: #E6F1E6;
+}
+
+tr.blankLabel td, .blankLabel {
+    font: bold 12px Calibri;
+    text-decoration: none;
+    padding-left: 5px;
+    color: #e2fae2;
+}
+
+tr.normalBold td, .normalBold {
+    font: bold 12px Calibri;
+    text-decoration: none;
+    padding-left: 5px;
+    color: #000000;
+}
+
+.normalDataGrid {
+    font: normal 12px Calibri;
+    color: black;
+    border: solid 1px #326733;
+}
+
+.normalDataGridSelectedItem {
+    background-color: Maroon;
+    height: 112px;
+    font: normal 12px Calibri;
+    color: #818181;
+}
+
+.normalDataGridItem {
+    background-color: #ffffff;
+    height: 18px;
+    text-align: left;
+}
+
+.normalDataGridAlternatingItem {
+    background-color: #f4f4f4;
+    height: 17px;
+    text-align: left;
+}
+
+tr.header td, .normalDataGridHeader {
+    background-color: #588d59;
+    font: bold 12px Calibri;
+    color: #ffffff;
+    height: 18px;
+    background-position: left;
+    vertical-align: bottom;
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    /*position: relative;
+	top: expression(this.offsetParent.scrollTop);
+	z-index: 10;*/
+}
+
+tr.header td, .FixedDataGridHeader {
+    background-color: #588d59;
+    font: bold 12px Calibri;
+    color: #ffffff;
+    height: 18px;
+    background-position: left;
+    vertical-align: bottom;
+    text-align: left;
+    position: relative;
+    top: expression(this.offsetParent.scrollTop);
+    z-index: 10;
+}
+
+.normalDataGridPager {
+    background-color: #dcdcdc;
+    font: bold 12px Calibri;
+    color: #000000;
+    height: 18px;
+    background-position: left;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.normalFreezeCol {
+    left: expression(document.getElementById("fixheadcol").scrollLeft);
+    position: relative;
+    z-index: 1;
+}
+
+.normalButton {
+    height: 20px;
+    width: 90px;
+    border: 1px solid #326733;
+    font: bold 12px Calibri;
+    color: #000000;
+    background-color: #e6e7e2;
+}
+
+button.searchButton, .searchButton, button.resetButton, .resetButton {
+    height: 18px;
+    width: 70px;
+    border: 1px solid #326733;
+    font: bold 12px Calibri;
+    color: #000000;
+    background-color: #e6e7e2;
+}
+
+.longButton {
+    height: 18px;
+    width: 120px;
+    border: 1px solid #326733;
+    font: bold 12px Calibri;
+    color: #000000;
+    background-color: #e6e7e2;
+}
+
+.redButton {
+    height: 20px;
+    width: 90px;
+    border: 1px solid #326733;
+    font: bold 12px Calibri;
+    color: #ff0000;
+    background-color: #e6e7e2;
+}
+
+.priorityButton {
+    height: 18px;
+    width: 38px;
+    border: 1px solid #326733;
+    font: bold 12px Calibri;
+    color: #000000;
+    background-color: #e6e7e2;
+}
+
+.dot3Button {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #326733;
+    font: normal normal 12px Calibri;
+    background-color: #e6e7e2;
+}
+
+.addImageButton {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #326733;
+    font: normal normal 12px Calibri;
+    background-image: url(../images/btn_add.gif);
+}
+
+.deleteImageButton {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #326733;
+    font: normal normal 12px Calibri;
+    background-image: url(../images/btn_cross.gif);
+}
+
+.input.normalTextBox, .normalTextBox {
+    background-color: #FFFFFF;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 1px solid #999999;
+}
+
+.input.normalHiddenTextBox, .normalHiddenTextBox {
+    background-color: #FFFFFF;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+}
+
+.input.normalLabelTextBox, .normalLabelTextBox {
+    background-color: Transparent;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+}
+
+.input.normalLabelTextBoxNumeric, .normalLabelTextBoxNumeric {
+    background-color: Transparent;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+    text-align: right;
+}
+
+.input.normalLabelGreenTextBoxNumeric, .normalLabelGreenTextBoxNumeric {
+    background-color: #e2fae2;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+    text-align: right;
+}
+
+.input.normalLabelGreenTextBox, .normalLabelGreenTextBox {
+    background-color: #e2fae2;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+}
+
+.input.normalAltLabelTextBox, .normalAltLabelTextBox {
+    background-color: #f4f4f4;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+}
+
+.input.AltnumericTextBox, .AltnumericTextBox {
+    background-color: #f4f4f4;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+    text-align: right;
+}
+
+.input.ListnumericTextBox, .ListnumericTextBox {
+    background-color: #FFFFFF;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+    text-align: right;
+}
+
+.input.numericTextBox, .numericTextBox {
+    background-color: #FFFFFF;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 1px solid #999999;
+    text-align: right;
+}
+
+.input.uniqueTextBox, .uniqueTextBox {
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 1px solid #999999;
+    background-color: #ffff99;
+}
+
+.input.tdTextBox, .tdTextBox {
+    background-color: #FFFFFF;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 1px solid #999999;
+    width: 50px;
+}
+
+.input.tdnumericTextBox, .tdnumericTextBox {
+    background-color: #FFFFFF;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 1px solid #999999;
+    width: 50px;
+    text-align: right;
+}
+
+.input.tdnumericTextBoxLabel, .tdnumericTextBoxLabel {
+    background-color: Transparent;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+    text-align: right;
+    width: 50px;
+    text-align: right;
+}
+
+.input.readonlyTextBox, .readonlyTextBox {
+    background-color: #d3d3d3;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 1px solid #999999;
+}
+
+
+.input.readonlyGridListTextBox, .readonlyGridListTextBox {
+    background-color: #ffffff;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+}
+
+
+.input.readonlyGridAltTextBox, .readonlyGridAltTextBox {
+    background-color: #f4f4f4;
+    font: normal 12px Calibri;
+    text-decoration: none;
+    border: 0px solid #999999;
+}
+
+
+
+.disableTextBox {
+    background-color: #d3d3d3;
+    font: normal 12px Calibri;
+    text-decoration: none;
+}
+
+.normalDropDownList {
+    font: normal 12px Calibri;
+    border: solid 1px #999999;
+}
+
+.normalRadioButton {
+    font: normal 12px Calibri;
+    border: none 0px #999999;
+    height: 12px;
+}
+
+.redAsterix {
+    font: bold 12px Calibri;
+    text-decoration: blink;
+    color: Red;
+}
+
+.normalCheckBox {
+    font: normal 12px Calibri;
+    border: none 0px;
+}
+
+.normalListBox {
+    font: normal 12px Calibri;
+    border: solid 1px #999999;
+}
+
+#tblDetail {
+    text-align: left;
+    width: 100%;
+    border: none 0px;
+}
+
+tr.newPRTextBox td, .newPRTextBox {
+    font: normal 12px Calibri;
+    border: 0px solid #999999;
+    text-align: left;
+    text-decoration: none;
+    background-color: #E6F1E6;
+}
+
+tr.header td, .FreezeDataGridHeader {
+    background-color: #588d59;
+    font: bold 12px Calibri;
+    color: #ffffff;
+    height: 18px;
+    background-position: left;
+    vertical-align: bottom;
+    text-align: left;
+    border-right: 1px solid silver;
+    position: relative;
+    top: expression(document.getElementById("divDataGrid")scrollTop-10);
+}
+
+td.note {
+    font: bold 20px Calibri;
+    color: Red;
+    padding: 15px;
+}
