@@ -184,6 +184,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\BLCommon.vb" />
     <Content Include="App_Data\ListOfValues.xml" />
     <Content Include="App_Data\Message.xml" />
     <Content Include="App_Lib\DBauer.Web.UI.WebControls.HierarGrid.dll" />
@@ -318,6 +319,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Home.aspx.txt" />
     <Content Include="images\applogo.jpg" />
+    <Content Include="images\baseline_home_black_24dp.png" />
     <Content Include="images\bintang.bmp" />
     <Content Include="images\BruneiLogo.bmp" />
     <Content Include="images\btn_add.gif" />
@@ -385,6 +387,14 @@
     <Content Include="js\TweenLite.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Master File\js\masterfile.js" />
+    <Content Include="Master File\ProductDetails.aspx" />
+    <Content Include="Master File\ProductEnquirySimp.aspx" />
+    <Content Include="Master File\ProductGroupDetails.aspx" />
+    <Content Include="Master File\ProductHierarchy.aspx" />
+    <Content Include="Master File\ProductHierarchyPopUp.aspx" />
+    <Content Include="Master File\ProductHierarchySimp.aspx" />
+    <Content Include="Master File\ProductStyle.aspx" />
+    <Content Include="Master File\ProductEnquiry.aspx" />
     <Content Include="Master File\VendorEnquiry.aspx" />
     <Content Include="Master File\VendorEnquiryForm.aspx" />
     <Content Include="Master File\VendorPrdtDetails.aspx" />
@@ -412,6 +422,7 @@
     <Content Include="images\Thumbs.db" />
     <Content Include="images\vssver2.scc" />
     <Content Include="App_Code\HQPOM_Code\vssver2.scc" />
+    <Content Include="SwitchStore.aspx" />
     <None Include="App_Code\Schema\OfflineStores.xsd" />
     <Content Include="App_Code\Schema\OfflineStores.xss">
       <DependentUpon>OfflineStores.xsd</DependentUpon>
@@ -861,11 +872,24 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Master File\ProductEnquiry.aspx.designer.vb">
+      <DependentUpon>ProductEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductEnquiry.aspx.vb">
+      <DependentUpon>ProductEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SwitchStore.aspx.designer.vb">
+      <DependentUpon>SwitchStore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SwitchStore.aspx.vb">
+      <DependentUpon>SwitchStore.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Content Include="App_Code\BLAllocationIN.vb" />
     <Content Include="App_Code\BLAllocationOut.vb" />
     <Content Include="App_Code\BLBatchEnquiry.vb" />
     <Content Include="App_Code\BLCentralizedIPC.vb" />
-    <Content Include="App_Code\BLCommon.vb" />
     <Content Include="App_Code\BLConfigureOfflineStore.vb" />
     <Content Include="App_Code\BLCostPriceControl.vb" />
     <Content Include="App_Code\BLCreateGRA.vb" />
@@ -979,6 +1003,54 @@
     </Compile>
     <Compile Include="Login.aspx.vb">
       <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master File\ProductDetails.aspx.designer.vb">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductDetails.aspx.vb">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master File\ProductEnquirySimp.aspx.designer.vb">
+      <DependentUpon>ProductEnquirySimp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductEnquirySimp.aspx.vb">
+      <DependentUpon>ProductEnquirySimp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductGroupDetails.aspx.designer.vb">
+      <DependentUpon>ProductGroupDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductGroupDetails.aspx.vb">
+      <DependentUpon>ProductGroupDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master File\ProductHierarchy.aspx.designer.vb">
+      <DependentUpon>ProductHierarchy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductHierarchy.aspx.vb">
+      <DependentUpon>ProductHierarchy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master File\ProductHierarchyPopUp.aspx.designer.vb">
+      <DependentUpon>ProductHierarchyPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductHierarchyPopUp.aspx.vb">
+      <DependentUpon>ProductHierarchyPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master File\ProductHierarchySimp.aspx.designer.vb">
+      <DependentUpon>ProductHierarchySimp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductHierarchySimp.aspx.vb">
+      <DependentUpon>ProductHierarchySimp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master File\ProductStyle.aspx.designer.vb">
+      <DependentUpon>ProductStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductStyle.aspx.vb">
+      <DependentUpon>ProductStyle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master File\VendorEnquiry.aspx.designer.vb">

@@ -1,146 +1,212 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
 	<siteMapNode url="~/Home.aspx" title="Home" description="Home Page">
-		<siteMapNode title="Master File" url="" description="">
+		<siteMapNode title="Master File" url="" description="nongiant">
 			<siteMapNode title="Vendor Enquiry" url="~/Master File/VendorEnquiry.aspx" description="" />
 			<siteMapNode title="Vendor Product Cost Enquiry" url="~/Master File/VendorProductCostEnquiry.aspx" description="" />
 			<siteMapNode title="Product Enquiry" url="~/Master File/ProductEnquiry.aspx?ScrId=0" description="" />
 			<siteMapNode title="Product Enquiry (Simplify)" url="~/Master File/ProductEnquirySimp.aspx" description="" />
-			<siteMapNode title="POS Promo Enquiry" url="~/Master File/POSPromotionEnquiry.aspx" description=""/>
+			<siteMapNode title="POS Promotion Enquiry" url="~/Master File/POSPromotionEnquiry.aspx" description=""/>
 			<siteMapNode title="Hamper Enquiry" url="~/Master File/EnquireHamper.aspx" description="" />
-			<siteMapNode title="Reports" url="" description="">
-				<siteMapNode title="AU001-New Article Report" url="~/Master File/Reports/AU001.aspx" />
-				<siteMapNode title="AU002-Cost Change Report" url="~/Master File/Reports/AU002.aspx" />
+			<siteMapNode title="Promotion Price Label" url="~/Master File/PriceLabel.aspx" description="" />
+			<siteMapNode title="Reports" url="" description="MFReports">
 				<siteMapNode title="MAST003-SKU Count Report" url="~/Master File/Reports/Mast003.aspx" />
-				<siteMapNode title="MAST004-Daily Price Change Report (HQ Change)" url="~/Master File/Reports/Mast004.aspx" />
-				<siteMapNode title="MAST004-Daily Price Change Report (Store Change)" url="~/Master File/Reports/Mast004_Store.aspx" />
-				<siteMapNode title="MAST005-Immediate Price Change Report" url="~/Master File/Reports/Mast005.aspx" />
+				<!--<siteMapNode id="giant" title="MAST004-Daily Price Change Report (HQ Change)" url="~/Master File/Reports/Mast004.aspx" description="hidden"/>-->
+				<siteMapNode id="nongiant" title="MAST004-Daily Price Change Report (Store Change)" url="~/Master File/Reports/Mast004_Store.aspx" description="hidden"/>
+				<!--<siteMapNode title="MAST005-Immediate Price Change Report" url="~/Master File/Reports/Mast005.aspx" />-->
 			</siteMapNode>
+			<siteMapNode title="Easy Loader" url="~/Master File/FileUpload.aspx" description="" />
 		</siteMapNode>
-		<siteMapNode title="Purchase Order" url="" description="">
-
-			<!--BeginMod 20150508 YouYingW GST Calculation
-      <siteMapNode title="OHB Adjustment" url="" description="">
-				<siteMapNode title="OHB Adjustment - HHT" url="~/Purchase Order/OHBAdjustment.aspx" description="" />
-				<siteMapNode title="OHB Adjustment - Manual" url="~/Purchase Order/AdjustOHB.aspx" description="" />
+		<siteMapNode title="Master File" url="" description="giant">
+			<siteMapNode title="Vendor Enquiry" url="~/Master File HQ/VendorEnquiry.aspx" description="" />
+			<siteMapNode title="Vendor Product Cost Enquiry" url="~/Master File HQ/VendorProductCostEnquiry.aspx" description="" />
+			<siteMapNode title="Product Enquiry" url="~/Master File HQ/ProductEnquiry.aspx?ScrId=0" description="" />
+			<siteMapNode title="Product Enquiry (Simplify)" url="~/Master File HQ/ProductEnquirySimp.aspx" description="" />
+			<siteMapNode title="POS Promotion Enquiry" url="~/Master File HQ/POSPromotionEnquiry.aspx" description=""/>
+			<siteMapNode title="Hamper Enquiry" url="~/Master File HQ/EnquireHamper.aspx" description="" />
+			<siteMapNode title="Promotion Price Label" url="~/Master File HQ/PriceLabel.aspx" description="" />
+			<siteMapNode title="Promotion Price Label Enhance" url="~/Master File HQ/PriceLabelEnhance.aspx" description="" />
+			<siteMapNode title="Reports" url="" description="Master File">
+				<siteMapNode title="MAST003-SKU Count Report" url="~/Master File HQ/Reports/Mast003.aspx" />
+				<siteMapNode id="giant" title="MAST004-Daily Price Change Report (HQ Change)" url="~/Master File HQ/Reports/Mast004.aspx" description="hidden"/>
+				<!--<siteMapNode id="nongiant" title="MAST004-Daily Price Change Report (Store Change)" url="~/Master File(HQ)/Reports/Mast004_Store.aspx" description="hidden"/>-->
+				<!--<siteMapNode title="MAST005-Immediate Price Change Report" url="~/Master File/Reports/Mast005.aspx" />-->
 			</siteMapNode>
+			<siteMapNode title="Easy Loader" url="~/Master File HQ/FileUpload.aspx" description="" />
+		</siteMapNode>
+		<siteMapNode title="Purchase Order" url="" description="purchaseOrder">
+			<!--<siteMapNode title="OHB Adjustment" url="~/Purchase Order/AdjustOHB.aspx" description="" />-->
 			<siteMapNode title="Recommended PO" url="~/Purchase Order/RecommendPO.aspx" description="" />
-      EndMod 20150508 YouYingW GST Calculation-->
-
 			<siteMapNode title="PO Maintenance" url="~/Purchase Order/POMaintenance.aspx?mark=0" description="" />
-			<!--<siteMapNode title="PO (DC) Maintenance" url="~/Purchase Order/POMaintenanceDC.aspx?mark=0" description="" />-->
 			<siteMapNode title="PO Enquiry" url="~/Purchase Order/POEnquiry.aspx" description="" />
 			<siteMapNode title="Prelist PO" url="~/Purchase Order/PrelistPOEnquiry.aspx" description=""/>
 			<siteMapNode title="Copy PO" url="~/Purchase Order/CopyPO.aspx" description=""/>
-
-			<!--BeginMod 20150508 YouYingW GST Calculation
+			<siteMapNode title="HQPO Notification" url="~/Purchase Order/HQPO.aspx" description="" />
 			<siteMapNode title="Scheduling" url="" description="">
 				<siteMapNode title="Vendor Scheduling" url="~/Vendor/vendorSchedule.aspx" description=""/>
 				<siteMapNode title="Weekly Ordering Schedule" url="~/Vendor/WeeklyOrderingSchedule.aspx" description="" />
 			</siteMapNode>
-      EndMod 20150508 YouYingW GST Calculation-->
-
-			<siteMapNode title="Export PO" url="~/Purchase Order/ExportPO.aspx" description="" />
-
-			<!--BeginMod 20150508 YouYingW GST Calculation
 			<siteMapNode title="HHT Ordering" url="~/Purchase Order/HHTORdering.aspx" description="" />
-      EndMod 20150508 YouYingW GST Calculation-->
-
-			<siteMapNode title="Reports" url="" description="">
-				<siteMapNode title="PO001-Proforma Report" url="" description="">
-					<siteMapNode title="Proforma Report" url="~/Purchase Order/Reports/PO001.aspx" description="" />
-					<siteMapNode title="Proforma Report (All Store)" url="~/Purchase Order/Reports/PO001_All.aspx" description="" />
-				</siteMapNode>
-				<siteMapNode title="PO003-SOS ReportDSP" url="" description="">
+			<siteMapNode title="Reports" url="" description="Purchase Order">
+				<siteMapNode title="PO001-Proforma Report" url="~/Purchase Order/Reports/PO001.aspx" description="" />
+				<siteMapNode title="PO003-SOS Report DSP" url="~/Purchase Order/Reports/PO003_Dept_Cate.aspx" description="" />
+				<!--<siteMapNode title="PO003-SOS Report DSP" url="" description="">
 					<siteMapNode title="Department" url="~/Purchase Order/Reports/PO003_Dept.aspx" description="" />
 					<siteMapNode title="Department &amp; Category" url="~/Purchase Order/Reports/PO003_Dept_Cate.aspx" description="" />
-				</siteMapNode>
+				</siteMapNode>-->
 				<siteMapNode title="PO004-Purchase Order" url="~/Purchase Order/Reports/PO004.aspx" description="" />
 				<siteMapNode title="PO005-Daily Delivery Schedule Report" url="~/Purchase Order/Reports/PO005.aspx"  description="" />
-				<siteMapNode title="PO006-SOS Status Report" description="" >
+				<siteMapNode title="PO006-SOS Status Report DSP" url="~/Purchase Order/Reports/PO006_Dept_Cate.aspx" description="" />
+				<!--<siteMapNode title="PO006-SOS Status Report" description="" >
 					<siteMapNode title="Department" url="~/Purchase Order/Reports/PO006_Dept.aspx" description="" />
 					<siteMapNode title="Department &amp; Category" url="~/Purchase Order/Reports/PO006_Dept_Cate.aspx" description="" />
-				</siteMapNode>
+				</siteMapNode>-->
 				<siteMapNode title="PO007-Purchase Order Entry Summary Report" url="~/Purchase Order/Reports/PO007.aspx" description="" />
 				<siteMapNode title="PO008-Purchase Order Posting Summary Report" url="~/Purchase Order/Reports/PO008.aspx" description="" />
 				<siteMapNode title="PO009-PO Authorization Report" url="~/Purchase Order/Reports/PO009.aspx" description="" />
 				<siteMapNode title="PO010-SOS Exception Report" url="~/Purchase Order/Reports/PO010_SOS.aspx" description="" />
-				<siteMapNode title="PO011-Consolidate Purchasing Report" url="~/Purchase Order/Reports/PO011.aspx" description="" />
+				<!--<siteMapNode title="PO011-Consolidate Purchasing Report" url="~/Purchase Order/Reports/PO011.aspx" description="" />-->
 				<siteMapNode title="PO012-Purchase Order Exception Report" url="~/Purchase Order/Reports/PO012.aspx" description="" />
 			</siteMapNode>
 		</siteMapNode>
-		<siteMapNode title="Receive/Return" url="" description="">
-			<siteMapNode title="Goods Receiving" url="" description="">
-				<siteMapNode title="Goods Receiving Maintenance" url="~/Goods Receiving/GoodsRcvng.aspx?Mode=New" description="" />
-				<!--<siteMapNode title="DC Goods Receiving Maintenance" url="~/Goods Receiving/DCGoodsRcvng.aspx?Mode=New" description="" />-->
-				<siteMapNode title="Goods Receiving Enquiry" url="~/Goods Receiving/GoodsRcvngEnquiry.aspx" description="" />
-				<siteMapNode title="Incoming PO" url="~/Goods Receiving/ViewincomingGRN.aspx" description="" />
-				<siteMapNode title="Activated PO" url="~/Goods Receiving/viewActivatedPO.aspx" description="" />
-				<siteMapNode title="Unexpired PO" url="~/Goods Receiving/UnExpire_PO.aspx" description="" />
-				<siteMapNode title="Reports" url="" description="">
-					<siteMapNode title="GR001-GRN" url="" description="" >
-						<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR001.aspx" description="" />
-						<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR001(A3).aspx" description="" />
-						<siteMapNode title="GRN Report by Store (All Store)" url="~/Goods Receiving/Reports/GR001_All.aspx" description="" />
-					</siteMapNode>
-					<siteMapNode title="GR003-Goods Receiving Entry Summary Report" url="" description="" >
-						<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR003.aspx" description="" />
-						<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR003(A3).aspx" description="" />
-					</siteMapNode>
-					<siteMapNode title="GR004-Goods Receiving Posting Summary Report" url="" description="" >
-						<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR004.aspx" description="" />
-						<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR004(A3).aspx" description="" />
-					</siteMapNode>
-					<siteMapNode title="GR005-PO Activated Without Receiving Summary Report" url="~/Goods Receiving/Reports/GR005.aspx" description="" />
-					<siteMapNode title="GR006-Product Selling Price By GRN" url="~/Goods Receiving/Reports/GR006.aspx" description="" />
-					<siteMapNode title="GR007-Goods Receiving by Hierarchy Report" url="~/Goods Receiving/Reports/GR007.aspx" description="" />
-					<siteMapNode title="GR008-Goods Receiving by Vendor Report" url="~/Goods Receiving/Reports/GR008.aspx" description="" />
-					<siteMapNode title="GR009-Vendor Services Level Summary Report" url="" description="" >
-						<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR009.aspx" description="" />
-						<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR009(A3).aspx" description="" />
-					</siteMapNode>
-					<siteMapNode title="GR010- NonTrade Goods Receiving Posting Summary Report" url="" description="" >
-						<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR010.aspx?Mode=A4" description="" />
-						<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR010.aspx?Mode=A3" description="" />
-					</siteMapNode>
-					<siteMapNode title="GR011-Goods Receiving Note Summary Report" url="~/Goods Receiving/Reports/GR011.aspx" description="" />
+		<siteMapNode title="Receiving" url="" description="Receiving" >
+			<siteMapNode title="Goods Receiving Maintenance" url="~/Goods Receiving/GoodsRcvng.aspx?Mode=New" description="" />
+			<siteMapNode title="Goods Receiving Enquiry" url="~/Goods Receiving/GoodsRcvngEnquiry.aspx" description="" />
+			<siteMapNode title="Incoming PO" url="~/Goods Receiving/ViewincomingGRN.aspx" description="" />
+			<siteMapNode title="Activated PO" url="~/Goods Receiving/viewActivatedPO.aspx" description="" />
+			<siteMapNode title="Unexpired PO" url="~/Goods Receiving/UnExpire_PO.aspx" description="" />
+			<siteMapNode title="Reports" url="" description="Goods Receiving">
+				<siteMapNode title="GR001-GRN Note" url="" description="" >
+					<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR001.aspx" description="" />
+					<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR001(A3).aspx" description="" />
 				</siteMapNode>
+				<siteMapNode title="GR003-Goods Receiving Entry Summary Report" url="" description="" >
+					<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR003.aspx" description="" />
+					<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR003(A3).aspx" description="" />
+				</siteMapNode>
+				<siteMapNode title="GR004-Goods Receiving Posting Summary Report" url="" description="" >
+					<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR004.aspx" description="" />
+					<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR004(A3).aspx" description="" />
+				</siteMapNode>
+				<siteMapNode title="GR005-PO Activated Without Receiving Summary Report" url="~/Goods Receiving/Reports/GR005.aspx" description="" />
+				<siteMapNode title="GR006-Product Selling Price By GRN" url="~/Goods Receiving/Reports/GR006.aspx" description="" />
+				<siteMapNode title="GR007-Goods Receiving by Hierarchy Report" url="~/Goods Receiving/Reports/GR007.aspx" description="" />
+				<siteMapNode title="GR008-Goods Receiving by Vendor Report" url="~/Goods Receiving/Reports/GR008.aspx" description="" />
+				<siteMapNode title="GR009-Vendor Service Level Summary Report" url="" description="" >
+					<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR009.aspx" description="" />
+					<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR009(A3).aspx" description="" />
+				</siteMapNode>
+				<!--<siteMapNode title="GR010- NonTrade Goods Receiving Posting Summary Report" url="" description="" >
+					<siteMapNode title="Print in A4 size" url="~/Goods Receiving/Reports/GR010.aspx?Mode=A4" description="" />
+					<siteMapNode title="Print in A3 size" url="~/Goods Receiving/Reports/GR010.aspx?Mode=A3" description="" />
+				</siteMapNode>-->
 			</siteMapNode>
-			<siteMapNode title="Goods Return" url="" description="">
-				<siteMapNode title="Return To Vendor Maintenance" url="~/Goods Return/CreateGRA.aspx?m=f" description="" />
-				<siteMapNode title="Return To Vendor Enquiry" url="~/Goods Return/GRAEnquiry.aspx" description="" />
-				<!--DCL 1962-Start-->
-				<siteMapNode title="Return To WareHouse Maintenance" url="~/Goods Return/RTWMaintenance.aspx?param=1" description="" />
-				<siteMapNode title="Return To WareHouse Enquiry" url="~/Goods Return/RTWEnquiry.aspx" description="" />
-				<siteMapNode title="RTW Consolidation" url="~/Goods Return/RTWConsolidation.aspx" description="Return to Warehouse Consolidation" />
-				<!--DCL 1962-End-->
-				<siteMapNode title="Reports" url="" description="">
-					<siteMapNode title="RTV001-RTV" url="~/Goods Return/Reports/RTV001.aspx" description="" />
-					<siteMapNode title="RTV002-RTV Entry Summary" url="~/Goods Return/Reports/RTV002.aspx" description="" />
-					<siteMapNode title="RTV003-RTV Posting Summary Report" url="~/Goods Return/Reports/RTV003.aspx" description="" />
-					<siteMapNode title="RTV004-Unposted RTV By Hierarchy Report" url="~/Goods Return/Reports/RTV004.aspx" description="" />
-					<siteMapNode title="RTV005-RTV Cancelled Summary Report" url="~/Goods Return/Reports/RTV005.aspx" description="" />
-					<siteMapNode title="RTV006-RTV By Hierarchy Report" url="~/Goods Return/Reports/RTV006.aspx" description="" />
-					<siteMapNode title="RTV007-RTV By Vendor Report" url="~/Goods Return/Reports/RTV007.aspx" description="" />
-					<siteMapNode title="RTV008-RTV Disposal/Collection Report" url="~/Goods Return/Reports/RTV008.aspx" description="" />
-					<!--Gaurav Verma - 04 Mar 09 - DCL# 1665 - Goods Return Exception Report-->
-					<siteMapNode title="RTV009-RTV Exception Report" url="~/Goods Return/Reports/RTV009.aspx" description="" />
-					<!--Gaurav Verma - 06 May 09 - DCL# 1962 - RTW Reports-->
-					<siteMapNode title="RTW001-RTW Note" url="~/Goods Return/Reports/RTW001.aspx" description="" />
-					<siteMapNode title="RTW002-RTW Entry Summary Report" url="~/Goods Return/Reports/RTW002.aspx" description="" />
-					<siteMapNode title="RTW003-RTW Posting Summary Report" url="~/Goods Return/Reports/RTW003.aspx" description="" />
-				</siteMapNode>
+
+		</siteMapNode>
+		<siteMapNode title="Return" url="" description="return">
+			<siteMapNode title="Return To Vendor Maintenance" url="~/Goods Return/CreateGRA.aspx?m=f" description="" />
+			<siteMapNode title="Return To Vendor Enquiry" url="~/Goods Return/GRAEnquiry.aspx" description="" />
+			<siteMapNode title="Return To WareHouse Maintenance" url="~/Goods Return/RTWMaintenance.aspx?param=1" description="" />
+			<siteMapNode title="Return To WareHouse Enquiry" url="~/Goods Return/RTWEnquiry.aspx" description="" />
+			<siteMapNode title="Return To WareHouse Consolidation" url="~/Goods Return/RTWConsolidation.aspx" description="Return to Warehouse Consolidation" />
+			<siteMapNode title="Reports" url="" description="Goods Return">
+				<siteMapNode title="RTV001-RTV Note" url="~/Goods Return/Reports/RTV001.aspx" description="" />
+				<siteMapNode title="RTV002-RTV Entry Summary Report" url="~/Goods Return/Reports/RTV002.aspx" description="" />
+				<siteMapNode title="RTV003-RTV Posting Summary Report" url="~/Goods Return/Reports/RTV003.aspx" description="" />
+				<siteMapNode title="RTV004-Unposted RTV By Hierarchy Report" url="~/Goods Return/Reports/RTV004.aspx" description="" />
+				<siteMapNode title="RTV005-RTV Cancelled Summary Report" url="~/Goods Return/Reports/RTV005.aspx" description="" />
+				<siteMapNode title="RTV006-RTV By Hierarchy Report" url="~/Goods Return/Reports/RTV006.aspx" description="" />
+				<siteMapNode title="RTV007-RTV By Vendor Report" url="~/Goods Return/Reports/RTV007.aspx" description="" />
+				<siteMapNode title="RTV008-RTV Disposal/Collection Report" url="~/Goods Return/Reports/RTV008.aspx" description="" />
+				<!--Gaurav Verma - 04 Mar 09 - DCL# 1665 - Goods Return Exception Report-->
+				<siteMapNode title="RTV009-RTV Exception Report" url="~/Goods Return/Reports/RTV009.aspx" description="" />
+				<!--Gaurav Verma - 06 May 09 - DCL# 1962 - RTW Reports-->
+				<siteMapNode title="RTW001-RTW Note" url="~/Goods Return/Reports/RTW001.aspx" description="" />
+				<siteMapNode title="RTW002-RTW Entry Summary Report" url="~/Goods Return/Reports/RTW002.aspx" description="" />
+				<siteMapNode title="RTW003-RTW Posting Summary Report" url="~/Goods Return/Reports/RTW003.aspx" description="" />
 			</siteMapNode>
 		</siteMapNode>
-		<siteMapNode title="Inv Matc" url="" description="Invoice Matching">
+		<siteMapNode title="IBT" url="" description="IBT">
+			<siteMapNode title="Transfer Request\IN" url="~/IBT/IBTSearch.aspx?Type=R" description="" />
+			<siteMapNode title="Transfer OUT" url="~/IBT/IBTSearch.aspx?Type=O" description="" />
+			<siteMapNode title="Trust Receiving" url="~/IBT/TrustReceiving.aspx" description=""/>
+			<siteMapNode title="Trust Receiving-ASN" url="~/IBT/TrustReceiving-ASN.aspx" description=""/>
+			<siteMapNode title="Allocation IN" url="~/IBT/AllocINSearch.aspx?Mode=I" description="" />
+			<siteMapNode title="Allocation OUT" url="~/IBT/AllocINSearch.aspx?Mode=O" description="" />
+			<siteMapNode title="DC Scheduling" url="~/IBT/DCSchedule.aspx" description="" />
+			<siteMapNode title="Recommended IBT" url="~/IBT/RecommendedIBT.aspx" description="" />
+			<siteMapNode title="Recommended ICT" url="~/IBT/RecommendedICT.aspx" description="" />
+			<siteMapNode title="Promotion / Allocation Notification" url="~/IBT/PromotionAllocation.aspx" description="" />
+			<siteMapNode title="Reports" url="" description="Inter Branch Transfer">
+				<siteMapNode title="IBTR001-IBT Requisition Order" url="~/IBT/Reports/IBTR001.aspx" description="" />
+				<siteMapNode title="IBTR002-IBT Request Entry Summary Report" url="~/IBT/Reports/IBTR002.aspx" description="" />
+				<siteMapNode title="IBTR003-IBT Request Posting Summary Report" url="~/IBT/Reports/IBTR003.aspx" description="" />
+				<siteMapNode title="IBTR004-IBT Cancelled Summary Report" url="~/IBT/Reports/IBTR004.aspx" description="" />
+				<siteMapNode title="IBTO001-IBT Out Note" url="~/IBT/Reports/IBTO001.aspx" description="" />
+				<siteMapNode title="IBTO002-IBT Out Entry Summary Report" url="~/IBT/Reports/IBTO002.aspx" description="" />
+				<siteMapNode title="IBTO003-IBT Out Posting Summary Report" url="~/IBT/Reports/IBTO003.aspx" description="" />
+				<!--Add By Farnia @ 28 May 2014 - for DCL 5086 - IBT out OOS Report-->
+				<siteMapNode title="IBTO004-IBT Out OOS Report" url="~/IBT/Reports/IBTO004.aspx" description="" />
+				<siteMapNode title="IBTI001-IBT In Note" url="~/IBT/Reports/IBTI001.aspx" description="" />
+				<siteMapNode title="IBTI002-IBT In Entry Summary Report" url="~/IBT/Reports/IBTI002.aspx" description="" />
+				<siteMapNode title="IBTI003-IBT In Posting Summary Report" url="~/IBT/Reports/IBTI003.aspx" description="" />
+				<siteMapNode title="IBTA001-IBT Allocation Note" url="~/IBT/Reports/IBTA001.aspx" description="" />
+				<siteMapNode title="IBTA002-IBT Allocation In Entry Summary Report" url="~/IBT/Reports/IBTA002.aspx" description="" />
+				<siteMapNode title="IBTA003-IBT Allocation In Posting Summary Report" url="~/IBT/Reports/IBTA003.aspx" description="" />
+				<siteMapNode title="IBT001-IBT Reconcilliation Note" url="~/IBT/Reports/IBT001.aspx" description="" />
+				<siteMapNode title="IBT002-IBT By Hierarchy Report" url="~/IBT/Reports/IBT002.aspx" description="" />
+				<siteMapNode title="IBTS001-IBT SOS Report - DC" url="~/IBT/Reports/IBTS001.aspx" description="" />
+				<siteMapNode title="IBTS002-IBT Daily Delivery Schedule Report" url="~/IBT/Reports/IBTS002.aspx" description="" />
+				<siteMapNode title="IBTS003-IBT SOS Status Report" url="~/IBT/Reports/IBTS003.aspx" description="" />
+				<!--<siteMapNode title="FTCR001-Flow Thru Consolidation Report" url="~/IBT/Reports/FTCR001.aspx" description="" />
+				<siteMapNode title="FTPR001-Flow Thru Pending Report" url="~/IBT/Reports/FTPR001.aspx" description="" />-->
+				<!--<siteMapNode title="DCCNDN002-Summary of IBT CNDN (Entry/Posting/Cancel) Report" url="~/IBT/Reports/DCCNDN002.aspx" description="" />
+				<siteMapNode title="DCCNDN003-IBT CNDN Details (Entry/Posting/Cancel) Report" url="~/IBT/Reports/DCCNDN003.aspx" description="" />
+				<siteMapNode title="IBTAO001-Allocation Out Note (Print Printed From)" url="~/IBT/Reports/IBTAO001.aspx" description="" />
+				<siteMapNode title="IBTAO002-Allocation Out Entry Summary Report" url="~/IBT/Reports/IBTAO002.aspx" description="" />
+				<siteMapNode title="IBTAO003-Allocation Out Posting Summary Report" url="~/IBT/Reports/IBTAO003.aspx" description="" />-->
+				<siteMapNode title="HQALC001-HQ Allocation Summary Report" url="~/IBT/Reports/HQALC001.aspx" description="" />
+				<siteMapNode title="TRCV001-Unconfirmed DC Delivery Report" url="~/IBT/Reports/TRCV001.aspx" description="" />
+				<siteMapNode title="TRCV002-Trust Receiving Report" url="~/IBT/Reports/TRCV002.aspx" description="" />
+				<siteMapNode title="FT001-FT Products Without Supplying DC" url="~/IBT/Reports/FTProducts_WithoutSupplyingDC.aspx" description="" />
+				<siteMapNode title="IBT-TS-001-IBTTransactionStatus_DCtoStore" url="~/IBT/Reports/IBTTransactionStatus_DCtoStore.aspx" description="" />
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode title="Stock Adj" url="" description="stockAdj">
+			<siteMapNode title="Stock Adjustment Maintenance" url="~/Stock Adjustment/StockAdjustment.aspx?" description="" />
+			<siteMapNode title="Stock Adjustment Enquiry" url="~/Stock Adjustment/ViewAdjustment.aspx" description="" />
+			<siteMapNode title="Reports" url="" description="Stock Adjustment">
+				<siteMapNode title="ADJ001-Stock Adjustment Advice" url="~/Stock Adjustment/Reports/ADJ001.aspx" descriptionZ="" />
+				<siteMapNode title="ADJ001A-Stock Adjustment Advice" url="~/Stock Adjustment/Reports/ADJ001A.aspx" description="" />
+				<siteMapNode title="ADJ002-Stock Adjustment Entry Summary" url="~/Stock Adjustment/Reports/ADJ002.aspx" description="" />
+				<siteMapNode title="ADJ002A-Stock Adjustment Entry Summary Report - Control Type CNDN (GRN &amp; RTV)" url="~/Stock Adjustment/Reports/ADJ002A.aspx" description="" />
+				<siteMapNode title="ADJ003-Stock Adjustment Posting Summary Report" url="~/Stock Adjustment/Reports/ADJ003.aspx" description="" />
+				<siteMapNode title="ADJ004-Stock Adjustment By Hierachy Report" url="~/Stock Adjustment/Reports/ADJ004.aspx" description="" />
+				<siteMapNode title="ADJ005-Stock Adjustment By Control Type" url="~/Stock Adjustment/Reports/ADJ005.aspx" description="" />
+				<siteMapNode title="ADJ006-Stock Adjustment Cancel Summary Report" url="~/Stock Adjustment/Reports/ADJ006.aspx" description="" />
+				<siteMapNode title="ADJ007-Credit Note/Debit Note" url="~/Stock Adjustment/Reports/ADJ007.aspx" description="" />
+				<siteMapNode title="ADJ008-Credit Note/Debit Note Posting Summary Report" url="~/Stock Adjustment/Reports/ADJ008.aspx" description="" />
+				<siteMapNode title="ADJ009-Stock Adjustment Unpost Summary Report" url="~/Stock Adjustment/Reports/ADJ009.aspx" description="" />
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode title="Hamper" description="hamper">
+			<siteMapNode title="Build Hamper" url="~/Hamper/DefineHamper.aspx?Fname=BuildHamper" description="" />
+			<siteMapNode title="Break Hamper" url="~/Hamper/BreakHamper.aspx?Fname=BreakHamper" description="" />
+			<siteMapNode title="Hamper Transaction Enquiry" url="~/Hamper/HamperEnquiry.aspx" description="" />
+			<siteMapNode title="Reports" url="" description="Hamper">
+				<siteMapNode title="HAM001-Build Hamper Note" url="~/Hamper/Reports/HAM001.aspx" description="" />
+				<siteMapNode title="HAM002-Break Hamper Note" url="~/Hamper/Reports/HAM002.aspx" description="" />
+				<siteMapNode title="HAM003-Build Hamper Posting Summary Report" url="~/Hamper/Reports/HAM003.aspx" description="" />
+				<siteMapNode title="HAM004-Break Hamper Posting Summary Report" url="~/Hamper/Reports/HAM004.aspx" description="" />
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode title="Invoice Matching" url="" description="invoiceMatching">
 			<siteMapNode title="Invoice Matching" url="~/Invoice Matching/InvoiceMatching.aspx?m=f" description="" />
 			<siteMapNode title="Batch Enquiry" url="~/Invoice Matching/BatchEnquiry.aspx" description="" />
 			<siteMapNode title="Non-Trade Accrual Posting" url="~/Invoice Matching/NonTradeAccural.aspx" description="" />
 			<siteMapNode title="Master Maintainance" url="" description="">
-				<siteMapNode title="Mapping Maintainance" url="~/Invoice Matching/VendorOFINMapping.aspx" description="">
-				</siteMapNode>
-				<siteMapNode title="Group Store" url="~/Invoice Matching/GroupSearch.aspx" description="">
-				</siteMapNode>
+				<siteMapNode title="Mapping Maintainance" url="~/Invoice Matching/VendorOFINMapping.aspx" description="" />
+				<siteMapNode title="Group Store" url="~/Invoice Matching/GroupSearch.aspx" description="" />
 			</siteMapNode>
 			<siteMapNode title="Reports" url="" description="">
 				<siteMapNode title="INV001-Invoice Batch Listing Report" url="~/Invoice Matching/Reports/INV001.aspx" description="" />
@@ -155,132 +221,38 @@
 				<siteMapNode title="INV009-Vendor GRN Listing Report" url="~/Invoice Matching/Reports/INV009.aspx" description="" />
 				<siteMapNode title="INV010-GRN &amp; RTV Listing Report" url="~/Invoice Matching/Reports/INV010.aspx" description="" />
 				<siteMapNode title="INV011-Consolidated GRN &amp; RTV Summary Report" url="~/Invoice Matching/Reports/INV011.aspx" description="" />
-				<siteMapNode title="INV012-Non Trade Invoice Listing Report" url="~/Invoice Matching/Reports/INV012.aspx" description="" />
-				<siteMapNode title="INV013-Non Trade Outstanding PO Listing Report" url="~/Invoice Matching/Reports/INV013.aspx" description="" />
-				<siteMapNode title="INV014-Non Trade Completed PO Listing Report" url="~/Invoice Matching/Reports/INV014.aspx" description="" />
-				<siteMapNode title="OF0001-Oracle Financial Interface Mapping Exception Report" url="~/Invoice Matching/Reports/OF001.aspx" />
-				<siteMapNode title="DN001-Debit Note" url="~/Invoice Matching/Reports/DN001.aspx" description="" />
+				<siteMapNode title="OF001-Oracle Financial Interface Mapping Exception Report" url="~/Invoice Matching/Reports/OF001.aspx" />
 			</siteMapNode>
 		</siteMapNode>
-		<!--<siteMapNode title="Sales Invoice" url="" description="Sales Invoice">
-			<siteMapNode title="Sales Invoice Maintainance" url="~/Sales Invoice/SalesInvoice.aspx?Mode=New" description="" />
-			<siteMapNode title="Sales Invoice Enquiry" url="~/Sales Invoice/SalesInvoiceEnquiry.aspx" description="" />
-			<siteMapNode title="SALR001-Credit Sales Posting Summary Report" url="~/Sales Invoice/Reports/SALR001.aspx" description="" />
-		</siteMapNode>-->
-		<siteMapNode title="IBT" url="" description="">
-			<siteMapNode title="Transfer Request\IN" url="~/IBT/IBTSearch.aspx?Type=R" description="" />
-			<siteMapNode title="Transfer OUT" url="~/IBT/IBTSearch.aspx?Type=O" description="" />
-			<siteMapNode title="Allocation IN" url="~/IBT/AllocINSearch.aspx?Mode=I" description="" />
-			<siteMapNode title="Allocation OUT" url="~/IBT/AllocINSearch.aspx?Mode=O" description="" />
-			<siteMapNode title="DC Scheduling" url="~/IBT/DCSchedule.aspx" description="" />
-			<siteMapNode title="Recommended IBT" url="~/IBT/RecommendedIBT.aspx" description="" />
-			<siteMapNode title="Update IBT Status" url="~/IBT/IBTUpdStatus.aspx" description="" />
-			<siteMapNode title="POMDC Allocation OUT" url="~/IBT/POMDCAllocOutSearch.aspx" description="" />
-			<siteMapNode title="POMDC FT Pre-Store List" url="~/IBT/POMDCRegStr.aspx" description="" />
-			<siteMapNode title="POMDC FT Pre-Request" url="~/IBT/POMDCPreReq.aspx" description="" />
-			<siteMapNode title="POMDC FT Palletizing" url="~/IBT/POMDCPallet.aspx" description="" />
-			<siteMapNode title="POMDC P-Stock Maintenance" url="~/IBT/POMDCPStockMaintenance.aspx" description="" />
-			<siteMapNode title="POMDC FT Consolidation" url="~/IBT/POMDCFTConsolidation.aspx" description="" />
-			<siteMapNode title="POMDC IBT CN/DN" url="~/IBT/IBTCDNMaintenance.aspx" description="" />
-			<siteMapNode title="Configure Offline Stores" url="~/IBT/ConfigureOfflineStores.aspx" description="" />
-			<siteMapNode title="Reports" url="" description="">
-				<siteMapNode title="IBTR001-IBT Requisition Order" url="~/IBT/Reports/IBTR001.aspx" description="" />
-				<siteMapNode title="IBTR002-IBT Request Entry Summary Report" url="~/IBT/Reports/IBTR002.aspx" description="" />
-				<siteMapNode title="IBTR003-IBT Request Posting Summary Report" url="~/IBT/Reports/IBTR003.aspx" description="" />
-				<siteMapNode title="IBTR004-IBT Cancelled Summary Report" url="~/IBT/Reports/IBTR004.aspx" description="" />
-				<siteMapNode title="IBTO001-IBT Out Note (Print Printed Form)" url="~/IBT/Reports/IBTO001.aspx" description="" />
-				<siteMapNode title="IBTO002-IBT Out Entry Summary Report" url="~/IBT/Reports/IBTO002.aspx" description="" />
-				<siteMapNode title="IBTO003-IBT Out Posting Summary Report" url="~/IBT/Reports/IBTO003.aspx" description="" />
-				<siteMapNode title="IBTI001-IBT In Note" url="~/IBT/Reports/IBTI001.aspx" description="" />
-				<siteMapNode title="IBTI002-IBT In Entry Summary Report" url="~/IBT/Reports/IBTI002.aspx" description="" />
-				<siteMapNode title="IBTI003-IBT In Posting Summary Report" url="~/IBT/Reports/IBTI003.aspx" description="" />
-				<siteMapNode title="IBTA001-IBT Allocation Note" url="~/IBT/Reports/IBTA001.aspx" description="" />
-				<siteMapNode title="IBTA002-IBT Allocation In Entry Summary Report" url="~/IBT/Reports/IBTA002.aspx" description="" />
-				<siteMapNode title="IBTA003-IBT Allocation In Posting Summary Report" url="~/IBT/Reports/IBTA003.aspx" description="" />
-				<siteMapNode title="IBT001-IBT Reconcilliation Note" url="~/IBT/Reports/IBT001.aspx" description="" />
-				<siteMapNode title="IBT002-IBT By Hierarchy Report" url="~/IBT/Reports/IBT002.aspx" description="" />
-				<siteMapNode title="IBTS001-IBT SOS Report - DC" url="~/IBT/Reports/IBTS001.aspx" description="" />
-				<siteMapNode title="IBTS002-IBT Daily Delivery Schedule Report" url="~/IBT/Reports/IBTS002.aspx" description="" />
-				<siteMapNode title="IBTS003-IBT SOS Status Report" url="~/IBT/Reports/IBTS003.aspx" description="" />
-				<siteMapNode title="FTCR001-Flow Thru Consolidation Report" url="~/IBT/Reports/FTCR001.aspx" description="" />
-				<siteMapNode title="FTPR001-Flow Thru Pending Report" url="~/IBT/Reports/FTPR001.aspx" description="" />
-				<siteMapNode title="DCCNDN002-Summary of IBT CNDN (Entry/Posting/Cancel) Report" url="~/IBT/Reports/DCCNDN002.aspx" description="" />
-				<siteMapNode title="DCCNDN003-IBT CNDN Details (Entry/Posting/Cancel) Report" url="~/IBT/Reports/DCCNDN003.aspx" description="" />
-				<siteMapNode title="IBTAO001-Allocation Out Note (Print Printed From)" url="~/IBT/Reports/IBTAO001.aspx" description="" />
-				<siteMapNode title="IBTAO002-Allocation Out Entry Summary Report" url="~/IBT/Reports/IBTAO002.aspx" description="" />
-				<siteMapNode title="IBTAO003-Allocation Out Posting Summary Report" url="~/IBT/Reports/IBTAO003.aspx" description="" />
-				<siteMapNode title="HQALC001-HQ Allocation Summary Report" url="~/IBT/Reports/HQALC001.aspx" description="" />
-			</siteMapNode>
-		</siteMapNode>
-		<siteMapNode title="Stock Adj" url="" description="">
-			<siteMapNode title="Stock Adjustment Maintenance" url="~/Stock Adjustment/StockAdjustment.aspx?" description="" />
-			<siteMapNode title="Stock Adjustment Enquiry" url="~/Stock Adjustment/ViewAdjustment.aspx" description="" />
-			<siteMapNode title="Reports" url="" description="">
-				<siteMapNode title="ADJ001-Stock Adjustment Advice" url="~/Stock Adjustment/Reports/ADJ001.aspx" descriptionZ="" />
-				<siteMapNode title="ADJ001A-Stock Adjustment Advice" url="~/Stock Adjustment/Reports/ADJ001A.aspx" description="" />
-				<siteMapNode title="ADJ002-Stock Adjustment Entry Summary" url="~/Stock Adjustment/Reports/ADJ002.aspx" description="" />
-				<siteMapNode title="ADJ002A-Stock Adjustment Entry Summary Report - Control Type CNDN (GRN &amp; RTV)" url="~/Stock Adjustment/Reports/ADJ002A.aspx" description="" />
-				<siteMapNode title="ADJ003-Stock Adjustment Posting Summary Report" url="~/Stock Adjustment/Reports/ADJ003.aspx" description="" />
-				<siteMapNode title="ADJ004-Stock Adjustment By Hierachy Report" url="~/Stock Adjustment/Reports/ADJ004.aspx" description="" />
-				<siteMapNode title="ADJ005-Stock Adjustment By Control Type" url="~/Stock Adjustment/Reports/ADJ005.aspx" description="" />
-				<siteMapNode title="ADJ006-Stock Adjustment Cancel Summary Report" url="~/Stock Adjustment/Reports/ADJ006.aspx" description="" />
-				<siteMapNode title="ADJ007-Credit Note/Debit Note" url="~/Stock Adjustment/Reports/ADJ007.aspx" description="" />
-				<siteMapNode title="ADJ008-Credit Note/Debit Note Posting Summary Report" url="~/Stock Adjustment/Reports/ADJ008.aspx" description="" />
-				<siteMapNode title="ADJ009-Stock Adjustment Unpost Summary Report" url="~/Stock Adjustment/Reports/ADJ009.aspx" description="" />
-			</siteMapNode>
-		</siteMapNode>
-		<!--<siteMapNode title="Hamper">
-			<siteMapNode title="Build Hamper" url="~/Hamper/DefineHamper.aspx?Fname=BuildHamper" description="" />
-			<siteMapNode title="Break Hamper" url="~/Hamper/BreakHamper.aspx?Fname=BreakHamper" description="" />
-			<siteMapNode title="Hamper Transaction Enquiry" url="~/Hamper/HamperEnquiry.aspx" description="" />
-			<siteMapNode title="Reports" url="" description="">
-				<siteMapNode title="HAM001-Build Hamper Note" url="~/Hamper/Reports/HAM001.aspx" description="" />
-				<siteMapNode title="HAM002-Break Hamper Note" url="~/Hamper/Reports/HAM002.aspx" description="" />
-				<siteMapNode title="HAM003-Build Hamper Posting Summary Report" url="~/Hamper/Reports/HAM003.aspx" description="" />
-				<siteMapNode title="HAM004-Break Hamper Posting Summary Report" url="~/Hamper/Reports/HAM004.aspx" description="" />
-			</siteMapNode>
-		</siteMapNode>-->
-		<!--<siteMapNode title="Cost/Price" description="">
-			<siteMapNode title="Cost Control" url="~/CostPrice Control/CostPriceEnquiry.aspx" description="" />
-			<siteMapNode title="Immediate Price Change" url="~/CostPrice Control/ImmediatePriceChangeEnquiry.aspx" description="" />       
-		</siteMapNode>-->
-		<siteMapNode title="Non Trade" description="">
-			<siteMapNode title="Product Maintenance" url="~/Non Trade/ProductMaintenance.aspx" description="" />
-			<siteMapNode title="Vendor Product Maintenance" url="~/Non Trade/VendorProductMaintenance.aspx" description="" />
-			<siteMapNode title="Store IPC Maintenance" url="~/Non Trade/StoreIPC.aspx" description="" />
-			<siteMapNode title="New Site Creation" url="~/Non Trade/NewSiteCreation.aspx" description="" />
-		</siteMapNode>
-		<siteMapNode title="Store Attribute" description="">
+		<siteMapNode title="Store Attribute" description="storeAttribute">
 			<siteMapNode title="Register HHT" url="~/Store Attribute/RegisterHHT.aspx" description="" />
 			<siteMapNode title="Register HHT Ordering" url="~/Store Attribute/RegHHTPO.aspx" description="" />
-			<siteMapNode title="Manual SOS Process" url="~/Store Attribute/TPInventoryStat.aspx" description="" />
+			<siteMapNode title="Gap Check" url="~/Store Attribute/GapCheck.aspx" description=""/>
 			<siteMapNode title="HouseKeeping Store" url="~/Store Attribute/HouseKeepingStore.aspx" description="" />
 			<siteMapNode title="HandHeld Terminal" url="~/Store Attribute/HandHeldTerminal.aspx" description="" />
 			<siteMapNode title="High Shrink/High Value Products" url="~/Master File/ProductEnquiry.aspx?ScrId=1" description="" />
 			<siteMapNode title="Shelf Capacity" url="~/Master File/ProductEnquiry.aspx?ScrId=2" description="" />
+			<siteMapNode title="TF &amp; ASC" url="~/Store Attribute/TrendFactorAdditionalShelfCapacity.aspx" description="" />
 			<siteMapNode title="Sales Person" url="~/Store Attribute/salesperson.aspx" description="" />
-			<siteMapNode title="Download FS-ST" url="~/Store Attribute/FloorScannigStockTake.aspx" description="" />
 			<siteMapNode title="Print Label" url="~/Store Attribute/PrintPassword.aspx" description="" />
-			<siteMapNode title="Currency Maintenance" url="~/Store Attribute/CurrencyMaintenance.aspx" description="" />
-			<siteMapNode title="DB Job Monitor" url="~/Store Attribute/RunInterface.aspx" description="" />
 			<siteMapNode title="Stock Take Jobs Monitor" url="~/Store Attribute/stocktake.aspx" description=""/>
 			<siteMapNode title="HHT File Upload" url="~/Store Attribute/HHTUpload.aspx" description=""/>
-			<!--Gaurav Verma - 13 Mar 09 - DCL# 1966 - Pallet Rounding Percentage screen-->
-			<siteMapNode title="Pallet Rounding Percentage" url="~/Store Attribute/PercentagePalletRounding.aspx" description=""/>
-			<siteMapNode title="Recovery" url="" description="">
-				<siteMapNode title="IBT" url="~/IBT/IBT_StatusRevert.aspx" description="" />
-			</siteMapNode>
 			<siteMapNode title="Fresh Stocktake" url="~/Store Attribute/FreshStockTake.aspx" description="">
 				<siteMapNode title="Import" url="~/Store Attribute/FreshStockTake.aspx?view=import" description=""/>
 				<siteMapNode title="Export" url="~/Store Attribute/FreshStockTake.aspx?view=export" description=""/>
 			</siteMapNode>
-			<siteMapNode title="Reports" url="" description="">
+			<siteMapNode title="SMS Maintenance" url="~/Store Attribute/SMSMaintenance.aspx" description=""/>
+			<siteMapNode title="Reports" url="" description="Store Attribute">
+				<siteMapNode title="MKD001-Markdown" url="~/Store Attribute/Markdown.aspx" description=""/>
+				<siteMapNode title="Shelf Label Report" url="~/Store Attribute/Reports/ShelfLabel.aspx" description="" />
+			</siteMapNode>
+			<!--<siteMapNode title="Reports" url="" description="Store Attribute">
 				<siteMapNode title="Batch Job Daily Summary" url="~/Store Attribute/Reports/BatchJobDailySummary.aspx" description="" />
 				<siteMapNode title="Operator's Daily Batch Job Report" url="~/Store Attribute/Reports/POMBatchJobReport.aspx" description="" />
 				<siteMapNode title="Interfaces Run Summary" url="~/Store Attribute/Reports/InterfacesSummaryReport.aspx" description="" />
-			</siteMapNode>
+			</siteMapNode>-->
 		</siteMapNode>
-		<siteMapNode title="Inventory" description="">
+		<siteMapNode title="Inventory" description="inventory">
 			<!--<siteMapNode title="Stock Take Maintenance" url="~/Inventory/StockTakeMaintenance.aspx" description="" />-->
 			<siteMapNode title="Reports" url="" description="">
 				<siteMapNode title="IVTR001-OHB Report (Ranged Item Only)" url="~/Inventory/Reports/IVTR001.aspx" description="" />
@@ -294,7 +266,7 @@
 				<siteMapNode title="IVTR008-Month To Date Stock Movement By Category Report" url="~/Inventory/Reports/IVTR008.aspx" description="" />
 				<siteMapNode title="IVTR009-Stock Card Report By SKU" url="~/Inventory/Reports/IVTR009.aspx" description="" />
 				<siteMapNode title="IVTR010-Top x Product By Sales with OHB Report" url="~/Inventory/Reports/IVTR010.aspx" description="" />
-				<siteMapNode title="IVTR011–Sales Order Listing By Outlets Report" url="~/Inventory/Reports/IVTR011.aspx" description="" />
+				<!--<siteMapNode title="IVTR011–Sales Order Listing By Outlets Report" url="~/Inventory/Reports/IVTR011.aspx" description="" />
 				<siteMapNode title="IVTR012–Sales Order Summary By Outlets Report" url="~/Inventory/Reports/IVTR012.aspx" description="" />
 				<siteMapNode title="IVTR013–Sales Order Summary By Vendor / By Outlets Report" url="~/Inventory/Reports/IVTR013.aspx" description="" />
 				<siteMapNode title="IVTR014–Storage Stock Transfer Listing Report" url="~/Inventory/Reports/IVTR014.aspx" description="" />
@@ -303,14 +275,16 @@
 				<siteMapNode title="IVTR017–StockTake Variance Report" url="~/Inventory/Reports/IVTR017.aspx" description="" />
 				<siteMapNode title="IVTR018–DC Service Level Report By Vendor" url="~/Inventory/Reports/IVTR018.aspx" description="" />
 				<siteMapNode title="IVTR019-On Hand Balance by Vendor Report" url="~/Inventory/Reports/IVTR019.aspx" description="" />
-				<siteMapNode title="IVTR020-DC Short Delivery to Store Report" url="~/Inventory/Reports/IVTR020.aspx" description="" />
+				<siteMapNode title="IVTR020-DC Short Delivery to Store Report" url="~/Inventory/Reports/IVTR020.aspx" description="" />-->
 				<siteMapNode title="IVTR021–Exception Report for Promotion" url="~/Inventory/Reports/IVTR021.aspx" description="" />
+				<siteMapNode title="IVTR024-Not On Sales Report By (Outright) Stock Take Result" url="~/Inventory/Reports/IVTR024.aspx" description="" />
 				<siteMapNode title="OOSR001–Out of stock Report" url="~/Inventory/Reports/OOSR001.aspx" description="" />
 				<siteMapNode title="OOSR002–Private Label Out of stock Report" url="~/Inventory/Reports/OOSR002.aspx" description="" />
 				<siteMapNode title="OOSR005-HQ OOS By Day By Acticle Report" url="~/Inventory/Reports/OOSR005.aspx" description="" />
-				<siteMapNode title="IVTR022-POMDC Month To Date Stock Movement By Department Report" url="~/Inventory/Reports/IVTR022.aspx?Type=D" description="" />
-				<siteMapNode title="IVTR023-POMDC Month To Date Stock Movement By Category Report" url="~/Inventory/Reports/IVTR022.aspx?Type=C" description="" />
-				<siteMapNode title="IVTR024-Not On Sales Report By (Outright) Stock Take Result" url="~/Inventory/Reports/IVTR024.aspx" description="" />
+				<!--Saber, Top1000 OOS Report-->
+				<siteMapNode title="OOSR1000-Top1000_OOS_Report" url="~/Inventory/Reports/TopOOSR001.aspx" description="" />
+				<!--<siteMapNode title="IVTR022-POMDC Month To Date Stock Movement By Department Report" url="~/Inventory/Reports/IVTR022.aspx?Type=D" description="" />
+				<siteMapNode title="IVTR023-POMDC Month To Date Stock Movement By Category Report" url="~/Inventory/Reports/IVTR022.aspx?Type=C" description="" />-->
 			</siteMapNode>
 			<siteMapNode title="BI Reports" url="" description="">
 				<siteMapNode title="BI001-Sales Profit, Inventory and Shrinkage Analysis by Subclass" url="~/Inventory/Reports/BI001.aspx" description="" />
@@ -318,39 +292,82 @@
 				<siteMapNode title="BI003-Stock Days by Merchandise Hierarchy by DC Article Report" url="~/Inventory/Reports/BI003.aspx" description="" />
 				<siteMapNode title="BI004-Stock Aging by Merchandise Hierarchy by Article Report" url="~/Inventory/Reports/BI004.aspx" description="" />
 				<siteMapNode title="BI005-Stock Movement by Value Report" url="~/Inventory/Reports/BI005.aspx" description="" />
+				<siteMapNode title="BI006-Disposal, Markdown &amp; IPC Report" url="~/Inventory/Reports/BI006.aspx" description="" />
 			</siteMapNode>
 		</siteMapNode>
-		<!--  Modified by: Z_Mark Milan
-			  Modified Date: 18 May 2009
-			  Purpose: Add module for Sales & GP Reports (HQ Reporting for SAP BI)
-			  -->
-		<!--<siteMapNode title="Sales &amp; GP" description ="Sales &amp; GP">
-		<siteMapNode title ="HQ SAP BI Reports" url ="~/SalesGP/SalesGPReports.aspx" description =""/>    
-		<siteMapNode title ="Sales Summary Reports" url ="~/SalesGP/SalesSummary.aspx" description =""/>
-    </siteMapNode>-->
-		<siteMapNode title="Help Desk" description ="Help Desk">
-			<siteMapNode title ="OSA Check List" url ="~/Help Desk/OSACheckList.aspx" description =""/>
-			<siteMapNode title ="HD Report" url ="" description ="">
-				<siteMapNode title="HD001-OSA Check List Report" url="~/Help Desk/Reports/HD001.aspx" description="" />
-				<siteMapNode title="HD002-OSA Check List Summary Report" url="~/Help Desk/Reports/HD002.aspx" description="" />
-			</siteMapNode>
+		<siteMapNode title="Sales &amp; GP" description ="SalesGP">
+			<siteMapNode title ="HQ SAP BI Reports" url ="~/SalesGP/SalesGPReports.aspx" description =""/>
+			<siteMapNode title ="Sales Summary Reports" url ="~/SalesGP/SalesSummary.aspx" description =""/>
+			<!--<siteMapNode title="Report Master" url="~/IBT/Reports/ReportMasters.aspx" description="" />-->
 		</siteMapNode>
-		<siteMapNode title="PCV" description ="PCV">
-			<siteMapNode title="Articles" url="~/PCV/Articles.aspx" description =""/>
-			<siteMapNode title="Approver" url="~/PCV/Approver.aspx" description =""/>
-			<siteMapNode title="Prompt Notification" url="~/PCV/PromptNotification.aspx" description =""/>
-			<siteMapNode title="PCV Enquiry" url="~/PCV/PCVEnquiry.aspx" description =""/>
-			<siteMapNode title="PCV Maintenance" url="~/PCV/PCVMaintenance.aspx" description =""/>
-			<siteMapNode title="Batch Enquiry" url="~/PCV/BatchEnquiry.aspx" description =""/>
-			<!--<siteMapNode title ="Batch Process" url ="~/PCV/BatchProcess.aspx" description =""/>-->
-			<siteMapNode title="Posting" url="~/PCV/Posting.aspx" description =""/>
-			<siteMapNode title="SCDF Enquiry" url="~/PCV/SCDFEnquiry.aspx" description =""/>
-			<siteMapNode title="SCDF Maintenance" url="~/PCV/SCDFProcess.aspx" description =""/>
-			<siteMapNode title="Reports" url="" description="">
-				<siteMapNode title="PCV Report Summary" url="~/PCV/PCVSummary.aspx" description =""/>
-				<siteMapNode title="SCDF Report Summary" url="~/PCV/SCDFSummary.aspx" description =""/>
-				<siteMapNode title="SCDF Report Summary By Status" url="~/PCV/SCDFSummarybyStatus.aspx" description =""/>
-			</siteMapNode>
+
+		<!--<siteMapNode title="Reporting" description ="Reporting">
+			<siteMapNode title ="Master Data Module" url ="ReportMasters.aspx?ReportHeader=Master_Module" description =""/>
+			<siteMapNode title ="Transactions Module" url ="ReportMasters.aspx?ReportHeader=Transaction_Module" description =""/>
+			<siteMapNode title ="Inventory Module" url ="ReportMasters.aspx?ReportHeader=IVTR_Module" description =""/>
+			<siteMapNode title ="Sales &amp; GP Module" url ="ReportMasters.aspx?ReportHeader=SGP_Module" description =""/>
 		</siteMapNode>
+		<siteMapNode title="Reporting" description ="hidden">
+			<siteMapNode title ="Master Data Module" description ="hidden">
+				<siteMapNode title ="Mast001" url="~/Master File/Reports/Mast001.aspx" description="hidden"/>
+				<siteMapNode title ="Mast002" url="~/Master File/Reports/Mast002.aspx" description="hidden"/>
+				<siteMapNode title ="Mast003" url="~/Master File/Reports/Mast003.aspx" description="hidden"/>
+				<siteMapNode title ="Mast004" url="~/Master File/Reports/Mast004.aspx" description="hidden"/>
+				<siteMapNode title ="Mast005" url="~/Master File/Reports/Mast005.aspx" description="hidden"/>
+
+			</siteMapNode>
+			<siteMapNode title ="Sales &amp; GP Module" description ="hidden">
+				<siteMapNode title ="Sales GP Reports" url="~/SalesGP/SalesGPReports.aspx" description="hidden"/>
+				<siteMapNode title ="Sales Summary Reports" url="~/SalesGP/SalesSummary.aspx" description="hidden"/>
+			</siteMapNode>
+			<siteMapNode title ="Transactions Report" description ="hidden">
+				<siteMapNode title ="ADJ001" url="~/Stock Adjustment/Reports/ADJ001.aspx" description="hidden"/>
+				<siteMapNode title ="ADJ001A" url="~/Stock Adjustment/Reports/ADJ001A.aspx" description="hidden"/>
+				<siteMapNode title ="ADJ002" url="~/Stock Adjustment/Reports/ADJ002.aspx" description="hidden"/>
+				<siteMapNode title ="ADJ002A" url="~/Stock Adjustment/Reports/ADJ002A.aspx" description="hidden"/>
+				<siteMapNode title ="ADJ003" url="~/Stock Adjustment/Reports/ADJ003.aspx" description="hidden"/>
+				<siteMapNode title ="ADJ004" url="~/Stock Adjustment/Reports/ADJ004.aspx" description="hidden"/>
+				<siteMapNode title ="ADJ005" url="~/Stock Adjustment/Reports/ADJ005.aspx" description="hidden"/>
+				<siteMapNode title ="ADJ006" url="~/Stock Adjustment/Reports/ADJ006.aspx" description="hidden"/>
+
+			</siteMapNode>
+			<siteMapNode title ="Inventory Module" description ="hidden">
+				<siteMapNode title ="Inventory BI Report" description ="hidden">
+					<siteMapNode title ="BI003" url="~/Inventory/Reports/BI003.aspx" description="hidden"/>
+					<siteMapNode title ="BI004" url="~/Inventory/Reports/BI004.aspx" description="hidden"/>
+					<siteMapNode title ="BI005" url="~/Inventory/Reports/BI005.aspx" description="hidden"/>
+					<siteMapNode title ="OOSR005" url="~/Inventory/Reports/OOSR005.aspx" description="hidden"/>
+				</siteMapNode>
+				<siteMapNode title ="Inventory Report" description ="hidden">
+					<siteMapNode title ="IVTR001" url="~/Inventory/Reports/IVTR001.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR002" url="~/Inventory/Reports/IVTR002.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR003" url="~/Inventory/Reports/IVTR003.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR004" url="~/Inventory/Reports/IVTR004.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR005" url="~/Inventory/Reports/IVTR005.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR005_Div" url="~/Inventory/Reports/IVTR005_Division.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR006" url="~/Inventory/Reports/IVTR006.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR007" url="~/Inventory/Reports/IVTR007.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR008" url="~/Inventory/Reports/IVTR008.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR009" url="~/Inventory/Reports/IVTR009.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR010" url="~/Inventory/Reports/IVTR010.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR011" url="~/Inventory/Reports/IVTR011.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR012" url="~/Inventory/Reports/IVTR012.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR013" url="~/Inventory/Reports/IVTR013.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR014" url="~/Inventory/Reports/IVTR014.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR015" url="~/Inventory/Reports/IVTR015.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR016" url="~/Inventory/Reports/IVTR016.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR017" url="~/Inventory/Reports/IVTR017.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR018" url="~/Inventory/Reports/IVTR018.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR019" url="~/Inventory/Reports/IVTR019.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR020" url="~/Inventory/Reports/IVTR020.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR021" url="~/Inventory/Reports/IVTR021.aspx" description="hidden"/>
+					<siteMapNode title ="IVTR022" url="~/Inventory/Reports/IVTR022.aspx?Type=D" description="hidden"/>
+					<siteMapNode title ="IVTR023" url="~/Inventory/Reports/IVTR022.aspx?Type=C" description="hidden"/>
+					<siteMapNode title ="IVTR024" url="~/Inventory/Reports/IVTR024.aspx" description="hidden"/>
+					<siteMapNode title ="OOSR001" url="~/Inventory/Reports/OOSR001.aspx" description="hidden"/>
+					<siteMapNode title ="OOSR002" url="~/Inventory/Reports/OOSR002.aspx" description="hidden"/>
+				</siteMapNode>
+			</siteMapNode>
+		</siteMapNode>-->
 	</siteMapNode>
 </siteMap>

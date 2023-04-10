@@ -8,6 +8,7 @@ Partial Class SwitchRole
     Protected screenpx As String = System.Configuration.ConfigurationManager.AppSettings.Item("Screenpx")
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
         Dim objDataAccess As DataAccess,
             objDataTable As DataTable,
             objDataSet As DataSet

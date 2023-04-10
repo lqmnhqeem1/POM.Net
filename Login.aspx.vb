@@ -224,9 +224,12 @@ Partial Class Login
             Dim errMsg As Integer
 
             lblMessage.Visible = False
+            altMessage.Visible = False
+
             Select Case AuthenticateOrRedirect(txtUserName.Text.Trim(), txtPassword.Text.Trim(), ddlStore.SelectedItem.Value, errMsg)
                 Case 0
                     lblMessage.Visible = True
+                    altMessage.Visible = True
                     '-----------------------------------------------------------------------------------------
                     '---- Modified by   : Nicholas Wong   
                     '---- Modified on   : 12 June 2013

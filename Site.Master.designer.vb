@@ -14,13 +14,31 @@ Option Explicit On
 Partial Public Class SiteMaster
 
     '''<summary>
-    '''MainContent control.
+    '''hlnkHome control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents hlnkHome As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''lblLogoVer control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblLogoVer As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''lblUser control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblUser As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''lblLoginName control.
@@ -32,6 +50,15 @@ Partial Public Class SiteMaster
     Protected WithEvents lblLoginName As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''lblRole control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblRole As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''lblCurrRole control.
     '''</summary>
     '''<remarks>
@@ -41,13 +68,13 @@ Partial Public Class SiteMaster
     Protected WithEvents lblCurrRole As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''lblStoreId control.
+    '''hlnkChangeRole control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblStoreId As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents hlnkChangeRole As Global.System.Web.UI.WebControls.HyperLink
 
     '''<summary>
     '''lblHQSystemVal control.
@@ -59,58 +86,13 @@ Partial Public Class SiteMaster
     Protected WithEvents lblHQSystemVal As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''smpPOM control.
+    '''Repeater1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents smpPOM As Global.System.Web.UI.WebControls.SiteMapPath
-
-    '''<summary>
-    '''lnkBack control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lnkBack As Global.System.Web.UI.HtmlControls.HtmlAnchor
-
-    '''<summary>
-    '''lblHHTPwd control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblHHTPwd As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''frmMasterPage control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents frmMasterPage As Global.System.Web.UI.HtmlControls.HtmlForm
-
-    '''<summary>
-    '''hlnkChangeStore control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents hlnkChangeStore As Global.System.Web.UI.WebControls.HyperLink
-
-    '''<summary>
-    '''hlnkChangeRole control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents hlnkChangeRole As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents Repeater1 As Global.System.Web.UI.WebControls.Repeater
 
     '''<summary>
     '''lnkSignOut control.
@@ -131,13 +113,49 @@ Partial Public Class SiteMaster
     Protected WithEvents lblSignOut As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''imgSignOut control.
+    '''sitemapPOMMenu control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents imgSignOut As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents sitemapPOMMenu As Global.System.Web.UI.WebControls.SiteMapDataSource
+
+    '''<summary>
+    '''lblStore control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblStore As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''lblStoreId control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblStoreId As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''hlnkChangeStore control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hlnkChangeStore As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''hlnkHome2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hlnkHome2 As Global.System.Web.UI.WebControls.HyperLink
 
     '''<summary>
     '''tContent control.

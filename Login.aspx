@@ -126,13 +126,13 @@
       }
 
     }
-
+/*
     .container {
       left: 50%;
       position: fixed;
       top: 50%;
       transform: translate(-50%, -50%);
-    }
+    }*/
 
     /* ---------- LOGIN ---------- */
 
@@ -310,50 +310,52 @@
 	</div>
 </div>--%>
     <div class="main" >   
-	<div class="container" style="zoom:70%">
+	<div class="mt-5" style="">
 		<center>
-		<div class="middle">
-            <%--<div class="logo">
-				  <div class="clearfix"></div>
-			</div>--%>
-            <div>
-                    <img style="margin-top: 40px; vertical-align:middle;" src="../images/Giant_logo.png" />
-            </div>
-			<div id="login">
-				<form accept-charset="UTF-8" role="form" runat="server">
-					<fieldset class="clearfix">
-                    <asp:Label ID="lblMessage" runat="server" CssClass="redLabel" Text="" Visible="false"></asp:Label>
-						<div>
-                            <div align=left style="color: #eee;">
-                                <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
+            <h1  class="mt-2 font-weight-bold " style="color: #eee;">POM.NET</h1>
+			<div class="container" zoom="100%">
+                <div class="row justify-content-sm-center">
+                    <form accept-charset="UTF-8" role="form" runat="server">
+                         <img src="../images/Giant_logo.png" />
+					<div class="mt-3"> 
+                        <div id="altMessage" runat="server" class="alert alert-danger w-75" role="alert" visible="false">
+                           <asp:Label ID="lblMessage" runat="server" CssClass="redLabel" Text="" Visible="false"></asp:Label>
+                        </div>
+						<div class="w-75">
+                            <div style="color: #eee;">
+                                <asp:Label ID="lblUserName" CssClass="d-flex justify-content-start" runat="server" Text="User Name"></asp:Label>
                             </div>
-                            <asp:TextBox ID="txtUserName" Placeholder="Username" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtUserName" Class="form-control d-flex justify-content-start" Placeholder="Domain\UserId" runat="server"></asp:TextBox>
 						</div> <!-- JS because of IE support; better: placeholder="Username" -->
-						<div>
-                            <div align=left style="color: #eee;">
-                                <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
+						<div class="mt-2">
+                            <div class="w-75" style="color: #eee;">
+                                <asp:Label ID="lblPassword"  CssClass="d-flex justify-content-start" runat="server" Text="Password"></asp:Label>
                             </div>
-                            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" Placeholder="Password"></asp:TextBox>
+                            <asp:TextBox ID="txtPassword" CssClass="form-control d-flex justify-content-start w-75" runat="server" TextMode="Password" Placeholder="Password"></asp:TextBox>
 						</div> <!-- JS because of IE support; better: placeholder="Password" -->
-                        <div>
-                            <div align=left style="color: #eee;">
-                                <asp:Label ID="lblStore" runat="server"  Text="Store"></asp:Label>
+                        <div class="w-75">
+                            <div style="color: #eee;">
+                                <asp:Label ID="lblStore"  CssClass="d-flex justify-content-start" runat="server"  Text="Store"></asp:Label>
                             </div>
-                            <asp:DropDownList ID="ddlStore" CssClass="customDropDown" runat="server" TabIndex="3" Width="100%" Height="40px"></asp:DropDownList>
+                            <asp:DropDownList ID="ddlStore" CssClass="form-control d-flex justify-content-start "  runat="server" ></asp:DropDownList>
 						</div> <!-- JS because of IE support; better: placeholder="Password" -->
 						<div>
-                        <div>
-                            <asp:Button id="btnLogin" runat="server" Text="Log In" CausesValidation="false"/>
-                            <asp:Button id="btnCancel" runat="server" Text="Cancel" CausesValidation="false"/>
+                        <div class="mt-4">
+                            <asp:Button id="btnLogin" runat="server" CssClass="btn btn-primary" Text="Log In" CausesValidation="false"/>
+                            <asp:Button id="btnCancel" runat="server" Text="Cancel" CssClass="btn btn-dark" CausesValidation="false"/>
                         </div>
 						</div>
-					</fieldset>
+					</div>
+                    <h5 class="mt-2 font-weight-bold " style="color: #eee;">Ver:1.1.0</h5>
 					<div class="clearfix"></div>
 				</form>
+
+                </div>
+				
 				<div class="clearfix"></div>
 			</div> <!-- end login -->
-		</div>
-		</center>
+
+		</center> 
 	</div>
     </div>
      

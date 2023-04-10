@@ -86,15 +86,6 @@ Partial Public Class SwitchRole
     Protected WithEvents lblSignOut As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''imgSignOut control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents imgSignOut As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
     '''lblPageTile control.
     '''</summary>
     '''<remarks>
@@ -102,15 +93,6 @@ Partial Public Class SwitchRole
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblPageTile As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''lblMessage control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblMessage As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''lblRoles control.
@@ -131,15 +113,6 @@ Partial Public Class SwitchRole
     Protected WithEvents dgRole As Global.System.Web.UI.WebControls.DataGrid
 
     '''<summary>
-    '''hrAbButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents hrAbButton As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
     '''btnSwitchRole control.
     '''</summary>
     '''<remarks>
@@ -147,4 +120,22 @@ Partial Public Class SwitchRole
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSwitchRole As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''lblMessage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblMessage As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''hrAbButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hrAbButton As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class
