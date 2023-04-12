@@ -27,11 +27,10 @@ Imports System.Diagnostics
 Imports System.IO
 Imports System.Net
 Imports WebServiceClient
-Imports System.Web.UI.WebControls
-
 #End Region
 
 Partial Class ProductEnquiry
+
     Inherits System.Web.UI.Page
     Protected strPrdtId As String
     Dim dsProd As New DataSet
@@ -80,17 +79,18 @@ Partial Class ProductEnquiry
 #End Region
 
 #Region "Load Event"
-    '    ''' <summary>
-    '    ''' Load Event
-    '    ''' </summary>
-    '    ''' <param name="sender"></param>
-    '    ''' <param name="e"></param>
-    '    ''' <remarks></remarks>
+    ''' <summary>
+    ''' Load Event
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
-            'If Utility.UserId.Equals(String.Empty) Then Response.Redirect("~/Login.aspx")
+            If Utility.UserId.Equals(String.Empty) Then Response.Redirect("~/Login.aspx")
 
             'Dim strValue As String = Convert.ToString(Request.QueryString("ScrId"))
+
             strValue = Convert.ToString(Request.QueryString("ScrId")) 'declare strValue as global variable. need to use the same variable at btnSearch
             Dim strScreenName As String = String.Empty
             If (strValue Is Nothing) Then
@@ -187,19 +187,17 @@ Partial Class ProductEnquiry
                         Me.btnSave.Visible = False
                         HSHVLine.Visible = True
                         'Add By Farnia @ 27 Aug 2014
-                        Me.TR1.Attributes("Class") = "d1"
-                        Me.TR2.Attributes("Class") = "d0"
-                        Me.TR3.Attributes("Class") = "d1"
-                        Me.TR4.Attributes("Class") = "d0"
-                        Me.WShelfCapacityLine.Attributes("Class") = "d1"
+                        'Me.TR1.Attributes("Class") = "d1"
+                        'Me.TR2.Attributes("Class") = "d0"
+                        'Me.TR3.Attributes("Class") = "d1"
+                        'Me.TR4.Attributes("Class") = "d0"
+                        'Me.WShelfCapacityLine.Attributes("Class") = "d1"
                         Me.HSHVLine.Attributes("Class") = "d1"
                         Me.TDTest1.Visible = True
-                        Me.TDTest2.Visible = True
+                        Me.TDTest2.Visible = False
                         'Me.TDTest1.Attributes("Class") = "d0"
                         'Me.TDTest2.Attributes("Class") = "d0"
-                        Me.TDTest3.Visible = False
-                        Me.TDTest4.Visible = False
-                        Me.trButton.Attributes("Class") = "d0"
+                        'Me.trButton.Attributes("Class") = "d0"
                         Me.cbHGHV.Checked = True
                         Me.cbBlockOfPro.Checked = True
                         'Saber, Checkbox for Front Facing 11/05/2016
@@ -232,9 +230,7 @@ Partial Class ProductEnquiry
                         HSHVLine.Visible = True
                         'Add By Farnia @ 27 Aug 2014
                         Me.TDTest1.Visible = True
-                        Me.TDTest2.Visible = True
-                        Me.TDTest3.Visible = False
-                        Me.TDTest4.Visible = False
+                        Me.TDTest2.Visible = False
                         '-----------------------------
                         'Saber, Checkbox for Front Facing 11/05/2016
                         Me.cbFFI.Visible = True
@@ -243,7 +239,7 @@ Partial Class ProductEnquiry
                         'Add By Farnia @ 20 Aug July 2014 For DCL 5137 - Show shelf capacity on shelf label
                         Me.WShelfCapacityLine.Visible = True
                         WShelfCapacityLine.Attributes("Class") = "d0"
-                        trButton.Attributes("Class") = "d0"
+                        'trButton.Attributes("Class") = "d0"
                         ViewState("WithShelfCapacity") = Convert.ToString(Request.QueryString("Mode"))
                         ViewState("Div") = Convert.ToString(Request.QueryString("Div"))
                         Me.cbHGHV.Checked = True
@@ -415,7 +411,7 @@ Partial Class ProductEnquiry
                     Me.WShelfCapacityLine.Visible = False
                     Me.btnSave.Visible = False
                     HSHVLine.Attributes("Class") = "d0"
-                    trButton.Attributes("Class") = "d1"
+                    'trButton.Attributes("Class") = "d1"
 
                     '-------------------------------------------------------------------------------
 
@@ -733,7 +729,9 @@ Partial Class ProductEnquiry
 
             'checking for DCL4901 - must check at least one checkbox
             If Me.cbHGHV.Checked = False And Me.cbHGHV_No.Checked = False Then
+                lblHerr.CssClass = "alert alert-danger d-flex justify-content-center"
                 lblHerr.Text = Utility.GetMessage("20001", "At Least One Checkbox for High Shrink / High Value")
+                lblError.CssClass = ""
                 lblError.Text = ""
                 dgProduct.DataSource = GetDataSet().Tables(0)
                 dgProduct.DataBind()
@@ -743,7 +741,9 @@ Partial Class ProductEnquiry
 
             'checking for DCL4901 - must check at least one checkbox
             If Me.cbBlockOfPro.Checked = False And Me.cbBlockOfPro_NO.Checked = False Then
+                lblHerr.CssClass = "alert alert-danger d-flex justify-content-center"
                 lblHerr.Text = Utility.GetMessage("20001", "At Least One Checkbox Blocked For Ordering Value")
+                lblError.CssClass = ""
                 lblError.Text = ""
                 dgProduct.DataSource = GetDataSet().Tables(0)
                 dgProduct.DataBind()
@@ -979,6 +979,8 @@ Partial Class ProductEnquiry
             '------------------------------------------------------------------------------
             lblError.Text = ""
             lblHerr.Text = ""
+            lblError.CssClass = ""
+            lblHerr.CssClass = ""
             dgProduct.CurrentPageIndex = 0
             Session("ProductEnqTable") = Nothing
 
@@ -1374,6 +1376,7 @@ Partial Class ProductEnquiry
 
             If (objData.DbMessage.Count <> 0) Then
                 If (objData.DbMessage.Code(0) = "10001") Then
+                    lblError.CssClass = "alert alert-danger d-flex justify-content-center"
                     lblError.Text = objData.DbMessage.Message(0)
                     dgProduct.DataSource = GetDataSet().Tables(0)
                     dgProduct.DataBind()
@@ -1392,6 +1395,7 @@ Partial Class ProductEnquiry
                 dgProduct.DataSource = dsProd.Tables(1)
                 dgProduct.DataBind()
                 dgProduct.PagerStyle.Visible = True
+                lblError.CssClass = ""
                 lblError.Text = ""
                 For i = 0 To CType(dsProd.Tables(0).Rows(0).Item(0), Integer) - 1
                     ddlPages.Items.Add(New ListItem(i + 1, i + 1))
@@ -1630,6 +1634,7 @@ Partial Class ProductEnquiry
 
             FetchDataForPrint()
             lblHerr.Text = ""
+            lblHerr.CssClass = ""
         Catch ex As Exception
             Dim objEx As New Exception("Error in Fetching Data", ex)
             If IsNothing(ex.InnerException) Then
@@ -1899,6 +1904,7 @@ Partial Class ProductEnquiry
                 Response.Write("<script type=""text/javascript"">alert(""Shelf Capacity should be numeric. "");</script")
             Else
                 If flag = True Then
+                    lblError.CssClass = "alert alert-danger d-flex justify-content-center"
                     lblError.Visible = True
                     lblError.Text = Utility.GetMessage("10355")
                 End If
@@ -2022,6 +2028,7 @@ Partial Class ProductEnquiry
         Try
             'Add By Farnia @ 29 Aug 2014 For DCL 5137 - Show shelf capacity on shelf label
             lblHerr.Text = ""
+            lblHerr.CssClass = ""
             If Not ViewState("IsLiveFiltering") Is Nothing Then
                 ViewState("IsLiveFiltering") = 1
                 LiveFiltering()
@@ -2048,6 +2055,7 @@ Partial Class ProductEnquiry
         Try
             'Add By Farnia @ 29 Aug 2014 For DCL 5137 - Show shelf capacity on shelf label
             lblHerr.Text = ""
+            lblHerr.CssClass = ""
             If Not ViewState("IsLiveFiltering") Is Nothing Then
                 ViewState("IsLiveFiltering") = 1
                 LiveFiltering()
@@ -2114,6 +2122,7 @@ Partial Class ProductEnquiry
 
             'Add By Farnia @ 29 Aug 2014 For DCL 5137 - Show shelf capacity on shelf label
             lblHerr.Text = ""
+            lblHerr.CssClass = ""
             If Not ViewState("IsLiveFiltering") Is Nothing Then
                 ViewState("IsLiveFiltering") = 1
                 LiveFiltering()
@@ -2140,6 +2149,7 @@ Partial Class ProductEnquiry
         Try
             'Add By Farnia @ 29 Aug 2014 For DCL 5137 - Show shelf capacity on shelf label
             lblHerr.Text = ""
+            lblHerr.CssClass = ""
             If Not ViewState("IsLiveFiltering") Is Nothing Then
                 ViewState("IsLiveFiltering") = 1
                 LiveFiltering()
@@ -2173,7 +2183,9 @@ Partial Class ProductEnquiry
             If (strValue = 0) Then
                 'Master File -> Product Enquiry
                 If (txtProductCode.Text.Trim() = "" And txtPrdtDesc.Text.Trim() = "" And ddlDept.SelectedValue = "" And ddlDeptTo.SelectedValue = "" And ddlCatg.SelectedValue = "" And ddlCatgTo.SelectedValue = "" And txtUPC.Text.Trim() = "" And ddlStatus.SelectedValue = "" And cbBlockOfPro.Checked = False And cbBlockOfPro_NO.Checked = False) Then
+                    lblHerr.CssClass = "alert alert-danger d-flex justify-content-center"
                     lblHerr.Text = Utility.GetMessage("20001", "At Least One Input Value")
+                    lblError.CssClass = ""
                     lblError.Text = ""
                     dgProduct.DataSource = GetDataSet().Tables(0)
                     dgProduct.DataBind()
@@ -2249,7 +2261,9 @@ Partial Class ProductEnquiry
             ElseIf (strValue = 1) Then
                 'Store Attributes -> HSHV
                 If (txtProductCode.Text.Trim() = "" And txtPrdtDesc.Text.Trim() = "" And ddlDept.SelectedValue = "" And ddlDeptTo.SelectedValue = "" And ddlCatg.SelectedValue = "" And ddlCatgTo.SelectedValue = "" And txtUPC.Text.Trim() = "" And ddlStatus.SelectedValue = "" And cbBlockOfPro.Checked = False And cbBlockOfPro_NO.Checked = False And cbHGHV.Checked = False And cbHGHV_No.Checked = False) Then
+                    lblHerr.CssClass = "alert alert-danger d-flex justify-content-center"
                     lblHerr.Text = Utility.GetMessage("20001", "At Least One Input Value")
+                    lblError.CssClass = ""
                     lblError.Text = ""
                     dgProduct.DataSource = GetDataSet().Tables(0)
                     dgProduct.DataBind()
@@ -2314,7 +2328,9 @@ Partial Class ProductEnquiry
                 'Shelf Capacity -> Home page Hyperlink Click
 
                 If (txtProductCode.Text.Trim() = "" And txtPrdtDesc.Text.Trim() = "" And ddlDept.SelectedValue = "" And ddlDeptTo.SelectedValue = "" And ddlCatg.SelectedValue = "" And ddlCatgTo.SelectedValue = "" And txtUPC.Text.Trim() = "" And ddlStatus.SelectedValue = "" And ddlWithShelfCapacity.SelectedValue = "" And cbBlockOfPro.Checked = False And cbBlockOfPro_NO.Checked = False) Then
+                    lblHerr.CssClass = "alert alert-danger d-flex justify-content-center"
                     lblHerr.Text = Utility.GetMessage("20001", "At Least One Input Value")
+                    lblError.CssClass = ""
                     lblError.Text = ""
                     dgProduct.DataSource = GetDataSet().Tables(0)
                     dgProduct.DataBind()
@@ -2468,7 +2484,9 @@ Partial Class ProductEnquiry
             ElseIf (strValue = 2) Then
                 'Store Attributes -> Shelf Capacity
                 If (txtProductCode.Text.Trim() = "" And txtPrdtDesc.Text.Trim() = "" And ddlDept.SelectedValue = "" And ddlDeptTo.SelectedValue = "" And ddlCatg.SelectedValue = "" And ddlCatgTo.SelectedValue = "" And txtUPC.Text.Trim() = "" And ddlStatus.SelectedValue = "" And ddlWithShelfCapacity.SelectedValue = "" And cbBlockOfPro.Checked = False And cbBlockOfPro_NO.Checked = False) Then
+                    lblHerr.CssClass = "alert alert-danger d-flex justify-content-center"
                     lblHerr.Text = Utility.GetMessage("20001", "At Least One Input Value")
+                    lblError.CssClass = ""
                     lblError.Text = ""
                     dgProduct.DataSource = GetDataSet().Tables(0)
                     dgProduct.DataBind()
@@ -2671,6 +2689,7 @@ Partial Class ProductEnquiry
             'FetchData()
             ' ----------------------------------------------------------------------------------------------------------------------
             lblHerr.Text = ""
+            lblHerr.CssClass = ""
             'new codes for DCL4901 
             Me.btnPrint.Visible = False
             Dim strFunc As String() = Access.ScreenFunctions(Constants.PRODENQ)
@@ -2752,12 +2771,12 @@ Partial Class ProductEnquiry
     'PURPOSE : DCL 5214 - Shelf capacity maintenance via HHT
     '----------------------------------------------------------------
     Private Function generateSeqNo() As Integer
-        Dim objRandomNo As System.Random = New Random()
-        Dim intMinValue As Int32 = 10000000
-        Dim intMaxValue As Int64 = 99999999
-        'LOH - Comment
-        Dim intRandom As Int32 = objRandomNo.Next(intMinValue, intMaxValue)
         Try
+            Dim objRandomNo As System.Random = New Random()
+            Dim intMinValue As Int32 = 10000000
+            Dim intMaxValue As Int64 = 99999999
+            Dim intRandom As Int32 = objRandomNo.Next(intMinValue, intMaxValue)
+
             Return intRandom
         Catch ex As Exception
             Dim objEx As New Exception("Error in Uploading Files", ex)

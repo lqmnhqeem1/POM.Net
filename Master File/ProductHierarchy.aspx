@@ -23,11 +23,15 @@ strPCd = '<%=strPrdtCd%>';
                     <asp:Label ID="Label16" runat="server" CssClass="normalHyperLink" Text="Ingredients"></asp:Label></a>&nbsp;|
                 <a id="PS" runat="server" href="#" onclick="window.open('ProductStyle.aspx?productid='+ strPrd,'PS','height=150,width=600,status=yes,toolbar=no,scrollbars=no')">
                     <asp:Label ID="Label17" runat="server" CssClass="normalHyperLink" Text="Product Style"></asp:Label></a>
-    <div class="container">
-        <asp:Label ID="lblError" runat="server" CssClass="redLabel" ForeColor="Red"></asp:Label>
+    <div class="mt-2">
+        <asp:Label ID="lblError" runat="server"></asp:Label>
+    </div>
+    <div class="d-flex justify-content-center mt-2 mb-2">
+        <a id="lnkBack" runat="server" class="btn btn-secondary" href="javascript:history.back();">
+                                                Go Back</a>
     </div>
 
-    <table class="table table-striped">
+    <table class="table table-sm table-bordered table-striped">
         <tbody class="entry" id="tblDetail1" runat="server" cellpadding="1" cellspacing="0" width="100%">
                     <tr class="d0" style="height:18px">
                         <td class="c0">

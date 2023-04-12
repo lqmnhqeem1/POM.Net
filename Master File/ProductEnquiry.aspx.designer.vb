@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class ProductEnquiry
 
     '''<summary>
-    '''tblDetail control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents tblDetail As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
     '''lblTitle control.
     '''</summary>
     '''<remarks>
@@ -32,24 +23,6 @@ Partial Public Class ProductEnquiry
     Protected WithEvents lblTitle As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''btnUpload control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnUpload As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''btnWin7Upload control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnWin7Upload As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
     '''lblSearchH control.
     '''</summary>
     '''<remarks>
@@ -57,24 +30,6 @@ Partial Public Class ProductEnquiry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblSearchH As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''lblMessage control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblMessage As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''TR1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TR1 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''lblProductCode control.
@@ -113,15 +68,6 @@ Partial Public Class ProductEnquiry
     Protected WithEvents txtPrdtDesc As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TR2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TR2 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
     '''lblDept control.
     '''</summary>
     '''<remarks>
@@ -158,15 +104,6 @@ Partial Public Class ProductEnquiry
     Protected WithEvents ddlDeptTo As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''TR3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TR3 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
     '''lblCategory control.
     '''</summary>
     '''<remarks>
@@ -201,15 +138,6 @@ Partial Public Class ProductEnquiry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCatgTo As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''TR4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TR4 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''lblBarCode control.
@@ -329,15 +257,6 @@ Partial Public Class ProductEnquiry
     Protected WithEvents lblBlockOfProcurement As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''TDTest2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TDTest2 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
     '''cbBlockOfPro control.
     '''</summary>
     '''<remarks>
@@ -356,13 +275,13 @@ Partial Public Class ProductEnquiry
     Protected WithEvents cbBlockOfPro_NO As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
-    '''TDTest3 control.
+    '''TDTest2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TDTest3 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents TDTest2 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''lblHghShrHghVal control.
@@ -372,15 +291,6 @@ Partial Public Class ProductEnquiry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblHghShrHghVal As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''TDTest4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TDTest4 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''cbHGHV control.
@@ -399,15 +309,6 @@ Partial Public Class ProductEnquiry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cbHGHV_No As Global.System.Web.UI.WebControls.CheckBox
-
-    '''<summary>
-    '''trButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents trButton As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''btnSearch control.
@@ -437,13 +338,22 @@ Partial Public Class ProductEnquiry
     Protected WithEvents lblHerr As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''ddlPages control.
+    '''lblError control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlPages As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents lblError As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''lblMessage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblMessage As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''lblSearchResult control.
@@ -455,13 +365,22 @@ Partial Public Class ProductEnquiry
     Protected WithEvents lblSearchResult As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''lblError control.
+    '''btnUpload control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblError As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents btnUpload As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''btnWin7Upload control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnWin7Upload As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''dgProduct control.
@@ -489,4 +408,31 @@ Partial Public Class ProductEnquiry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSave As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''lblPages control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblPages As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''ddlPages control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlPages As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''lblPages1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblPages1 As Global.System.Web.UI.WebControls.Label
 End Class

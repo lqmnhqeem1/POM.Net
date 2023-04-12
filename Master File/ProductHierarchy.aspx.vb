@@ -52,6 +52,7 @@ Partial Class ProductHierarchy
                 dsProd = objData.ExecuteSpDataSet("usp_ProductHierarchySearch", objXml)
                 If (objData.DbMessage.Count <> 0) Then
                     If (objData.DbMessage.Code(0) = "10001") Then
+                        lblError.CssClass = "alert alert-danger d-flex justify-content-center text-dark"
                         lblError.Text = objData.DbMessage.Message(0)
                         Return
                     Else

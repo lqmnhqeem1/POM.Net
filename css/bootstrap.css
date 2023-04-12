@@ -1914,7 +1914,7 @@ select.form-control:focus::-ms-value {
   line-height: 1.5;
   color: #212529;
   background-color: transparent;
-  border: solid transparent;
+  border: solid #6c757d;
   border-width: 1px 0;
 }
 

@@ -11666,11 +11666,11 @@ a[data-toggle="collapse"] {
     border-radius: 4px;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: transparent;
+    border: solid 1px #3ba32f;
 }
 
     .form-control:focus, .form-control:active {
-        border-color: #000;
+        border-color: #a9f367;
     }
 
     .form-control::-webkit-input-placeholder {

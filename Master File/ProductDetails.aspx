@@ -22,7 +22,7 @@ strPCd = '<%=strPrdtCd%>';
 	<a href="#" onclick="window.open('ProductHierarchy.aspx',null,'height=150,width=400,status=yes,toolbar=no,scrollbars=no')">Product Hierarchy</a>&nbsp;|&nbsp; 
 								
     
-    <table class="table table-striped">
+    <table class="table table-sm table-bordered">
         <tbody class="entry" id="tblDetail" runat="server" cellpadding="1" cellspacing="0" width="100%">
                     <tr class="d0">
         <td ><asp:Label ID="lblPrdCode" runat="server" CssClass="normalLabel" Text="Product Code"></asp:Label></td>

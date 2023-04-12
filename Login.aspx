@@ -20,6 +20,7 @@
 <!-- This is a very simple parallax effect achieved by simple CSS 3 multiple backgrounds, made by http://twitter.com/msurguy -->
 <html>
 <head runat="server">
+    <title>Login</title>
     <%-- <script src="/js/jquery-3.2.1.min.js"></script>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
@@ -270,45 +271,6 @@
 </head>
 
 <body onkeydown="checkKey(event);">
-<%--<div class="container">
-    <div class="row vertical-offset-100">
-    	<div class="col-md-4 col-md-offset-4">
-    		<div class="panel panel-default">
-			  	<div class="panel-heading">
-			    	<h3 class="panel-title">Log in</h3>
-                    <asp:Label ID="lblMessage" runat="server" CssClass="redLabel" Text="" Visible="false"></asp:Label>
-			 	</div>
-			  	<div class="panel-body">
-			    	<form accept-charset="UTF-8" role="form" runat="server">
-                    <fieldset>
-			    	  	<div class="form-group">
-			    		    <asp:Label ID="lblUserName" runat="server" CssClass="normalLabel" Text="User Name"></asp:Label>
-			    		</div>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtUserName" runat="server" CssClass="normalTextBox" TabIndex="1" Width="70%"></asp:TextBox>
-                        </div>
-			    		<div class="form-group">
-                            <asp:Label ID="lblPassword" runat="server" CssClass="normalLabel" Text="Password"></asp:Label>
-			    		</div>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtPassword" runat="server" CssClass="normalTextBox" TabIndex="2" Width="70%" TextMode="password"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="lblStore" runat="server" CssClass="normalLabel" Text="Store"></asp:Label>
-			    		</div>
-                        <div>
-                            <asp:DropDownList ID="ddlStore" runat="server" CssClass="normalDropDownList" TabIndex="3" Width="100%"></asp:DropDownList>
-                        </div>
-                        <br>
-                        <asp:Button id="btnLogin" runat="server" CssClass="searchButton" Text="Log In" CausesValidation="false"/>
-                        <asp:Button id="btnCancel" runat="server" CssClass="resetButton" Text="Cancel" OnClientClick="javascript:window.close();" CausesValidation="false"/>
-			    	</fieldset>
-			      	</form>
-			    </div>
-			</div>
-		</div>
-	</div>
-</div>--%>
     <div class="main" >   
 	<div class="mt-5" style="">
 		<center>
