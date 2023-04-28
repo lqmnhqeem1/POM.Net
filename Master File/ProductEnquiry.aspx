@@ -240,8 +240,8 @@
 
             <div class="d-flex justify-content-center">
                  <asp:Label ID="lblPages" runat="server" CssClass="normalLabel" Text="Page Set "></asp:Label>
-                <asp:DropDownList ID="ddlPages" runat="server" CssClass="form-control m-2 " AutoPostBack="True"
-                    Width="50px" Height="20px">
+                <asp:DropDownList ID="ddlPages" runat="server" CssClass="form-control ml-2 mb-2 mr-2 " AutoPostBack="True"
+                    Width="100px" Height="10px">
                 </asp:DropDownList>
                 <asp:Label ID="lblPages1" runat="server" CssClass="normalLabel" Text="(Each Page Set Contains Max 10 Pages)"></asp:Label>
             </div>

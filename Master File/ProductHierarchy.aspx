@@ -1,28 +1,49 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="ProductHierarchy.aspx.vb" Inherits="IM_POM_VB.Net.ProductHierarchy" %>
 <asp:Content ID="cProductEnquiry" ContentPlaceHolderID="tContent" runat="Server">
-<%--        <script type="text/javascript" src="js/masterfile.js"></script>
+ <script type="text/javascript" src="js/masterfile.js"></script>
 
     <script language="javascript" type="text/javascript">
-var strPrd;
-var strPCd; 
-strPrd = '<%=strPrdtId%>';
-strPCd = '<%=strPrdtCd%>';
-    </script>--%>
+        var strPrd;
+        var strPCd; 
+        strPrd = '<%=strPrdtId%>';
+        strPCd = '<%=strPrdtCd%>';
+    </script>
     <h1 class="display-5">Product Information</h1>
-                <a id="FSP" runat="server" href="#" onclick="window.open('FuturePrice.aspx?productid='+ strPrd,'FP','height=180,width=600,status=yes,toolbar=no,scrollbars=no', 'FSP')">
-                    <asp:Label ID="lblFPLink" runat="server" CssClass="normalHyperLink" Text="Future Selling Price"></asp:Label></a>&nbsp;|
+        
+    <div class="nav ">
+
+    </div>
+        <ul class="btn btn-group flex-wrap">
+            <li class="btn btn-primary">
+                <a id="FSP" runat="server" href="#" onclick="window.open('FuturePrice.aspx?productid='+ strPrd,'FP','', 'FSP')">
+                    <asp:Label ID="lblFPLink" runat="server" CssClass="text-white" Text="Future Selling Price"></asp:Label></a>
+            </li>
+            <li class="btn btn-primary">
                 <a id="CRSP" runat="server" href="#" onclick="window.open('CurrentRSP.aspx?productid='+ strPrd,'CRSP','height=180,width=600,status=yes,toolbar=no,scrollbars=no', 'CRSP')">
-                    <asp:Label ID="Label2" runat="server" CssClass="normalHyperLink" Text="Current RSP"></asp:Label></a>&nbsp;|
+                    <asp:Label ID="Label2" runat="server" CssClass="text-white" Text="Current RSP"></asp:Label></a>
+            </li>
+            <li class="btn btn-primary">
                 <a id="UPC" runat="server" href="#" onclick="window.open('UPC.aspx?productid='+ strPrd,'UPC','height=350,width=404,status=yes,toolbar=no,scrollbars=no', 'UPC')">
-                    <asp:Label ID="Label11" runat="server" CssClass="normalHyperLink" Text="UPC"></asp:Label></a>&nbsp;|
+                    <asp:Label ID="Label11" runat="server" CssClass="text-white" Text="UPC"></asp:Label></a>
+            </li>
+            <li class="btn btn-primary">
                 <a id="VP" runat="server" href="#" onclick="window.open('VendorProduct.aspx?productid='+ strPrd +'&Desc='+ strPCd,'VP','height=350,width=650,status=yes,toolbar=no,scrollbars=no', 'VP')">
-                    <asp:Label ID="Label12" runat="server" CssClass="normalHyperLink" Text="Vendor Product"></asp:Label></a>&nbsp;|
+                    <asp:Label ID="Label12" runat="server" CssClass="text-white" Text="Vendor Product"></asp:Label></a>
+            </li>
+            <li class="btn btn-primary">
                 <a id="LP" runat="server" href="#" onclick="window.open('LinkProducts.aspx?productid='+ strPrd,'LP','height=450,width=600,status=yes,toolbar=no,scrollbars=no', 'LP')">
-                    <asp:Label ID="Label13" runat="server" CssClass="normalHyperLink" Text="Link Products"></asp:Label></a>&nbsp;|
+                    <asp:Label ID="Label13" runat="server" CssClass="text-white" Text="Link Products"></asp:Label></a>
+            </li>
+            <li class="btn btn-primary">
                 <a id="ING" runat="server" href="#" onclick="window.open('Ingredients.aspx?productid='+ strPrd,'ING','height=350,width=650,status=yes,toolbar=no,scrollbars=no')">
-                    <asp:Label ID="Label16" runat="server" CssClass="normalHyperLink" Text="Ingredients"></asp:Label></a>&nbsp;|
+                    <asp:Label ID="Label16" runat="server" CssClass="text-white" Text="Ingredients"></asp:Label></a>
+            </li>
+            <li class="btn btn-primary">
                 <a id="PS" runat="server" href="#" onclick="window.open('ProductStyle.aspx?productid='+ strPrd,'PS','height=150,width=600,status=yes,toolbar=no,scrollbars=no')">
-                    <asp:Label ID="Label17" runat="server" CssClass="normalHyperLink" Text="Product Style"></asp:Label></a>
+                    <asp:Label ID="Label17" runat="server" CssClass="text-white" Text="Product Style"></asp:Label></a>
+            </li>
+        </ul>
+                
     <div class="mt-2">
         <asp:Label ID="lblError" runat="server"></asp:Label>
     </div>

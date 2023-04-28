@@ -1,19 +1,23 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeFile="ProductHierarchySimp.aspx.vb" Inherits="Master_File_ProductHierarchySimp" %> <%--MasterPageFile="~/Site.Master"--%>
+﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="ProductHierarchySimp.aspx.vb" Inherits="IM_POM_VB.Net.ProductHierarchySimp" %> <%--MasterPageFile="~/Site.Master"--%>
 <asp:Content ID="cProductEnquiry" ContentPlaceHolderID="tContent" runat="Server">
        <script type="text/javascript" src="js/masterfile.js"></script>
 
-    <script language="javascript" type="text/javascript">
+    <%--<script language="javascript" type="text/javascript">
     var strPrd;
     var strPCd; 
     strPrd = '<%=strPrdtId%>';
     strPCd = '<%=strPrdtCd%>';
-    </script>
+    </script>--%>
     <h1 class="display-5">Product Information (Simplify)</h1>   
-     <div class="container">
-        <asp:Label ID="lblError" runat="server" CssClass="redLabel" ForeColor="Red"></asp:Label>
+     <div class="mt-2">
+        <asp:Label ID="lblError" runat="server"></asp:Label>
     </div>
-    <table class="table table-striped">
-        <tbody class="entry" id="tblDetail1" runat="server" cellpadding="1" cell    spacing="0" width="100%">
+    <div class="d-flex justify-content-center mt-2 mb-2">
+        <a id="lnkBack" runat="server" class="btn btn-secondary" href="javascript:history.back();">
+                                                Go Back</a>
+    </div>
+    <table class="table table-sm table-bordered table-striped">
+        <tbody class="entry" id="tblDetail1" runat="server" cellpadding="1" cellspacing="0" width="100%">
                     <tr class="d0" style="height:18px">
                         <td class="c0">
                             <asp:Label ID="lblPrdCode" runat="server" CssClass="normalLabel" Text="Product Code"></asp:Label></td>

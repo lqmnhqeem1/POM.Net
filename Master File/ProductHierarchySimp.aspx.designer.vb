@@ -11,7 +11,25 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Master_File_ProductHierarchySimp
+Partial Public Class ProductHierarchySimp
+
+    '''<summary>
+    '''lblError control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblError As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''lnkBack control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkBack As Global.System.Web.UI.HtmlControls.HtmlAnchor
 
     '''<summary>
     '''tblDetail1 control.

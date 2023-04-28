@@ -108,7 +108,7 @@ Partial Class ProductHierarchy
                         For intcounter = 0 To strFunc.Length - 1
                             If strFunc(intcounter) = Constants.CONST_F1 Then
                                 FSP.HRef = "#"
-                                FSP.Attributes.Add("onclick", "javascript:window.open('FuturePrice.aspx?productid='+ strPrd,'FP','height=200,width=980,top=100,left=140,status=yes,toolbar=no,scrollbars=no', 'FSP')")
+                                FSP.Attributes.Add("onclick", "javascript:window.open('FuturePrice.aspx?productid='+ strPrd,'FP','', 'FSP')")
                             ElseIf strFunc(intcounter) = Constants.CONST_F2 Then
                                 CRSP.HRef = "#"
                                 CRSP.Attributes.Add("onclick", "javascript:window.open('CurrentRSP.aspx?productid='+ strPrd,'CRSP','height=220,width=980,top=100,left=140,status=yes,toolbar=no,scrollbars=no', 'CRSP')")
