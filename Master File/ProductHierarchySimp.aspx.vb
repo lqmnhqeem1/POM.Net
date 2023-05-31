@@ -7,7 +7,8 @@ Imports POM.Lib.Log
 Imports POM.Lib.Security
 
 #End Region
-Partial Class Master_File_ProductHierarchySimp
+Partial Class ProductHierarchySimp
+
     Inherits System.Web.UI.Page
 
     Protected strPrdtId As String
@@ -37,6 +38,7 @@ Partial Class Master_File_ProductHierarchySimp
                 dsProd = objData.ExecuteSpDataSet("usp_ProductHierarchySimpSearch", objXml)
                 If (objData.DbMessage.Count <> 0) Then
                     If (objData.DbMessage.Code(0) = "10001") Then
+                        lblError.CssClass = "alert alert-danger d-flex justify-content-center text-dark"
                         lblError.Text = objData.DbMessage.Message(0)
                         Return
                     Else

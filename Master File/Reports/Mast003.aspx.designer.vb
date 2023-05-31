@@ -11,95 +11,122 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class ProductGroupDetails
+Partial Public Class Mast003
 
     '''<summary>
-    '''Head1 control.
+    '''lblTitle control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Head1 As Global.System.Web.UI.HtmlControls.HtmlHead
+    Protected WithEvents lblTitle As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''frmPrdGrpDetail control.
+    '''lblParam control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents frmPrdGrpDetail As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents lblParam As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''lblProductGroup control.
+    '''lblHierSecCap control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblProductGroup As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblHierSecCap As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''lblProductGroupValue control.
+    '''Label7 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblProductGroupValue As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''lblGroupDesc control.
+    '''ddlHierSecVal control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblGroupDesc As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ddlHierSecVal As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''lblGroupDescValue control.
+    '''lblRangeFromCap control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblGroupDescValue As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblRangeFromCap As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''lblResults control.
+    '''Label1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblResults As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''dgPrdGrpDetails control.
+    '''ddlRangeFromVal control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents dgPrdGrpDetails As Global.System.Web.UI.WebControls.DataGrid
+    Protected WithEvents ddlRangeFromVal As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''dgSubClassGroupDetail control.
+    '''lblRangeToCap control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents dgSubClassGroupDetail As Global.System.Web.UI.WebControls.DataGrid
+    Protected WithEvents lblRangeToCap As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''btnPrint control.
+    '''Label2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnPrint As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''ddlRangeToVal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlRangeToVal As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''btnViewReport control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnViewReport As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''ifrmReport control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ifrmReport As Global.System.Web.UI.HtmlControls.HtmlIframe
 End Class
