@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class VendorDetails
 
     '''<summary>
+    '''lblSearchResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblSearchResult As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''lblVendorCode control.
     '''</summary>
     '''<remarks>
@@ -93,6 +102,15 @@ Partial Public Class VendorDetails
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnReset As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''lblVendorDetails control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblVendorDetails As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''lblResults control.

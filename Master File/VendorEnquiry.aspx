@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="VendorEnquiry.aspx.vb" Inherits="IM_POM_VB.Net.VendorDetails" %> <%-- Inherits="IM_POM_VB.Net.WebForm2" --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="tContent" runat="server" style="zoom:75%;">
     <%--16/2/2023--%>
-    <style type="text/css">
+    <%--<style type="text/css">
         .button-div {
             text-align: right;
         }
@@ -13,36 +13,33 @@
         .header-top {
             vertical-align:top !important;
         }
-    </style>
+    </style>--%>
+    <form runat="server" method="post">
     <h1 class="display-5">Vendor Enquiry</h1>
-    <br />
+    <div class="card-header w-25 rounded-top" >
+        <asp:Label ID="lblSearchResult" runat="server" CssClass="text-white h5" Text="Search"></asp:Label>
+    </div>
         <div class="card">
-            <h5 class="card-header font-weight-light">Search</h5>
              <div class="card-body">
-                <form runat="server">
                       <div class="form-row">
                         <div class="form-group col-md-6">
-                          <asp:label ID="lblVendorCode" for="inputVendorCode"  runat="server" CssClass="labelText">Vendor Code</asp:label>
+                          <asp:label ID="lblVendorCode" for="inputVendorCode"  runat="server" CssClass="normalLabel">Vendor Code</asp:label>
                           <br />
                           <%--<input type="email" class="form-control" id="txtVendorCode" placeholder="Vendor Code">--%>
-                          <asp:Textbox runat="server"  class="form-control" CssClass="inputText" id="txtVendorCode" MaxLength="10" TabIndex="1"></asp:Textbox>
+                          <asp:Textbox runat="server"  class="form-control" id="txtVendorCode" MaxLength="10" TabIndex="1"></asp:Textbox>
                         </div>
                         <div class="form-group col-md-6">
-                          <asp:label ID="lblVendorName" for="inputVendorName" runat="server" CssClass="labelText">Vendor Name</asp:label>
+                          <asp:label ID="lblVendorName" for="inputVendorName" runat="server" CssClass="normalLabel">Vendor Name</asp:label>
                           <%--<input type="password" class="form-control" id="txtVendorName" placeholder="Vendor Name">--%>
                           <br />
-                          <asp:Textbox runat="server" CssClass="inputText" class="form-control" id="txtVendorName" MaxLength="50" TabIndex="2"></asp:Textbox>
+                          <asp:Textbox runat="server" class="form-control" id="txtVendorName" MaxLength="50" TabIndex="2"></asp:Textbox>
                         </div>
                       </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                              <asp:label id="lblDepartment" runat="server" for="inputDept">Department</asp:label>
-                                <%--<select id="inputState" class="form-control">
-                                    <option selected>--Select--</option>
-                                    <option>...</option>
-                                </select>--%>
+                              <asp:label id="lblDepartment" CssClass="normalLabel" runat="server" for="inputDept">Department</asp:label>
                                 <br />
-                                <asp:DropDownList ID="ddlDepartment" runat="server" autopostback="true" class="form-control" CssClass="inputDropDown" TabIndex="3">
+                                <asp:DropDownList ID="ddlDepartment" runat="server" autopostback="true" class="form-control" TabIndex="3">
                                 </asp:DropDownList>
                             </div>
                             <div class="form-group col-md-6">
@@ -52,8 +49,9 @@
                                     <option>...</option>
                                 </select>--%>
                                 <br />
-                                <asp:DropDownList ID="ddlCategory" runat="server" class="form-control"  CssClass="inputDropDown" TabIndex="4">
+                                <asp:DropDownList ID="ddlCategory" runat="server" class="form-control"  TabIndex="4">
                                 </asp:DropDownList>
+                                 <%--CssClass="inputDropDown"--%>
                             </div>
                           </div>
                       <%--LOH - Comment--%>
@@ -69,18 +67,19 @@
                             <asp:Button ID="btnSearch" runat="server" Text="Search" class="btn btn-primary button-width" TabIndex="5" />
                             <asp:Button ID="btnReset" runat="server" Text="Reset" class="btn btn-primary button-width" TabIndex="6" />
                         </div>
-                    </form>
             </div>
         </div>
     <br />
+        <div class="card-header w-25 rounded-top mt-4" >
+            <asp:Label ID="lblVendorDetails" runat="server" CssClass="text-white h5" Text="Vendor Details"></asp:Label>
+        </div>
         <div class="card">
                 <%--<Label>Vendor Details</Label>--%>
-                <h5 class="card-header font-weight-light">Vendor Details</h5>
                 <div class="card-body" style="overflow-x: auto;">
                     <asp:Label ID="lblResults" runat="server" CssClass="redLabel"></asp:Label>
                     <div style="overflow: auto; width: 100%;">
-                    <asp:DataGrid AllowPaging="True" ID="grdVendorDetails" CellPadding="1" GridLines="Vertical" CssClass="normalDataGrid" Width="100%" AutoGenerateColumns="False"
-                        runat="server">
+                    <asp:DataGrid ID="grdVendorDetails" GridLines="Vertical" Width="100%" CellPadding="2" AutoGenerateColumns="False"
+                        CssClass="table table-bordered" runat="server" AllowPaging="True">
                         <SelectedItemStyle CssClass="normalDataGridSelectedItem"></SelectedItemStyle>
                         <AlternatingItemStyle CssClass="normalDataGridAlternatingItem"></AlternatingItemStyle>
                         <ItemStyle CssClass="normalDataGridItem"></ItemStyle>
@@ -91,13 +90,15 @@
                                 <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                             </asp:BoundColumn>
                             <asp:TemplateColumn HeaderText="Vendor Name" >
-                                <ItemStyle Wrap="True" HorizontalAlign="Left" VerticalAlign="Middle" Width="270px" />
+                                <ItemStyle Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False"
+                                    Font-Underline="False" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                <HeaderStyle Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Strikeout="False"
+                                    Font-Underline="False" HorizontalAlign="Center" VerticalAlign="Middle" Width="13%" />
                                 <ItemTemplate>
                                     <a href="#" onclick="window.open('VendorCompanyDetails.aspx?vendorcode=' + <%# DataBinder.Eval(Container.DataItem, "vendor_code") %>,null,'height=320,width=980,top=100,left=140,status=yes,toolbar=no,scrollbars=no')">
                                         <%# DataBinder.Eval(Container.DataItem, "vendor_name") %>
                                     </a>
                                 </ItemTemplate>
-                                <HeaderStyle VerticalAlign="Middle" />
                             </asp:TemplateColumn>
                             <asp:TemplateColumn Visible="False">
                                 <ItemTemplate>
@@ -148,4 +149,5 @@
                     </div>
                 </div>
         </div>
+    </form>
 </asp:Content>
