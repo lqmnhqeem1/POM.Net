@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class VendorProduct
 
     '''<summary>
-    '''lblError control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblError As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''frmVendorProduct control.
     '''</summary>
     '''<remarks>
@@ -30,6 +21,24 @@ Partial Public Class VendorProduct
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents frmVendorProduct As Global.System.Web.UI.HtmlControls.HtmlForm
+
+    '''<summary>
+    '''lblSetInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblSetInfo As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''lblError control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblError As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''dgVenProduct control.

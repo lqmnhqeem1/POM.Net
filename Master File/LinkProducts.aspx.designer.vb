@@ -23,6 +23,24 @@ Partial Public Class LinkProducts
     Protected WithEvents frmLinkProducts As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''lblSetInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblSetInfo As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''alertError control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents alertError As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''lblError control.
     '''</summary>
     '''<remarks>

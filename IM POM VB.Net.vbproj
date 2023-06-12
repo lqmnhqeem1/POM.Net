@@ -306,6 +306,7 @@
     <Content Include="css\pom.net.css" />
     <Content Include="css\style.css" />
     <Content Include="css\styles.css" />
+    <Content Include="ErrorPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -386,15 +387,21 @@
     <Content Include="js\popper.js" />
     <Content Include="js\TweenLite.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Master File\FuturePrice.aspx" />
+    <Content Include="Master File\Ingredients.aspx" />
     <Content Include="Master File\js\masterfile.js" />
+    <Content Include="Master File\LinkProducts.aspx" />
+    <Content Include="Master File\POSPromotionEnquiry.aspx" />
     <Content Include="Master File\ProductDetails.aspx" />
-    <Content Include="Master File\ProductEnquirySimp.aspx" />
     <Content Include="Master File\ProductGroupDetails.aspx" />
     <Content Include="Master File\ProductHierarchy.aspx" />
     <Content Include="Master File\ProductHierarchyPopUp.aspx" />
     <Content Include="Master File\ProductHierarchySimp.aspx" />
     <Content Include="Master File\ProductStyle.aspx" />
     <Content Include="Master File\ProductEnquiry.aspx" />
+    <Content Include="Master File\Reports\Mast003.aspx" />
+    <Content Include="Master File\Reports\Mast004_Store.aspx" />
+    <Content Include="Master File\UPC.aspx" />
     <Content Include="Master File\VendorEnquiry.aspx" />
     <Content Include="Master File\VendorEnquiryForm.aspx" />
     <Content Include="Master File\VendorPrdtDetails.aspx" />
@@ -422,6 +429,8 @@
     <Content Include="images\Thumbs.db" />
     <Content Include="images\vssver2.scc" />
     <Content Include="App_Code\HQPOM_Code\vssver2.scc" />
+    <Content Include="Master File\ProductEnquirySimp.aspx" />
+    <Content Include="Master File\CurrentRSP.aspx" />
     <Content Include="SwitchStore.aspx" />
     <None Include="App_Code\Schema\OfflineStores.xsd" />
     <Content Include="App_Code\Schema\OfflineStores.xss">
@@ -872,11 +881,81 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErrorPage.aspx.designer.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\FuturePrice.aspx.designer.vb">
+      <DependentUpon>FuturePrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\FuturePrice.aspx.vb">
+      <DependentUpon>FuturePrice.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\Ingredients.aspx.designer.vb">
+      <DependentUpon>Ingredients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\Ingredients.aspx.vb">
+      <DependentUpon>Ingredients.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\LinkProducts.aspx.designer.vb">
+      <DependentUpon>LinkProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\LinkProducts.aspx.vb">
+      <DependentUpon>LinkProducts.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\POSPromotionEnquiry.aspx.designer.vb">
+      <DependentUpon>POSPromotionEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\POSPromotionEnquiry.aspx.vb">
+      <DependentUpon>POSPromotionEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Master File\ProductEnquiry.aspx.designer.vb">
       <DependentUpon>ProductEnquiry.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master File\ProductEnquiry.aspx.vb">
       <DependentUpon>ProductEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\ProductEnquirySimp.aspx.designer.vb">
+      <DependentUpon>ProductEnquirySimp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\ProductEnquirySimp.aspx.vb">
+      <DependentUpon>ProductEnquirySimp.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\CurrentRSP.aspx.designer.vb">
+      <DependentUpon>CurrentRSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\CurrentRSP.aspx.vb">
+      <DependentUpon>CurrentRSP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\Reports\Mast003.aspx.designer.vb">
+      <DependentUpon>Mast003.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\Reports\Mast003.aspx.vb">
+      <DependentUpon>Mast003.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\Reports\Mast004_Store.aspx.designer.vb">
+      <DependentUpon>Mast004_Store.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\Reports\Mast004_Store.aspx.vb">
+      <DependentUpon>Mast004_Store.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master File\UPC.aspx.designer.vb">
+      <DependentUpon>UPC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master File\UPC.aspx.vb">
+      <DependentUpon>UPC.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="SwitchStore.aspx.designer.vb">
@@ -1011,12 +1090,6 @@
     <Compile Include="Master File\ProductDetails.aspx.vb">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Master File\ProductEnquirySimp.aspx.designer.vb">
-      <DependentUpon>ProductEnquirySimp.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Master File\ProductEnquirySimp.aspx.vb">
-      <DependentUpon>ProductEnquirySimp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master File\ProductGroupDetails.aspx.designer.vb">
       <DependentUpon>ProductGroupDetails.aspx</DependentUpon>

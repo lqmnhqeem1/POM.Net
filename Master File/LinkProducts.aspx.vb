@@ -76,6 +76,7 @@ Public Class LinkProducts
                     dgProduct.DataSource = GetDataSet().Tables(0)
                     dgProduct.DataBind()
                     lblError.Text = objData.DbMessage.Message(0)
+                    alertError.Visible = true
                     dgProduct.PagerStyle.Visible = False
                     Return
                 Else
@@ -89,6 +90,7 @@ Public Class LinkProducts
                 dgProduct.DataBind()
                 dgProduct.PagerStyle.Visible = True
                 lblError.Text = ""
+                alertError.Visible = False
             End If
 
         Catch httpex As Threading.ThreadAbortException

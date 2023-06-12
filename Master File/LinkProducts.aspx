@@ -9,23 +9,35 @@
 </head>
 <body style="height: 450px; width: 960px">
     <form id="frmLinkProducts" runat="server" style="height: 90%; width: 90%">
+         <div class="card-header rounded-top">
+             <div class="row">
+                 <div class="col-4"> <asp:Label ID="lblSetInfo" runat="server" CssClass="text-white h5" Text="Set Information"></asp:Label></div>
+                 <div class="col-8 d-flex justify-content-end"><a href="javascript:window.close();">Close X</a></div>
+             </div>
+       </div>
+          <div class="container alert alert-danger d-flex justify-content-center" id="alertError" runat="server" visible="false">
+             <asp:Label ID="lblError" runat="server" CssClass="redLabel" ForeColor="Red"></asp:Label>
+        </div>
         <table id="tblLinkProducts" cellpadding="1" cellspacing="0" align="center" style="width: 100%">
             <tr>
                 <td align="right">
-                    <a href="javascript:window.close();">Close X</a></td>
+                    </td>
             </tr>
             <tr class="title">
-                <td >
-                    Set Information</td>
+            
             </tr>
             <tr>
                 <td align="center">
-                    <asp:Label ID="lblError" runat="server" CssClass="redLabel" ForeColor="Red"></asp:Label></td>
+                    </td>
             </tr>
             <tr>
                 <td>
-                    <asp:DataGrid ID="dgProduct" Style="width: 100%" GridLines="Vertical" CellPadding="2"
-                        AutoGenerateColumns="False" CssClass="normalDataGrid" runat="server" AllowPaging="True">
+                   
+                </td>
+            </tr>
+        </table>
+         <asp:DataGrid ID="dgProduct" Style="width: 100%" GridLines="Vertical" CellPadding="2"
+                        AutoGenerateColumns="False" CssClass="table table-bordered" runat="server" AllowPaging="True">
                         <SelectedItemStyle CssClass="normalDataGridSelectedItem"></SelectedItemStyle>
                         <AlternatingItemStyle CssClass="normalDataGridAlternatingItem"></AlternatingItemStyle>
                         <ItemStyle CssClass="normalDataGridItem"></ItemStyle>
@@ -61,9 +73,6 @@
                         </Columns>
                         <PagerStyle Mode="NumericPages" CssClass="normalDataGridPager" />
                     </asp:DataGrid>
-                </td>
-            </tr>
-        </table>
     </form>
 </body>
 </html>

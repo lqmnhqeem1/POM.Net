@@ -1,25 +1,51 @@
 ﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.Mobile.master.vb" Inherits="IM_POM_VB.Net.Site_Mobile" %>
 
-<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
-
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+<head runat="server">
+    <title>POM.Net</title>
+    <link href="css/pom.net.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .HyperlinkCssClass img
+        {
+            width: 170px;
+            height: 90px;
+        }
+    </style>
 </head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <h1>Mobile Master Page</h1>
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
-        <friendlyUrls:ViewSwitcher ID="ViewSwitcher1" runat="server" />
-    </div>
-    </form>
+<body style="background-color: #f7f7f7;">
+    <table cellpadding="0" cellspacing="0" style="height: 100%; background-color: #ffffff;">
+        <tr>
+            <td>
+                <form id="frmMasterPageNoMenu" runat="server">
+                    <table id='tblMaster' cellpadding="1" cellspacing="1" border="0" style="background-color: #ffffff;
+                       >
+                        <tr>
+                            <td id="tdHeader">
+                                <table style="text-align: left; width: 100%;" border="0">
+                                    <tr class="systemLabel">
+                                        <td style="text-align: left; vertical-align: top;">
+                                            <asp:HyperLink ID="hlnkHome" runat="server" CssClass="HyperlinkCssClass" ImageUrl="~/images/Giant2.jpg" NavigateUrl="~/Home.aspx"
+                                                BorderStyle="none"></asp:HyperLink><br/><asp:Label ID="lblLogoVer" runat="server" Text=""></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr align="right">
+                                        <td>
+                                            <a href="javascript:window.history.back();" class="normalHyperLink">Go Back</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id='tdDetail' style="height: 100%;">
+                                <asp:ContentPlaceHolder ID="tContentNM" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
-
