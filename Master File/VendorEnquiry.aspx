@@ -14,6 +14,7 @@
             vertical-align:top !important;
         }
     </style>--%>
+    <script language="javascript" type="text/javascript" src="js/masterfile.js"></script>
     <form runat="server" method="post">
     <h1 class="display-5">Vendor Enquiry</h1>
     <div class="card-header w-25 rounded-top" >
@@ -63,10 +64,10 @@
                           </label>
                         </div>
                       </div>--%>
-                        <div class="button-div">
-                            <asp:Button ID="btnSearch" runat="server" Text="Search" class="btn btn-primary button-width" TabIndex="5" />
-                            <asp:Button ID="btnReset" runat="server" Text="Reset" class="btn btn-primary button-width" TabIndex="6" />
-                        </div>
+                     <div class="container d-flex justify-content-end">
+                        <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary" Text="Search" />
+                        <asp:Button ID="btnReset" runat="server" CssClass="btn btn-secondary ml-2" Text="Reset" />
+                    </div>
             </div>
         </div>
     <br />
@@ -95,7 +96,8 @@
                                 <HeaderStyle Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Strikeout="False"
                                     Font-Underline="False" HorizontalAlign="Center" VerticalAlign="Middle" Width="13%" />
                                 <ItemTemplate>
-                                    <a href="#" onclick="window.open('VendorCompanyDetails.aspx?vendorcode=' + <%# DataBinder.Eval(Container.DataItem, "vendor_code") %>,null,'height=320,width=980,top=100,left=140,status=yes,toolbar=no,scrollbars=no')">
+                                    <%--<a href="#" onclick="window.open('VendorCompanyDetails.aspx?vendorcode=' + <%# DataBinder.Eval(Container.DataItem, "vendor_code") %>,null,'height=320,width=980,top=100,left=140,status=yes,toolbar=no,scrollbars=no')">--%>
+                                    <a href="#" onclick="window.open('VendorCompanyDetails.aspx?vendorcode=' + <%# DataBinder.Eval(Container.DataItem, "vendor_code") %>,null,'')">
                                         <%# DataBinder.Eval(Container.DataItem, "vendor_name") %>
                                     </a>
                                 </ItemTemplate>

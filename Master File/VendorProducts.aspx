@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="VendorProducts.aspx.vb" Inherits="IM_POM_VB.Net.VendorProducts" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="tContent" runat="server">
-
+<asp:Content ID="Content1" ContentPlaceHolderID="tContent" runat="server" zoom="75%">
+    <script type="text/javascript" src="../commonjs/common.js"></script>
 <%--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -31,7 +31,9 @@
 </head>--%>
 
 <%--<body>--%>
-    <div class="col p-4">
+    <%--<div class="col p-4">--%>
+    <script type="text/javascript" src="../commonjs/common.js"></script>
+    <form runat="server" method="post">
     <h1 class="display-5">Vendor Product</h1>
     <br />
         <div class="card">
@@ -56,11 +58,14 @@
             </div>
         </div>
         <br />
+        <div class="card-header w-25 rounded-top" >
+            <asp:Label ID="lblSearchResult" runat="server" CssClass="text-white h5" Text="Details"></asp:Label>
+        </div>
         <div class="card">
-            <h5 class="card-header font-weight-light">Details</h5>
-            <form runat="server">
+            <%--<h5 class="card-header font-weight-light">Details</h5>--%>
+            <%--<form runat="server">--%>
                 <div class="card-body" style="overflow-x: auto;">
-                    <asp:DataGrid ID="grdVendorProduct" GridLines="Vertical" Width="100%" CellPadding="1" CellSpacing="0" AutoGenerateColumns="False" CssClass="normalDataGrid" runat="server" AllowPaging="True">
+                    <asp:DataGrid ID="grdVendorProduct" GridLines="Vertical" Width="100%" CellPadding="1" CellSpacing="0" AutoGenerateColumns="False" CssClass="table table-bordered" runat="server" AllowPaging="True">
                         <SelectedItemStyle CssClass="normalDataGridSelectedItem"></SelectedItemStyle>
                         <AlternatingItemStyle CssClass="normalDataGridAlternatingItem"></AlternatingItemStyle>
                         <ItemStyle CssClass="normalDataGridItem"></ItemStyle>
@@ -139,9 +144,10 @@
                         <asp:LinkButton ID="lbtnLRCHistory" runat="server">Last Received Cost History</asp:LinkButton>   
                     </div>
                     </div>
-                </form>
+                <%--</form>--%>
                 </div>
-    </div>
+        </form>
+    <%--</div>--%>
 <%--</body>--%>
 <%--</html>--%>
 </asp:Content>

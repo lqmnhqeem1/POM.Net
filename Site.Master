@@ -133,7 +133,7 @@
     	</nav>
            
         <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5">
+      <div id="content" class="p-4 p-md-5 pt-5" style="width: 80%">
 
         <%--<h2 class="mb-4">Sidebar #02</h2>--%>
           <div class="container-fluid border-bottom border-success">

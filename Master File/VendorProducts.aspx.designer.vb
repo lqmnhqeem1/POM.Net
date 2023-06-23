@@ -77,6 +77,15 @@ Partial Public Class VendorProducts
     Protected WithEvents lblError As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''lblSearchResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblSearchResult As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''grdVendorProduct control.
     '''</summary>
     '''<remarks>

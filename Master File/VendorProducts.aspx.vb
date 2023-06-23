@@ -180,9 +180,6 @@ Partial Class VendorProducts
         '***************************************************************************
     End Sub
 
-    ''' <summary>
-    ''' show grid header only
-    ''' </summary>
     ''' <remarks></remarks>
     Private Sub ShowGridHeader()
 
@@ -229,42 +226,28 @@ Partial Class VendorProducts
 
     End Sub
 
-    ''' <summary>
-    ''' ItemDataBound Event
-    ''' for exclusive radio button check
-    ''' </summary>
-    ''' <param name="sender"></param>
-    ''' <param name="e"></param>
-    ''' <remarks></remarks>
-    ''' 'LOH - Comment
-    'Protected Sub grdVendorProduct_ItemDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.DataGridItemEventArgs) Handles grdVendorProduct.ItemDataBound
-    '    Try
-    '        Select Case e.Item.ItemType
-    '            Case ListItemType.Item, ListItemType.AlternatingItem, ListItemType.EditItem
-    '                CType(e.Item.FindControl("rdoVendorProduct"), RadioButton).Attributes.Add("OnClick", "javascript:exclusiveRadio('" & frmVendorProducts.ClientID & "', '" & CType(e.Item.FindControl("rdoVendorProduct"), RadioButton).ClientID & "');")
-    '        End Select
-    '    Catch ex As Exception
-    '        Dim objEx As New ApplicationException("Error in ItemDataBound event.", ex)
-    '        If IsNothing(ex.InnerException) Then
-    '            objEx.Source = Reflection.Assembly.GetExecutingAssembly.GetName(False).Name
-    '        Else
-    '            objEx.Source = ex.Source
-    '        End If
-    '        ExceptionLog.Log(objEx)
+    Protected Sub grdVendorProduct_ItemDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.DataGridItemEventArgs) Handles grdVendorProduct.ItemDataBound
+        Try
+            Select Case e.Item.ItemType
+                Case ListItemType.Item, ListItemType.AlternatingItem, ListItemType.EditItem
+                    CType(e.Item.FindControl("rdoVendorProduct"), RadioButton).Attributes.Add("OnClick", "javascript:exclusiveRadio('" & "frmVendorProducts" & "', '" & CType(e.Item.FindControl("rdoVendorProduct"), RadioButton).ClientID & "');")
+            End Select
+        Catch ex As Exception
+            Dim objEx As New ApplicationException("Error in ItemDataBound event.", ex)
+            If IsNothing(ex.InnerException) Then
+                objEx.Source = Reflection.Assembly.GetExecutingAssembly.GetName(False).Name
+            Else
+                objEx.Source = ex.Source
+            End If
+            ExceptionLog.Log(objEx)
 
-    '        'redirect to the error page
-    '        Response.Redirect("~/ErrorPage.aspx?code=50001")
+            'redirect to the error page
+            Response.Redirect("~/ErrorPage.aspx?code=50001")
 
-    '    End Try
+        End Try
 
-    'End Sub
+    End Sub
 
-    ''' <summary>
-    ''' PageIndexChanged Event
-    ''' </summary>
-    ''' <param name="source"></param>
-    ''' <param name="e"></param>
-    ''' <remarks></remarks>
     Protected Sub grdVendorProduct_PageIndexChanged(ByVal source As Object, ByVal e As System.Web.UI.WebControls.DataGridPageChangedEventArgs) Handles grdVendorProduct.PageIndexChanged
         Try
             grdVendorProduct.CurrentPageIndex = e.NewPageIndex()
@@ -285,13 +268,6 @@ Partial Class VendorProducts
 
     End Sub
 
-    ''' <summary>
-    ''' opens the VPCHistory page in a new window
-    ''' </summary>
-    ''' <param name="sender"></param>
-    ''' <param name="e"></param>
-    ''' <remarks>Modified by Sachin Jain for DCL 1556 on 22-Sep-2008</remarks>
-    ''' LOH - Comment
     Protected Sub lbtnVPCHistory_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles lbtnVPCHistory.Click
         Try
             'set the Hyperlinks here
@@ -328,13 +304,7 @@ Partial Class VendorProducts
         End Try
     End Sub
 
-    ''' <summary>
-    ''' opens the LRCHistory page in a new window
-    ''' </summary>
-    ''' <param name="sender"></param>
-    ''' <param name="e"></param>
-    ''' <remarks>Modified by Sachin Jain for DCL 1556 on 22-Sep-2008</remarks>
-    ''' ' LOH - Comment
+
     Protected Sub lbtnLRCHistory_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles lbtnLRCHistory.Click
         Try
             'set the Hyperlinks here
